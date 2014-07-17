@@ -1,0 +1,833 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+
+	<!-- CSS -->
+	<link rel="stylesheet" href="../css/bootstrap.css">
+	<link rel="stylesheet" href="../css/bootstrap-responsive.css">
+	<link rel="stylesheet" href="../css/plugins/jquery-ui/smoothness/jquery-ui.css">
+	<link rel="stylesheet" href="../css/plugins/chosen/chosen.css">
+	<link rel="stylesheet" href="../css/plugins/multiselect/multi-select.css">
+	<link rel="stylesheet" href="../css/plugins/select2/select2.css">
+	<link rel="stylesheet" href="../css/plugins/select2/select2-bootstrap.css">
+	<link rel="stylesheet" href="../css/plugins/icheck/all.css">
+	<link rel="stylesheet" href="../css/plugins/tagsinput/jquery.tagsinput.css">
+	<link rel="stylesheet" href="../css/plugins/fancybox/jquery.fancybox.css">
+	<link rel="stylesheet" href="../css/plugins/datepicker/datepicker.css">
+	<link rel="stylesheet" href="../css/plugins/bootstrap-multiselect/bootstrap-multiselect.css">
+	<link rel="stylesheet" href="../css/style.css">
+	<link rel="stylesheet" href="../css/themes.css">
+	<link rel="stylesheet" href="../css/admin.css">
+
+	<!-- JS -->
+	<script src="../js/jquery.min.js"></script>
+	<script src="../js/plugins/jquery-ui/jquery-ui-1.10.3.custom.min.js"></script>
+	<script src="../js/plugins/touch-punch/jquery.touch-punch.min.js"></script>
+	<script src="../js/bootstrap.min.js"></script>
+	<script src="../js/plugins/bootbox/jquery.bootbox.js"></script>
+	<script src="../js/plugins/imagesLoaded/jquery.imagesloaded.min.js"></script>
+	<script src="../js/plugins/chosen/chosen.jquery.min.js"></script>
+	<script src="../js/plugins/datepicker/bootstrap-datepicker.js"></script>
+	<script src="../js/plugins/select2/select2.min.js"></script>
+	<script src="../js/plugins/icheck/jquery.icheck.min.js"></script>
+	<script src="../js/plugins/fancybox/jquery.fancybox.js"></script>
+	<script src="../js/plugins/tagsinput/jquery.tagsinput.min.js"></script>
+	<script src="../js/plugins/multiselect/jquery.multi-select.js"></script>
+	<script src="../js/plugins/jquery.scrolltofixed/1.0.0/jquery-scrolltofixed.js"></script>
+	<script src="../js/plugins/bootstrap-multiselect/bootstrap-multiselect.js"></script>
+	<script src="../js/init.js"></script>
+	<script src="../js/application.js"></script>
+	<script src="../js/admin.js"></script>
+	
+	<!--[if lte IE 9]>
+		<script src="../js/plugins/placeholder/jquery.placeholder.min.js"></script>
+		<script>
+			$(document).ready(function() {
+				$('input, textarea').placeholder();
+			});
+		</script>
+	<![endif]-->
+
+</head>
+
+<body>
+	<div id="navigation">
+		<div class="container">
+			<div class="pull-left" style="padding-top: 4px; min-width: 200px;"><img src="../mock/image/promo-logo.png" alt="" /></div>
+			<a href="#" class="toggle-nav" rel="tooltip" data-placement="bottom" title="Toggle sidebar"><i class="icon-reorder"></i></a>
+			<ul class='main-nav'>
+				<li>
+					<a href="#">
+						<span>Home</span>
+					</a>
+				</li>
+				<li>
+					<a href="#" data-toggle="dropdown" class='dropdown-toggle'>
+						<span>Biz Social</span>
+						<span class="caret"></span>
+					</a>
+					<ul class="dropdown-menu">
+						<li><a href="#">Customer social</a></li>
+						<li><a href="#">Vendor social</a></li>
+						<li><a href="#">Internal social</a></li>
+					</ul>
+				</li>
+				<li class='active'>
+					<a href="#" data-toggle="dropdown" class='dropdown-toggle'>
+						<span>Marketing</span>
+						<span class="caret"></span>
+					</a>
+					<ul class="dropdown-menu">
+						<li><a href="#">Homepage admin</a></li>
+						<li><a href="#">Item admin</a></li>
+						<li><a href="#">Mass price updating</a></li>
+						<li><a href="#">Mass info updating</a></li>
+						<li><a href="#">Categories</a></li>
+						<li><a href="#">Tags</a></li>
+						<li><a href="#">Banners</a></li>
+						<li><a href="#">eFlyers</a></li>
+						<li><a href="#">Workflow</a></li>
+						<li><a href="#">My surveys</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="#" data-toggle="dropdown" class='dropdown-toggle'>
+						<span>Customers</span>
+						<span class="caret"></span>
+					</a>
+					<ul class="dropdown-menu">
+						<li><a href="#">Customer social</a></li>
+						<li><a href="#">Quotes</a></li>
+						<li><a href="#">Sale orders</a></li>
+						<li><a href="#">AR down invoices</a></li>
+						<li><a href="#">AR invoice</a></li>
+						<li><a href="#">AR credit memos</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="#" data-toggle="dropdown" class='dropdown-toggle'>
+						<span>Vendors</span>
+						<span class="caret"></span>
+					</a>
+					<ul class="dropdown-menu">
+						<li><a href="#">Vendor social</a></li>
+						<li><a href="#">Inquiries</a></li>
+						<li><a href="#">Puchuse orders</a></li>
+						<li><a href="#">AP down invoices</a></li>
+						<li><a href="#">AP invoices</a></li>
+						<li><a href="#">AP credit memos</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="#" data-toggle="dropdown" class='dropdown-toggle'>
+						<span>Finance</span>
+						<span class="caret"></span>
+					</a>
+					<ul class="dropdown-menu">
+						<li><a href="#">Currency exchange</a></li>
+						<li><a href="#">Incoming payments</a></li>
+						<li><a href="#">Outgoing payments</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="#" data-toggle="dropdown" class='dropdown-toggle'>
+						<span>HR</span>
+						<span class="caret"></span>
+					</a>
+					<ul class="dropdown-menu">
+						<li><a href="#">Orginizaion chart</a></li>
+						<li><a href="#">Member profiles</a></li>
+						<li><a href="#">Permissions</a></li>
+					</ul>
+				</li>
+			</ul>
+			<div class="user">
+				<ul class="icon-nav">
+					<li class='dropdown colo'>
+						<a href="#" class='dropdown-toggle' data-toggle="dropdown"><i class="icon-tint"></i></a>
+						<ul class="dropdown-menu pull-right theme-colors">
+							<li class="subtitle">
+								Theme colors
+							</li>
+							<li>
+								<span class="lightgrey" rel="tooltip" title="Classic Black"></span>
+								<span class="blue" rel="tooltip" title="Classic Blue"></span>
+								<span class="darkblue" rel="tooltip" title="Classic Deep Blue"></span>
+								<span class='green' rel="tooltip" title="Classic Green"></span>
+								<span class="satgreen" rel="tooltip" title="Holiday Green"></span>
+								<span class='red' rel="tooltip" title="Classic Red"></span>
+								<span class="lightred" rel="tooltip" title="Holiday Red"></span>
+								<span class="lime" rel="tooltip" title="Classic Yellow"></span>
+							</li>
+						</ul>
+					</li>
+					<li class="dropdown">
+						<a href="#" class='dropdown-toggle' data-toggle="dropdown"><i class="icon-search"></i></a>
+						<ul class="dropdown-menu pull-right theme-settings" style="padding: 15px 15px 0;">
+							<form class='form-horizontal'>
+								<div class="input-append">
+									<input type="text" name="search" placeholder="Type a company name">
+									<button type='submit' class='btn'><i class="icon-search"></i></button>
+								</div>
+							</form>
+						</ul>
+					</li>
+					<li class="dropdown">
+						<a href="#" class='dropdown-toggle' data-toggle="dropdown"><i class="icon-cog"></i></a>
+						<ul class="dropdown-menu pull-right theme-settings">
+							<li><a href="#">Company profile</a></li>
+							<li><a href="#">Site theme</a></li>
+						</ul>
+					</li>
+				</ul>
+				<div class="dropdown">
+					<a href="#" class='dropdown-toggle' data-toggle="dropdown">Harrison Fu <img src="../mock/image/user/user-avatar.jpg" width="27" height="27" alt=""></a>
+					<ul class="dropdown-menu pull-right">
+						<li>
+							<a href="#">Edit profile</a>
+						</li>
+						<li>
+							<a href="#">Account settings</a>
+						</li>
+						<li>
+							<a href="#">Sign out</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="container" id="content">
+		<div id="left">
+
+			<div class="side-logo">
+				<img src="../mock/image/logo/sunjoy.gif" width="150" alt="" />
+			</div>
+
+			<div class="side-scrollfixed">
+				<div class="side-action spaced">
+					<a href="#add-activity"  data-toggle="modal" class='btn btn-large btn-block btn-success'><i class="icon-plus"></i> Add activity</a>
+				</div>
+
+				<div class="filter-sections spaced">
+					
+					<div class="filter-section">
+						<h5>To me:</h5>
+						<div class="filter-tag">
+							<a href="javascript:void(0)" class="btn-remove-filter"><i class="icon-remove"></i></a>
+							<span>Assigned to me</span>
+						</div>
+						<div class="filter-tag">
+							<a href="javascript:void(0)" class="btn-remove-filter"><i class="icon-remove"></i></a>
+							<span>Replied to me</span>
+						</div>
+					</div>
+
+					<div class="filter-section">
+						<h5>Target type:</h5>
+						<div class="filter-tag">
+							<a href="javascript:void(0)" class="btn-remove-filter"><i class="icon-remove"></i></a>
+							<span>Type A</span>
+						</div>
+						<div class="filter-tag">
+							<a href="javascript:void(0)" class="btn-remove-filter"><i class="icon-remove"></i></a>
+							<span>Type B</span>
+						</div>
+					</div>
+
+					<button class="btn btn-warning btn-block"><i class="icon-trash"></i> Remove all filters</button>
+
+				</div>
+
+				<div class="side-filter">
+					<div class="side-filter-hd">To me</div>
+					<div class="side-filter-bd">
+						<input type="text" class="input-medium">
+					</div>
+				</div>
+
+				<div class="side-filter">
+					<div class="side-filter-hd">Target type</div>
+					<div class="side-filter-bd">
+						<input type="text" class="input-medium">
+					</div>
+				</div>
+
+				<div class="side-filter">
+					<div class="side-filter-hd">Created by</div>
+					<div class="side-filter-bd">
+						<input type="text" class="input-medium">
+					</div>
+				</div>
+
+				<div class="side-filter">
+					<div class="side-filter-hd">Content tag</div>
+					<div class="side-filter-bd">
+						<input type="text" class="input-medium">
+					</div>
+				</div>
+
+				<div class="side-filter">
+					<div class="side-filter-hd">Target type</div>
+					<div class="side-filter-bd">
+						<input type="text" class="input-medium">
+					</div>
+				</div>
+
+				<div class="side-filter">
+					<div class="side-filter-hd">Created date</div>
+					<div class="side-filter-bd">
+						<input type="text" name="textfield" value="" placeholder="From" id="t23234" class="input-small datepick">
+						<input type="text" name="textfield" value="" placeholder="To" id="23423" class="input-small datepick">
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		<div id="main">
+			<div class="container-fluid">
+				<div class="page-header">
+					<div class="pull-left">
+						<h1>Biz Social</h1>
+					</div>
+					<div class="pull-right" style="padding-top: 25px;">
+						<form action="#" method="GET" class='search-form spaced'>
+							<div class="search-pane">
+								<input type="text" name="search" placeholder="Search activity">
+								<button type="submit"><i class="icon-search"></i></button>
+							</div>
+						</form>
+					</div>
+				</div>
+				<div class="breadcrumbs spaced">
+					<ul>
+						<li>
+							<a href="#">Home</a>
+							<i class="icon-angle-right"></i>
+						</li>
+						<li>
+							<a href="#">Biz Social</a>
+						</li>
+					</ul>
+					<div class="close-bread">
+						<a href="#"><i class="icon-remove"></i></a>
+					</div>
+				</div>
+
+				<div class="row-fluid">
+					<div class="span12">
+						<div class="box">
+							<div class="box-content nopadding">
+								
+								<div class="cf">
+
+									<div class="list-actions-container">
+										<div class="list-actions-bar">
+											<div class="row-fluid">
+												<div class="span11" style="margin-left:0;">
+													<a href="javascript:void(0)" class="btn" rel="tooltip" title="Toggle todo"><i class="icon-ok-circle icon-large"></i></a> 
+													<a href="javascript:void(0)" class="btn" rel="tooltip" title="Toogle important"><i class="icon-star icon-large"></i></a> 
+													<a href="javascript:void(0)" class="btn" rel="tooltip" title="Hide"><i class="icon-eye-close icon-large"></i></a> 
+													<a href="javascript:void(0)" class="btn" rel="tooltip" title="Toggle read"><i class="icon-bookmark-empty icon-large"></i></a>
+													
+													<div class="btn-group">
+														<select class="multiselect-folder" multiple="multiple">
+														  <option value="">Folder 1</option>
+														  <option value="">Folder 2</option>
+														  <option value="">Folder 3</option>
+														  <option value="">Folder 4</option>
+														  <option value="">Folder 5</option>
+														  <option value="">Folder 6</option>
+														</select>
+													</div>
+
+													<div class="btn-group">
+														<select class="multiselect-tag" multiple="multiple">
+														  <option value="">Tag 1</option>
+														  <option value="">Tag 2</option>
+														  <option value="">Tag 3</option>
+														  <option value="">Tag 4</option>
+														  <option value="">Tag 5</option>
+														  <option value="">Tag 6</option>
+														</select>
+													</div>
+
+													<div class="btn-group">
+														<a href="javascript:void(0)" data-toggle="dropdown" class="btn dropdown-toggle"> More <span class="caret"></span></a>
+														<ul class="dropdown-menu">
+															<li><a href="#">Action 1</a></li>
+															<li><a href="#">Action 2</a></li>
+														</ul>
+													</div>
+												</div>
+												<div class="span1 tright">
+													<div class="btn-group">
+														<a href="javascript:void(0)" data-toggle="dropdown" class="btn dropdown-toggle"> <i class="icon-cog icon-large"></i></a>
+														<ul class="dropdown-menu pull-right tleft">
+															<li><a href="#">Show 50 per page</a></li>
+															<li><a href="#">Show 100 per page</a></li>
+															<li><a href="#">Show 200 per page</a></li>
+														</ul>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+
+									<table class="table table-hover table-nomargin table-list">
+										<thead>
+											<tr>
+												<th style="width: 3%;">
+													<div class="check-line"><input type="checkbox" class='icheck-me checkbox-select-all' id="8388" name="2983" data-skin="minimal" class=""></div>
+												</th>
+												<th style="width: 7%;">
+													<div class="context-popup">
+														<a href="#" data-toggle="dropdown" class='dropdown-toggle context-popup-btn'>
+															<span>Type <i class="icon-filter"></i></span>
+														</a>
+														<div class="dropdown-menu context-popup-bd">
+															<div>
+																<input type="text" name="textfield" value="" id="84894" class="span12" placeholder="Type"> 
+															</div>
+															<div>
+																<button class="btn btn-primary"><i class="icon-filter"></i> Filter</button> <button class="btn btn-cancel">Cancel</button>
+															</div>
+														</div>
+													</div>
+												</th>
+												<th style="width: 15%;">
+													<div class="context-popup">
+														<a href="#" data-toggle="dropdown" class='dropdown-toggle context-popup-btn'>
+															<span>From <i class="icon-filter"></i></span>
+														</a>
+														<div class="dropdown-menu context-popup-bd">
+															<div>
+																<input type="text" name="textfield" value="" id="84894" class="span12" placeholder="From"> 
+															</div>
+															<div>
+																<button class="btn btn-primary"><i class="icon-filter"></i> Filter</button> <button class="btn btn-cancel">Cancel</button>
+															</div>
+														</div>
+													</div>
+												</th>
+												<th style="width: 40%;">
+													<div class="context-popup">
+														<a href="#" data-toggle="dropdown" class='dropdown-toggle context-popup-btn'>
+															<span>Subject <i class="icon-filter"></i></span>
+														</a>
+														<div class="dropdown-menu context-popup-bd">
+															<div>
+																<input type="text" name="textfield" value="" id="84894" class="span12" placeholder="Subject"> 
+															</div>
+															<div>
+																<button class="btn btn-primary"><i class="icon-filter"></i> Filter</button> <button class="btn btn-cancel">Cancel</button>
+															</div>
+														</div>
+													</div>
+												</th>
+												<th style="width: 15%;">
+													<div class="context-popup">
+														<a href="#" data-toggle="dropdown" class='dropdown-toggle context-popup-btn'>
+															<span>Company <i class="icon-filter"></i></span>
+														</a>
+														<div class="dropdown-menu context-popup-bd">
+															<div>
+																<input type="text" name="textfield" value="" id="84894" class="span12" placeholder="Company"> 
+															</div>
+															<div>
+																<button class="btn btn-primary"><i class="icon-filter"></i> Filter</button> <button class="btn btn-cancel">Cancel</button>
+															</div>
+														</div>
+													</div>
+												</th>
+												<th style="width: 10%;"></th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td colspan="6" class="alert-select-all">
+													All 48 activities on this page are selected. <a href="#">Select all 1,167 activities. </a>
+												</td>
+											</tr>
+											<tr>
+												<td colspan="6">
+													<div class="row-fluid">
+														<div class="span6 separator-unread">
+															<i class="icon-caret-down"></i> Unread 
+														</div>
+														<div class="span6 tright">
+															<div class="btn-group">
+																<a href="#" class="btn"><i class="icon-angle-left"></i></a>
+																<a href="#" class="btn"><i class="icon-angle-right"></i></a>
+															</div>
+														</div>
+													</div>
+												</td>
+											</tr>
+											<tr class="unread">
+												<td width="5%">
+													<div class="check-line"><input type="checkbox" class='icheck-me checkbox-item' id="2983" name="3283" data-skin="minimal"></div>
+												</td>
+												<td>ac</td>
+												<td><a href="#">Harrrrrison Fu</a></td>
+												<td><a href="#">Turnaround issue need to done early on Monday</a></td>
+												<td><a href="#">IClick, IncIClick, In</a></td>
+												<td><a href="#">9:12 AM</a></td>
+											</tr>
+											<tr class="unread">
+												<td>
+													<div class="check-line"><input type="checkbox" class='icheck-me checkbox-item' id="uf93" name="" data-skin="minimal"></div>
+												</td>
+												<td>ac</td>
+												<td><a href="#">Harrison Fu</a></td>
+												<td><a href="#">Turnaround issue need to done early on Monday</a></td>
+												<td><a href="#">IClick, Inc</a></td>
+												<td><a href="#">9:12 AM</a></td>
+											</tr>
+											<tr class="unread">
+												<td>
+													<div class="check-line"><input type="checkbox" class='icheck-me checkbox-item' id="zoi5" name="" data-skin="minimal"></div>
+												</td>
+												<td>ac</td>
+												<td><a href="#">Harrison Fu</a></td>
+												<td><a href="#">Turnaround issue need to done early on Monday</a></td>
+												<td><a href="#">IClick, Inc</a></td>
+												<td><a href="#">9:12 AM</a></td>
+											</tr>
+											<tr class="unread">
+												<td>
+													<div class="check-line"><input type="checkbox" class='icheck-me checkbox-item' id="kvi8" name="" data-skin="minimal"></div>
+												</td>
+												<td>ac</td>
+												<td><a href="#">Harrison Fu</a></td>
+												<td><a href="#">Turnaround issue need to done early on Monday</a></td>
+												<td><a href="#">IClick, Inc</a></td>
+												<td><a href="#">9:12 AM</a></td>
+											</tr>
+											<tr class="unread">
+												<td>
+													<div class="check-line"><input type="checkbox" class='icheck-me checkbox-item' id="q98w" name="" data-skin="minimal"></div>
+												</td>
+												<td>ac</td>
+												<td><a href="#">Harrison Fu</a></td>
+												<td><a href="#">Turnaround issue need to done early on Monday</a></td>
+												<td><a href="#">IClick, Inc</a></td>
+												<td><a href="#">9:12 AM</a></td>
+											</tr>
+											<tr class="unread">
+												<td>
+													<div class="check-line"><input type="checkbox" class='icheck-me checkbox-item' id="3284" name="" data-skin="minimal"></div>
+												</td>
+												<td>ac</td>
+												<td><a href="#">Harrison Fu</a></td>
+												<td><a href="#">Turnaround issue need to done early on Monday</a></td>
+												<td><a href="#">IClick, Inc</a></td>
+												<td><a href="#">9:12 AM</a></td>
+											</tr>
+											<tr class="unread">
+												<td>
+													<div class="check-line"><input type="checkbox" class='icheck-me checkbox-item' id="2983" name="" data-skin="minimal"></div>
+												</td>
+												<td>ac</td>
+												<td><a href="#">Harrison Fu</a></td>
+												<td><a href="#">Turnaround issue need to done early on Monday</a></td>
+												<td><a href="#">IClick, Inc</a></td>
+												<td><a href="#">9:12 AM</a></td>
+											</tr>
+											<tr class="unread">
+												<td>
+													<div class="check-line"><input type="checkbox" class='icheck-me checkbox-item' id="2886" name="" data-skin="minimal"></div>
+												</td>
+												<td>ac</td>
+												<td><a href="#">Harrison Fu</a></td>
+												<td><a href="#">Turnaround issue need to done early on Monday</a></td>
+												<td><a href="#">IClick, Inc</a></td>
+												<td><a href="#">9:12 AM</a></td>
+											</tr>
+
+											<tr>
+												<td colspan="6">
+													<div class="row-fluid">
+														<div class="span6 separator-read">
+															<i class="icon-caret-down"></i> Read 
+														</div>
+														<div class="span6 tright">
+															<div class="btn-group">
+																<a href="#" class="btn"><i class="icon-angle-left"></i></a>
+																<a href="#" class="btn"><i class="icon-angle-right"></i></a>
+															</div>
+														</div>
+													</div>
+												</td>
+											</tr>
+
+											<tr class="read">
+												<td>
+													<div class="check-line"><input type="checkbox" class='icheck-me checkbox-item' id="4752" name="" data-skin="minimal"></div>
+												</td>
+												<td>ac</td>
+												<td><a href="#">Harrison Fu</a></td>
+												<td><a href="#">Turnaround issue need to done early on Monday</a></td>
+												<td><a href="#">IClick, Inc</a></td>
+												<td><a href="#">9:12 AM</a></td>
+											</tr>
+											<tr class="read">
+												<td>
+													<div class="check-line"><input type="checkbox" class='icheck-me checkbox-item' id="0588" name="" data-skin="minimal"></div>
+												</td>
+												<td>ac</td>
+												<td><a href="#">Harrison Fu</a></td>
+												<td><a href="#">Turnaround issue need to done early on Monday</a></td>
+												<td><a href="#">IClick, Inc</a></td>
+												<td><a href="#">9:12 AM</a></td>
+											</tr>
+											<tr class="read">
+												<td>
+													<div class="check-line"><input type="checkbox" class='icheck-me checkbox-item' id="8677" name="" data-skin="minimal"></div>
+												</td>
+												<td>ac</td>
+												<td><a href="#">Harrison Fu</a></td>
+												<td><a href="#">Turnaround issue need to done early on Monday</a></td>
+												<td><a href="#">IClick, Inc</a></td>
+												<td><a href="#">9:12 AM</a></td>
+											</tr>
+											<tr class="read">
+												<td>
+													<div class="check-line"><input type="checkbox" class='icheck-me checkbox-item' id="2995" name="" data-skin="minimal"></div>
+												</td>
+												<td>ac</td>
+												<td><a href="#">Harrison Fu</a></td>
+												<td><a href="#">Turnaround issue need to done early on Monday</a></td>
+												<td><a href="#">IClick, Inc</a></td>
+												<td><a href="#">9:12 AM</a></td>
+											</tr>
+											<tr class="read">
+												<td>
+													<div class="check-line"><input type="checkbox" class='icheck-me checkbox-item' id="4752" name="" data-skin="minimal"></div>
+												</td>
+												<td>ac</td>
+												<td><a href="#">Harrison Fu</a></td>
+												<td><a href="#">Turnaround issue need to done early on Monday</a></td>
+												<td><a href="#">IClick, Inc</a></td>
+												<td><a href="#">9:12 AM</a></td>
+											</tr>
+											<tr class="read">
+												<td>
+													<div class="check-line"><input type="checkbox" class='icheck-me checkbox-item' id="0588" name="" data-skin="minimal"></div>
+												</td>
+												<td>ac</td>
+												<td><a href="#">Harrison Fu</a></td>
+												<td><a href="#">Turnaround issue need to done early on Monday</a></td>
+												<td><a href="#">IClick, Inc</a></td>
+												<td><a href="#">9:12 AM</a></td>
+											</tr>
+											<tr class="read">
+												<td>
+													<div class="check-line"><input type="checkbox" class='icheck-me checkbox-item' id="8677" name="" data-skin="minimal"></div>
+												</td>
+												<td>ac</td>
+												<td><a href="#">Harrison Fu</a></td>
+												<td><a href="#">Turnaround issue need to done early on Monday</a></td>
+												<td><a href="#">IClick, Inc</a></td>
+												<td><a href="#">9:12 AM</a></td>
+											</tr>
+											<tr class="read">
+												<td>
+													<div class="check-line"><input type="checkbox" class='icheck-me checkbox-item' id="2995" name="" data-skin="minimal"></div>
+												</td>
+												<td>ac</td>
+												<td><a href="#">Harrison Fu</a></td>
+												<td><a href="#">Turnaround issue need to done early on Monday</a></td>
+												<td><a href="#">IClick, Inc</a></td>
+												<td><a href="#">9:12 AM</a></td>
+											</tr>
+
+											<tr class="read">
+												<td>
+													<div class="check-line"><input type="checkbox" class='icheck-me checkbox-item' id="9354" name="" data-skin="minimal"></div>
+												</td>
+												<td>ac</td>
+												<td><a href="#">Harrison Fu</a></td>
+												<td><a href="#">Turnaround issue need to done early on Monday</a></td>
+												<td><a href="#">IClick, Inc</a></td>
+												<td><a href="#">9:12 AM</a></td>
+											</tr>
+											<tr class="read">
+												<td>
+													<div class="check-line"><input type="checkbox" class='icheck-me checkbox-item' id="3842" name="" data-skin="minimal"></div>
+												</td>
+												<td>ac</td>
+												<td><a href="#">Harrison Fu</a></td>
+												<td><a href="#">Turnaround issue need to done early on Monday</a></td>
+												<td><a href="#">IClick, Inc</a></td>
+												<td><a href="#">9:12 AM</a></td>
+											</tr>
+											<tr class="read">
+												<td>
+													<div class="check-line"><input type="checkbox" class='icheck-me checkbox-item' id="0058" name="" data-skin="minimal"></div>
+												</td>
+												<td>ac</td>
+												<td><a href="#">Harrison Fu</a></td>
+												<td><a href="#">Turnaround issue need to done early on Monday</a></td>
+												<td><a href="#">IClick, Inc</a></td>
+												<td><a href="#">9:12 AM</a></td>
+											</tr>
+											<tr class="read">
+												<td>
+													<div class="check-line"><input type="checkbox" class='icheck-me checkbox-item' id="4992" name="" data-skin="minimal"></div>
+												</td>
+												<td>ac</td>
+												<td><a href="#">Harrison Fu</a></td>
+												<td><a href="#">Turnaround issue need to done early on Monday</a></td>
+												<td><a href="#">IClick, Inc</a></td>
+												<td><a href="#">9:12 AM</a></td>
+											</tr>
+											
+										</tbody>
+									</table>
+
+								</div>
+
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div style="text-align: right; padding: 30px 0 50px;">Copyright © 2013 SunJoy Group, Inc. All rights reserved.</div>
+	</div>
+
+
+	<div id="add-activity" class="modal hide" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		<div class="modal-header">
+			<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+			<h4 id="myModalLabel">Add Activity</h4>
+		</div>
+			<div class="modal-body">
+				<div class="row-fluid activity-add">
+					<div class="activity-add-tabs">
+						<ul class="nav nav-tabs cf">
+							<li class="first active"><a href="#tab-add-activity" data-toggle="tab" >Activity</a></li>
+							<li class=""><a href="#tab-add-meeting" data-toggle="tab">Meeting</a></li>
+							<li class=""><a href="#tab-add-knowledge" data-toggle="tab">Knowledge</a></li>
+							<li class=""><a href="#tab-add-poll" data-toggle="tab">Poll</a></li>
+						</ul>
+					</div>
+					<div class="activity-add-content tab-content">
+						<div id="tab-add-activity" class="tab-pane cf active">
+							<div class="title"><input type="text" placeholder="You're invited to sunjoy new system" class="span12" /> </div>
+							<div class="content"><textarea name="" placeholder="Activity content..." id="" cols="30" rows="5" class="span12 rte-nocontrol"></textarea> </div>
+							<div class="notify spaced small">
+								<div class="row-fluid">
+									<div class="span10">
+										<a href="#" class="grey">Emily Hu</a> <a href="#" class="grey">Harrison Fu</a> <input type="text" name="" id="" placeholder="+ Add people to notify" class="span4 no-margin"> <a href="#">Search &amp; Add</a>
+									</div>
+									<div class="span2 tright"><a href="#">Remove all</a></div>
+								</div>
+							</div>
+							<div class="assign">
+								<div class="row-fluid">
+									<div class="span10">
+										<p class="grey">Assigned to Harrison Fu <a href="#">change</a></p>
+									</div>
+									<div class="span2 tright"><div class="btn btn-primary btn-small">Add</div></div>
+								</div>
+							</div>
+						</div>
+						<div id="tab-add-meeting" class="tab-pane cf">
+							<div class="title"><input type="text" placeholder="Meeting" class="span12" /> </div>
+							<div class="content"><textarea name="" placeholder="Meeting content..." id="" cols="30" rows="5" class="span12 rte-nocontrol"></textarea> </div>
+							<div class="notify spaced small">
+								<div class="row-fluid">
+									<div class="span10">
+										<a href="#" class="grey">Emily Hu</a> <a href="#" class="grey">Harrison Fu</a> <input type="text" name="" id="" placeholder="+ Add people to notify" class="span4 no-margin"> <a href="#">Search &amp; Add</a>
+									</div>
+									<div class="span2 tright"><a href="#">Remove all</a></div>
+								</div>
+								
+							</div>
+							<div class="assign">
+								<div class="row-fluid">
+									<div class="span10">
+									</div>
+									<div class="span2 tright"><div class="btn btn-primary btn-small">Add</div></div>
+								</div>
+							</div>
+						</div>
+						<div id="tab-add-knowledge" class="tab-pane cf">
+							<div class="title"><input type="text" placeholder="Knowledge" class="span12" /> </div>
+							<div class="content"><textarea name="" placeholder="Knowledge content..." id="" cols="30" rows="5" class="span12 rte-nocontrol"></textarea> </div>
+							<div class="notify spaced small">
+								<div class="row-fluid">
+									<div class="span10">
+										<input type="text" name="" id="" placeholder="+ Add people to notify" class="span4 no-margin"> <a href="#">Search &amp; Add</a>
+									</div>
+									<div class="span2 tright"><a href="#">Remove all</a></div>
+								</div>
+								
+							</div>
+							<div class="assign">
+								<div class="row-fluid">
+									<div class="span12">
+									</div>
+									<div class="span10 tright"><div class="btn btn-primary btn-small">Add</div></div>
+								</div>
+							</div>
+						</div>
+						<div id="tab-add-poll" class="tab-pane cf">
+							<div class="row-fluid">
+								<div class="span11"><input type="text" name="" value="How did you know about sunjoy product and service?" class="span12" id=""></div>
+							</div>
+							<div class="row-fluid">
+								<div class="span11">
+									<textarea placeholder="Enter descriptions" class="span12 rte-nocontrol" name="" id="" cols="30" rows="4"></textarea>
+								</div>
+							</div>
+							<div class="row-fluid">
+								<div class="span11"><label for="checkbox2" class="checkbox"><input type="checkbox" class="" name="" id="checkbox2"> allow multi-choice</label></div>
+							</div>
+
+							<div class="row-fluid poll-option">
+								<div class="span11"><input type="text" name="" placeholder="Answer A" class="span12" id=""></div>
+								<div class="span1 tright"><button type="button" class="close btn-remove-option">&times;</button></div>
+							</div>
+
+							<div class="notify spaced small">
+								<div class="row-fluid">
+									<div class="span10">
+										<input type="text" name="" id="" placeholder="+ Add people to notify" class="span4 no-margin"> <a href="#">Search &amp; Add</a>
+									</div>
+									<div class="span2 tright"><a href="#">Remove all</a></div>
+								</div>
+							</div>
+							<div class="assign">
+								<div class="row-fluid">
+									<div class="span10">
+										<p class="grey">Assigned to Harrison Fu <a href="#">change</a></p>
+									</div>
+									<div class="span2 tright"><button class="btn btn-primary btn-small">Add</button></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="modal-footer">
+				<input type="submit" class="btn btn-primary" value="Save"> 
+				<button class="btn">Cancel</button>
+			</div>
+	</div>
+		
+</body>
+
+</html>
+
+
+
+
+						

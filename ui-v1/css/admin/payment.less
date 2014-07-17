@@ -1,0 +1,212 @@
+/*///////////////////////////////////////////////////////////////////////////////////////
+ //
+ //  File:          paymeny.less
+ //  Description:   Payment
+ //
+ //////////////////////////////////////////////////////////////////////////////////////*/
+
+.payment-step {
+  min-height: 52px;
+  height: 52px;
+  background: url(../../img/icons/step-arrow.png) right center no-repeat;
+  padding-right: 20px;
+  width: 70px;
+  margin-left: 8px;
+  float: left;
+  line-height: 1.2;
+  text-align: left;
+  > span {
+    display: block;
+    height: 52px;
+    display: table-cell;
+    vertical-align: middle;
+  }
+  &.pass {
+    background: url(../../img/icons/step-arrow-green.png) right center no-repeat;
+    a {
+      color: #468C00;
+    }
+  }
+  &.not-pass {
+    background: url(../../img/icons/step-arrow-grey.png) right center no-repeat;
+    a {
+      color: #999;
+    }
+  }
+}
+
+.payment-mean, .payment-proof, .payment-reconciation {
+  padding: 20px 15px;
+  background: #f9f9f9;
+  margin-bottom: 1px;
+  ul.payment-list {
+    border: none;
+  }
+  ul.payment-list li {
+    border-radius: 0;
+    border: none;
+    a {
+      display: block;
+      color: #888;
+      font-weight: 300;
+      padding: 10px 0;
+      &:hover {
+        border-color: transparent;
+        background: none;
+        color: #333;
+        text-decoration: none;
+      };
+    }
+    &.active {
+      color: #333;
+      border: 0;
+      background: none;
+      border-bottom: 1px solid #ccc;
+      a {
+      font-weight: 700;
+        border: none;
+        background: none;
+      }
+    }
+  }
+}
+
+
+.section-payment {
+  padding-top: 5px;
+  &:hover {
+    background: #f9f9f9;
+  }
+}
+
+
+.payment-list-filter {
+  padding: 10px;
+  background: #f9f9f9;
+  color: #444;
+  border: 1px solid #eee;
+  position: relative;
+
+  a {
+    color: #666;
+  }
+  .btn-advanced-filter {
+    position: absolute;
+    right: 5px;
+    bottom: 5px;
+    cursor: pointer;
+    .size(20px, 20px);
+    background: url(../../img/icons/icon-expand-grey.png) 0 0 no-repeat;
+    &.btn-collapse {
+      background: url(../../img/icons/icon-collapse-grey.png) 0 0 no-repeat;
+    }
+  }
+  .expandable {
+    display: none;
+  }
+  .filter-date {
+    width: 100px;
+    padding: 0px;
+    border: 0;
+    box-shadow: none;
+    background: none;
+    cursor: pointer;
+    &:focus {
+      box-shadow: none;
+    }
+  }
+  
+
+  .filter-single .filter-item {
+    .inline-block;
+    &.selected {
+      padding: 0px 4px;
+      background: #ddd url(../../img/icons/icon-close-3.png) right center no-repeat;
+      padding-right: 20px;
+      color: #000;
+    }
+    &:hover {
+      text-decoration: none;
+    }
+    &.none {
+      display: none;
+    }
+  }
+  
+  .filter-multi .filter-item {
+    .inline-block;
+    &.selected {
+      padding: 0px 4px;
+      background: #ddd url(../../img/icons/icon-tick-s.png) right center no-repeat;
+      padding-right: 12px;
+      color: #000;
+    }
+    &:hover {
+      text-decoration: none;
+    }
+    &.none {
+      display: none;
+    }
+  }
+  
+  .filter-alphabet .filter-item {
+    .inline-block;
+    &.selected {
+      color: #245F9A;
+      font-weight: 700;
+      text-decoration: underline;
+    }
+    &:hover {
+      text-decoration: underline;
+    }
+    &.none {
+      display: none;
+    }
+  }
+  
+  .filter-list > li {
+    margin-right: 10px;
+    float: left;
+  }
+}
+
+.payment-summary {
+  input, select, .btn-save {
+    display: none!important;
+  }
+  &.editing {
+    input, select, .btn-save {
+      display: inline-block!important;
+    }
+    .value {
+      display: none;
+    }
+  }
+}
+
+.row-invoice {
+  padding: 6px 0;
+  margin: 0;
+  &.row-active {
+    background: #f6f6f6;
+  }
+}
+
+.item-bank-account {
+  input,
+  .btn-save {
+    display: none!important;
+  }
+  &.editing {
+    span.value {
+      display: none;
+    }
+    .btn-edit {
+      display: none!important;
+    }
+    input,
+    .btn-save {
+      display: inline-block!important;
+    }
+  }
+}

@@ -1,0 +1,310 @@
+// inline-block
+// ----------------
+.inline-block() {
+  display: inline-block;
+  *display: inline; /* IE7 inline-block hack */
+  *zoom: 1;
+}
+
+.cf {
+  *zoom: 1;
+}
+.cf:before,
+.cf:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.cf:after {
+  clear: both;
+}
+
+.gapped {
+  margin-left: 10px;
+}
+
+.gray {
+  color: #555;
+}
+.gray-dark {
+  color: #333;
+}
+.gray-darker {
+  color: #222;
+}
+.gray-light {
+  color: #999;
+}
+.gray-lighter {
+  color: #ccc;
+}
+
+.black {
+  color: #000;
+}
+.white {
+  color: #fff;
+}
+.green {
+  color: #698C00;
+}
+.orange {
+  color: #f30;
+}
+.red {
+  color: #f00;
+}
+.bold {
+  font-weight: 700;
+}
+
+.font-small {
+  font-size: 11px;
+}
+.font-smaller {
+  font-size: 10px;
+}
+.font-large {
+  font-size: 13px;
+}
+.font-larger {
+  font-size: 14px;
+}
+.clear {
+  clear: both;
+}
+
+
+.bold() {
+  font-weight: 700;
+}
+
+.size(@width, @height) {
+  width: @width;
+  height: @height;
+}
+
+.none {
+  display: none;
+}
+
+.row-fluid {
+  .break-line {
+    margin-left: 0!important;
+  }
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.tcenter,
+.table td.center {
+  text-align: center;
+}
+
+.tright,
+.table td.tright {
+  text-align: right;
+}
+
+.tleft,
+.table td.tleft {
+  text-align: left;
+}
+
+.box-gray {
+  padding: 10px;
+  background: #eee;
+}
+
+.headline {
+  background: #ddd;
+  width: 80%;
+  margin: 20px auto;
+  h2, h3 {
+    position: relative;
+    background: #f6f6f6;
+    //top: -5px;
+    //left: -5px;
+    border: 1px solid #ddd;
+    color: #666;
+    text-align: center;
+    padding: 10px 0;
+  }
+  h2 {
+    font-size: 24px;
+  }
+  h3 {
+    font-size: 18px;
+  }
+}
+
+.colors {
+  li a{
+    width: 32px;
+    height: 32px;
+    padding: 4px;
+    text-align: center;
+    line-height: 1.4;
+    font-size: 12px;
+    color: #fff;
+    text-shadow: 0px 1px 1px #666;
+  }
+  li.active {
+    a {
+      width: 28px;
+      height: 28px;
+      border: 2px solid #f60;
+    }
+  }
+}
+
+
+.colors.small {
+  li.active {
+    a {
+      width: 16px;
+      height: 16px;
+      border: 2px solid #f60;
+    }
+  }
+}
+
+.colors.pms {
+  li {
+    width: 132px;
+    height: auto;
+    text-align: center;
+  }
+  li a{
+    width: 116px;
+    padding: 8px;
+    height: auto;
+    line-height: 1.4;
+    font-size: 14px;
+    color: #fff;
+    text-shadow: 0px 1px 1px #666;
+  }
+  li.active {
+    a {
+      width: 28px;
+      height: 28px;
+      border: 2px solid #f60;
+    }
+  }
+}
+
+.tabs.tabs-inline.tabs-top {
+  border-bottom: 1px solid #ccc;
+  > li > a {
+    position: relative;
+    top: 1px;
+  }
+  > li.active > a {
+    border: 1px solid #ccc;
+    border-bottom: 1px solid #fff;
+  }
+}
+
+.padding {
+  padding: 10px;
+}
+
+#toTop {
+  //width:100px;
+  border-radius: 3px;
+  background:#ccc;
+  text-align:center;
+  padding: 12px 8px 6px;
+  position:fixed; /* this is the magic */
+  bottom:80px; /* together with this to put the div at the bottom*/
+  right:10px;
+  cursor:pointer;
+  display:none;
+  color:#fff;
+  font-family:verdana;
+  font-size:32px;
+  font-weight: bold;
+}
+
+.chosen-noborder {
+  
+  .chzn-container-single .chzn-single {
+    border: none;
+
+  }
+  .chzn-drop {
+    border: none;
+    background: #f0f0f0;
+  }
+}
+
+.box-title {
+  &.noborder {
+    border: none;
+  }
+  &.liner {
+    background: url(../../img/global/titlebg.png);
+  }
+}
+
+.cate-list {
+  .extended {
+    padding-top: 0!important;
+    background: #eee!important;
+    //border: 1px solid #ddd!important;
+    //border-top: 0!important;
+    text-align: center!important;
+  }
+}
+
+.item-list {
+  .extended {
+    padding-top: 0!important;
+    background: #eee!important;
+    //border: 1px solid #ddd!important;
+    //border-top: 0!important;
+    text-align: center!important;
+  }
+}
+
+.tag-hot {
+  background: #f00;
+  padding: 20px 10px;
+  position: absolute;
+  top: 0;
+  left: 5px;
+  color: #fff;
+  text-align: center;
+  color: #fff;
+  width: 30px;
+  line-height: 1.2;
+  font-weight: bold;
+}
+.tag-new {
+  background: #4D7AFF;
+  padding: 20px 10px;
+  position: absolute;
+  top: 0;
+  left: 5px;
+  color: #fff;
+  text-align: center;
+  color: #fff;
+  width: 30px;
+  line-height: 1.2;
+  font-weight: bold;
+}
+.tag-onsale {
+  background: #fc0;
+  padding: 20px 10px;
+  position: absolute;
+  top: 0;
+  left: 5px;
+  color: #fff;
+  text-align: center;
+  color: #fff;
+  width: 30px;
+  line-height: 1.2;
+  font-weight: bold;
+}

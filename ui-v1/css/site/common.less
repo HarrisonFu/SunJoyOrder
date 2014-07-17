@@ -1,0 +1,128 @@
+/*///////////////////////////////////////////////////////////////////////////////////////
+ //
+ //  File:          common.less
+ //  Description:   Site common styles
+ //
+ //////////////////////////////////////////////////////////////////////////////////////*/
+
+
+////Editable////
+.editable,
+.editable-select {
+  .inline-block;
+  min-width: 60px;
+  padding: 1px;
+  color: #666;
+  &:hover {
+    padding: 0px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+}
+
+.editable-textarea {
+  padding: 1px;
+  color: #666;
+  form {
+    margin: 0;
+    padding: 0;
+  }
+  textarea {
+    margin: 0;
+  }
+  &:hover {
+    padding: 0px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+  &.large {
+    height: 100px;
+  }
+}
+
+.editable.small form{
+  margin: 0;
+  padding: 0;
+}
+
+.editable.small input{
+  width: 60px;
+}
+
+.editable.medium input{
+  width: 120px;
+}
+
+.editable.large input{
+  width: 180px;
+}
+
+.editable.larger input{
+  width: 240px;
+}
+
+.editable-textarea textarea{
+  width: 100%;
+  min-height: 80px;
+}
+
+
+////Alerts////
+.alerts {
+  width: 500px;
+  position: fixed;
+  top: 40px;
+  left: 50%!important;
+  margin-left: -250px;
+  
+}
+
+////Popover////
+.popover.large {
+  min-width: 300px;
+}
+
+.popover.user-profile {
+  width: 240px;
+}
+
+
+////Row with input////
+.row-fluid.inline-input {
+  line-height: 30px;
+  input {
+    margin: 0;
+  }
+}
+
+
+.bp-logo {
+  max-width: 150px;
+}
+
+
+.alert-info {
+  background: #EEEEE2;
+  border: none;
+  box-shadow: 1px 1px 3px #bbb;
+  color: #666;
+  h5 {
+    color: #f30;
+    line-height: 1.6;
+    padding: 0;
+    margin: 0;
+  }
+}
+
+.shade-box {
+  background: #eee;
+  padding:10px;
+}
+
+a.btn {
+  color: #333!important;
+}
+
+a.btn-primary {
+  color: #fff!important;
+}

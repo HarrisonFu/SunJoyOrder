@@ -1,0 +1,61 @@
+/*///////////////////////////////////////////////////////////////////////////////////////
+ //
+ //  File:          mockup-edit.less
+ //  Description:   
+ //
+ //////////////////////////////////////////////////////////////////////////////////////*/
+
+
+.list-hd {
+  border-bottom: 1px solid #ddd;
+}
+
+.list-bd {
+  > .row-fluid {
+    .btn-group {
+      display: none;
+    }
+    &:hover {
+      .btn-group {
+        .inline-block;
+      }
+    }
+    
+  }
+}
+
+
+.filter-alphabet {
+  li {
+    float: left;
+    margin-right: 10px;
+  }
+}
+
+.bizsocial-list {
+  position: relative;
+  > .row-fluid {
+    color: #666;
+    padding: 5px 5px 0 5px;
+    &:hover {
+      background: #eee;
+    }
+    &.unread {
+      font-weight: 700;
+      color: #333;
+      a {
+        color: #333;
+        &:hover {
+          color: #005580;
+        }
+      }
+    }
+  }
+  a {
+    color: #666;
+    &:hover {
+      color: #005580;
+    }
+  }
+
+}

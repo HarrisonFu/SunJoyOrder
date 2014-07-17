@@ -1,0 +1,82 @@
+/*///////////////////////////////////////////////////////////////////////////////////////
+ //
+ //  File:          shopping-cart.less
+ //  Description:   Shopping cart
+ //
+ //////////////////////////////////////////////////////////////////////////////////////*/
+
+////Customize////
+.shopping-cart {
+  clear: both;
+  > .hd {
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    box-shadow: 0px 1px 3px #ddd;
+  }
+  > .bd {
+    margin: 15px 0;
+    > .main {
+      width: 740px;
+      float: left;
+    }
+    > .side {
+      width: 210px;
+      float: right;
+    }
+  }
+}
+
+////Customize Guide////
+.jobs-header {
+  padding: 10px 15px 0 15px;
+  font-size: 13px;
+  color: #222;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  #gradient > .vertical(#fff, #ddd);
+}
+
+////Customize Selection////
+.job-item {
+  padding: 15px;
+  border-radius: 3px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  position: relative;
+  .job-item-menu {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    ul.dropdown-menu {
+      left: auto;
+      top: 100%;
+      right: 0;
+    }
+  }
+  &.active {
+    border: 1px solid #bbb;
+    box-shadow: 0px 2px 3px #ccc;
+  }
+}
+
+//Job summary
+.job-summary {
+  li {
+    clear: both;
+    > a {
+      text-decoration: none;
+      padding: 4px;
+      display: block;
+    }
+    > a:hover {
+      text-decoration: none;
+      background: #f3f3f3;
+    }
+  }
+  img {
+    margin: 0 6px 0px 0;
+    border: 1px solid #ddd;
+  }
+}
+
+

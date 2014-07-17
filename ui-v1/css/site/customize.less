@@ -1,0 +1,463 @@
+/*///////////////////////////////////////////////////////////////////////////////////////
+ //
+ //  File:          customize.less
+ //  Description:   Product customize
+ //
+ //////////////////////////////////////////////////////////////////////////////////////*/
+
+////Customize////
+.customize {
+  clear: both;
+  > .hd {
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    box-shadow: 0px 1px 3px #ddd;
+  }
+  > .bd {
+    margin: 15px 0;
+    > .main {
+      width: 740px;
+      float: left;
+    }
+    > .side {
+      width: 210px;
+      float: right;
+    }
+  }
+}
+
+////Customize Guide////
+.customize-guide {
+  padding: 5px 8px;
+  .nav {
+    margin: 0;
+  }
+  a, a:hover {
+    color: #222;
+  }
+  .nav-pills li.active a {
+    background-color: #ddd;
+    .bold;
+    color: #222;
+  }
+}
+
+////Customize Selection////
+.customize-section {
+  border: 1px solid #ddd;
+  padding: 15px 15px 15px 15px;
+  border-radius: 3px;
+  margin-bottom: 15px;
+  position: relative;
+  .icon-toggle-expand {
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    cursor: pointer;
+  }
+  &.active {
+    border: 1px solid #bbb;
+    box-shadow: 0px 2px 3px #ccc;
+  }
+  > .hd {
+    font-size: 18px;
+    color: #999;
+    .bold();
+    margin-bottom: 4px;
+  }
+  h5 {
+    font-size: 14px;
+    font-weight: 700;
+    background: #eee;
+    margin: 10px 0;
+    padding: 3px 6px;
+    border-radius: 3px;
+    color: #222;
+  }
+  .expandable {
+    display: none;
+  }
+  
+  .btn.edit, .btn.save {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+  }
+  .btn.edit{
+    display: none;
+  }
+  &.readonly {
+    &:hover {
+      .btn.edit {
+        display: block;
+      }
+    }
+    .btn.save,
+    .fileinput-button {
+      display: none;
+    }
+    input, textarea {
+      border: 1px solid #fff!important;
+      .box-shadow(none);
+    }
+    input:disabled, textarea:disabled {
+      background: none;
+      cursor: default;
+    }
+    .combobox-container .dropdown-toggle {
+      display: none;
+    }
+    input:-moz-placeholder { color:#ddd; }
+    input::-webkit-input-placeholder { color:#ddd; }
+    // .pms-list.pms-list-editable .pms {
+      // display: none;
+      // &.selected {
+        // .inline-block;
+      // }
+    // }
+  }
+  .section-select {
+    position: absolute;
+    top: 0;
+    left: 0;
+    // border-bottom: 1px solid #ccc;
+    // border-right: 1px solid #ccc;
+    // background: #f3f3f3;
+    padding: 10px 10px 6px 10px;
+    .size(18px, 20px);
+    border-bottom-right-radius: 3px;
+    input {
+      margin: 0;
+      padding: 0;
+    }
+  }
+}
+
+.customize-review {
+  border: 1px solid #ddd;
+  padding: 15px;
+}
+
+.customize-review-overview {
+  border-radius: 3px;
+  margin-bottom: 15px;
+  position: relative;
+  padding-bottom: 15px;
+  background: url(../../img/site/line-shade.png) center bottom no-repeat;
+  h5 {
+    font-size: 14px;
+    font-weight: 700;
+    background: #eee;
+    margin: 10px 0;
+    padding: 3px 6px;
+    border-radius: 3px;
+    color: #222;
+  }
+  .edit {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    color: #666;
+  }
+  &:hover .edit {
+    color: #08C;
+  }
+}
+
+.customize-review-details {
+  padding-top: 15px;
+  border-radius: 3px;
+  position: relative;
+  > .bd > .item {
+    margin-bottom: 25px;
+    position: relative;
+    border-top: 1px solid #ddd;
+    padding-bottom: 15px;
+    padding-top: 25px;
+    margin-top: 15px;
+  }
+  > .bd > .item .edit{
+    position: absolute;
+    right: 0;
+    top: 2px;
+    color: #666;
+  }
+  .expandable {
+    display: none;
+  }
+  > .bd > .item:hover .edit{
+    color: #08C;
+  }
+}
+
+.customize-summary {
+  li {
+    clear: both;
+  }
+  li > img {
+    margin: 0 4px 4px 0;
+    border: 1px solid #ddd;
+  }
+  li > a {
+    color: #222;
+  }
+}
+
+////Price Table////
+table.price-table {
+  
+}
+
+.price-table td {
+  padding: 3px 5px;
+  text-align: right;
+  font-size: 12px;
+}
+
+.price-table th {
+  padding: 3px 5px;
+  font-size: 11px;
+  text-align: right;
+}
+
+
+////Multiple Select////
+.multiple-select {
+  .select-item {
+    position: relative;
+    i.icon-checkbox-m {
+      position: absolute;
+      top: 6px;
+      left: 6px;
+      display: none;
+    }
+    &.checked {
+      i.icon-checkbox-m {
+        .inline-block();
+      }
+    }
+  }
+}
+
+.single-select {
+  .select-item {
+    position: relative;
+    i.icon-radio-m {
+      position: absolute;
+      top: 6px;
+      left: 6px;
+      display: none;
+    }
+    &.checked {
+      i.icon-radio-m {
+        .inline-block();
+      }
+    }
+  }
+}
+
+
+
+////Edit////
+.customize.on-edit {
+  
+}
+
+.customize.on-edit {
+  
+}
+
+.job-edit-section {
+  border-bottom: 1
+}
+
+
+.job-edit {
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  padding: 0;
+  .job-edit-section {
+    padding: 15px;
+    background: url(../../img/site/line-shade.png) center bottom no-repeat;
+    &:last-of-type {
+      background: none;
+    }
+    > h3 {
+      font-size: 20px;
+      color: #888;
+      margin-bottom: 8px;
+    }
+    &.readonly {
+    &:hover {
+      .btn.edit {
+        display: block;
+      }
+    }
+    .btn.save,
+    .fileinput-button {
+      display: none;
+    }
+    input, textarea {
+      border: 1px solid #fff!important;
+      .box-shadow(none);
+    }
+    input:disabled, textarea:disabled {
+      background: none;
+      cursor: default;
+    }
+    .combobox-container .dropdown-toggle {
+      display: none;
+    }
+      input:-moz-placeholder { color:#ddd; }
+      input::-webkit-input-placeholder { color:#ddd; }
+    }
+  }
+  .editable-color {
+    position: relative;
+    .modal.modal-color {
+      display: none;
+      position: absolute;
+      left: 0px;
+      top: 40px;
+      width: 320px;
+      margin: 0;
+    }
+  }
+  .editable-specifications {
+    position: relative;
+    .modal.modal-specifications {
+      display: none;
+      position: absolute;
+      left: 0px;
+      top: 20px;
+      margin: 0;
+    }
+  }
+}
+
+
+
+////Product viewer////
+.product-viewer{
+  display: none;
+  margin-bottom: 10px;
+}
+
+.product-viewer .etalage_thumb{
+  background: white url(../../img/icons/loading.gif) center no-repeat;
+  padding: 0px;
+}
+
+.product-viewer .etalage_thumb_image{
+}
+
+.product-viewer .etalage_small_thumbs li{
+  background: white;
+  border: 1px solid #ddd;
+  margin: 10px;
+  padding: 3px;
+}
+
+
+.product-viewer .etalage_zoom_area,
+.etalage_zoom_area{
+  background: white url(../../img/icons/loading.gif) center no-repeat;
+  border: 1px solid #ddd;
+  padding: 6px;
+  -webkit-box-shadow: 0 0 10px #ddd;
+  -moz-box-shadow: 0 0 10px #ddd;
+  box-shadow: 0 0 10px #ddd;
+}
+
+.product-viewer .etalage_magnifier{
+  background: white;
+  border: 1px solid #bbb;
+}
+
+.product-viewer .etalage_icon{
+  background: url(../../img/icons/zoom.png) no-repeat;
+  width: 14px;
+  height: 14px;
+}
+
+.product-viewer .etalage_description{
+  background: white;
+  font-style: italic;
+  margin: 10px;
+  padding: 6px 10px;
+}
+
+.expandable-once-bd {
+  display: none;
+}
+
+
+/* 
+  Hide the original radios and checkboxes
+  (but still accessible)
+    
+  :not(#foo) > is a rule filter to block browsers
+               that don't support that selector from
+               applying rules they shouldn't
+     
+*/
+.section-select:not(#foo) > input[type='radio'], 
+.section-select:not(#foo) > input[type='checkbox'] {
+  
+  /* Hide the input, but have it still be clickable */
+  opacity: 0;
+  
+  float: left;
+  width: 27px;
+  height: 25px;
+}
+
+
+.section-select:not(#foo) > input[type='radio'] + label {
+  margin: 0;
+  clear: none;
+  display: block;
+  width: 17px;
+  height: 15px;
+  /* Left padding makes room for image */
+  padding: 5px 0 4px 24px;
+  /* Make look clickable because they are */
+  cursor: pointer;
+  background: url(../../img/icons/icon-radio.png) left center no-repeat; 
+}
+
+
+.section-select:not(#foo) > input[type='checkbox'] + label {
+  margin: 0;
+  clear: none;
+  display: block;
+  width: 17px;
+  height: 15px;
+  /* Left padding makes room for image */
+  padding: 5px 0 4px 24px;
+  /* Make look clickable because they are */
+  cursor: pointer;
+  background: url(../../img/icons/icon-check.png) left center no-repeat; 
+}
+
+
+/*
+  Change from unchecked to checked graphic
+*/
+.section-select:not(#foo) > input[type='radio']:checked + label {
+  background-image: url(../../img/icons/icon-radio-checked.png);
+}
+.section-select:not(#foo) > input[type='checkbox']:checked + label {
+  background-image: url(../../img/icons/icon-check-checked.png);
+}
+
+.popup-customize .hd {
+  background: #fff;
+}
+
+.popup-customize .main > h4 {
+  color: #555;
+  border-top: 1px solid #ddd;
+  background: url(../../img/admin/order-list-toolbar-bg.png) repeat-x;
+  padding: 5px;
+}

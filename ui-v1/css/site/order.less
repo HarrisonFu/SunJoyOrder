@@ -1,0 +1,256 @@
+/*///////////////////////////////////////////////////////////////////////////////////////
+ //
+ //  File:          shopping-cart.less
+ //  Description:   Shopping cart
+ //
+ //////////////////////////////////////////////////////////////////////////////////////*/
+
+////Customize////
+.order {
+  clear: both;
+  > .hd {
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    box-shadow: 0px 1px 3px #ddd;
+  }
+  > .bd {
+    margin: 15px 0;
+    > .main {
+      width: 740px;
+      float: left;
+    }
+    > .side {
+      width: 210px;
+      float: right;
+    }
+  }
+}
+
+////Customize Guide////
+
+.order-guide {
+  font-size: 13px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  padding: 5px 8px;
+  #gradient > .vertical(#fff, #eee);
+  .nav {
+    margin: 0;
+  }
+  a, a:hover {
+    color: #222;
+  }
+  .nav-pills li.active a {
+    background-color: #ddd;
+    .bold;
+    color: #222;
+  }
+}
+
+.order-form {
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  padding: 0;
+  > section {
+    padding: 15px;
+    position: relative;
+    background: url(../../img/site/line-shade.png) center bottom no-repeat;
+    &:last-of-type {
+      background: none;
+    }
+    > .edit {
+      position: absolute;
+      right: 10px;
+      top: 10px;
+      display: none;
+    }
+    
+    &.readonly {
+      > .edit {
+        display: block;
+      }
+      .save,
+      .fileinput-button,
+      .btn-search-bp,
+      .btn-search-contact {
+        display: none;
+      }
+      input, textarea {
+        border: 1px solid #fff!important;
+        .box-shadow(none);
+      }
+      input:disabled, textarea:disabled {
+        background: none;
+        cursor: default;
+      }
+      select:disabled {
+        border: none;
+        background: none;
+        cursor: default;
+      }
+      .combobox-container .dropdown-toggle {
+        display: none;
+      }
+      // input:hover, textarea:hover {
+        // cursor: pointer;
+        // border: 1px solid #ddd!important;
+        // .box-shadow(none);
+      // }
+      input:-moz-placeholder { color:#ddd; }
+      input::-webkit-input-placeholder { color:#ddd; }
+      .save-address,
+      .clone-address {
+        display: none;
+      }
+      .pms-list .pms {
+        display: none;
+        &.selected {
+          .inline-block;
+        }
+      }
+    }
+    
+    > h3 {
+      color: #888;
+      margin-bottom: 8px;
+    }
+    
+    .combobox-container > input {
+      width: 272px;
+      border-right: none;
+    }
+    
+    .combobox-container .dropdown-toggle,
+    .combobox-container .dropdown-toggle:active {
+      background: none;
+      box-shadow: none;
+      border-radius: 0 3px 3px 0;
+    }
+    .combobox-container .dropdown-toggle:hover {
+      background: #eee;
+    }
+    
+    .combobox-wrap.medium .combobox-container > input {
+      width: 100px;
+    }
+    
+    .combobox-wrap.inbetween.medium {
+      margin-left: 20px;
+      margin-right: 20px;
+      width: 140px;
+    }
+    
+    .combobox-wrap.larger .combobox-container > input {
+      width: 420px;
+    }
+    
+    .combobox-wrap.large .combobox-container > input {
+      width: 260px;
+    }
+    
+  }
+}
+
+
+
+.order-review {
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  padding: 0;
+  > section {
+    padding: 15px;
+    background: url(../../img/site/line-shade.png) center bottom no-repeat;
+    &:last-of-type {
+      background: none;
+    }
+    position: relative;
+    .edit {
+      position: absolute;
+      right: 10px;
+      top: 10px;
+      color: #666;
+    }
+    &:hover {
+      .edit {
+        display: block;
+        color: #08C;
+      }
+    }
+    
+    > h3 {
+      color: #888;
+      margin-bottom: 8px;
+    }
+  }
+}
+
+
+.job-details {
+  border-radius: 3px;
+  margin-bottom: 15px;
+  padding-bottom: 15px;
+  position: relative;
+  padding-top: 15px;
+  background: url(../../img/site/line-shade.png) center bottom no-repeat;
+  &:last-of-type {
+    background: none;
+  }
+  .btn.edit {
+      position: absolute;
+      right: 10px;
+      top: 10px;
+      display: none;
+    }
+    &:hover {
+      .edit {
+        display: block;
+      }
+    }
+  > .bd > .item {
+    margin-bottom: 25px;
+    position: relative;
+    border-top: 1px solid #ddd;
+    padding-bottom: 15px;
+    padding-top: 25px;
+    margin-top: 15px;
+  }
+  > .bd > .item .edit{
+    position: absolute;
+    right: 0;
+    top: 2px;
+    color: #666;
+  }
+  .expandable {
+    display: none;
+  }
+  > .bd > .item:hover .edit{
+    color: #08C;
+  }
+}
+
+
+//Job summary
+.job-summary {
+  li {
+    clear: both;
+    > a {
+      text-decoration: none;
+      padding: 4px;
+      display: block;
+    }
+    > a:hover {
+      text-decoration: none;
+      background: #f3f3f3;
+    }
+  }
+  img {
+    margin: 0 6px 0px 0;
+    border: 1px solid #ddd;
+  }
+}
+
+
+.user.with-profile {
+  cursor: pointer;
+  .bold;
+}

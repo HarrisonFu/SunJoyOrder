@@ -1,0 +1,1196 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+
+	<!-- CSS -->
+	<link rel="stylesheet" href="../css/bootstrap.css">
+	<link rel="stylesheet" href="../css/bootstrap-responsive.css">
+	<link rel="stylesheet" href="../css/plugins/jquery-ui/smoothness/jquery-ui.css">
+	<link rel="stylesheet" href="../css/plugins/chosen/chosen.css">
+	<link rel="stylesheet" href="../css/plugins/multiselect/multi-select.css">
+	<link rel="stylesheet" href="../css/plugins/select2/select2.css">
+	<link rel="stylesheet" href="../css/plugins/select2/select2-bootstrap.css">
+	<link rel="stylesheet" href="../css/plugins/icheck/all.css">
+	<link rel="stylesheet" href="../css/plugins/tagsinput/jquery.tagsinput.css">
+	<link rel="stylesheet" href="../css/plugins/fancybox/jquery.fancybox.css">
+	<link rel="stylesheet" href="../css/plugins/datepicker/datepicker.css">
+	<link rel="stylesheet" href="../css/plugins/bootstrap-multiselect/bootstrap-multiselect.css">
+	<link rel="stylesheet" href="../css/style.css">
+	<link rel="stylesheet" href="../css/themes.css">
+	<link rel="stylesheet" href="../css/admin.css">
+
+	<!-- JS -->
+	<script src="../js/jquery.min.js"></script>
+	<script src="../js/plugins/jquery-ui/jquery-ui-1.10.3.custom.min.js"></script>
+	<script src="../js/plugins/touch-punch/jquery.touch-punch.min.js"></script>
+	<script src="../js/bootstrap.min.js"></script>
+	<script src="../js/plugins/bootbox/jquery.bootbox.js"></script>
+	<script src="../js/plugins/imagesLoaded/jquery.imagesloaded.min.js"></script>
+	<script src="../js/plugins/chosen/chosen.jquery.min.js"></script>
+	<script src="../js/plugins/datepicker/bootstrap-datepicker.js"></script>
+	<script src="../js/plugins/select2/select2.min.js"></script>
+	<script src="../js/plugins/icheck/jquery.icheck.min.js"></script>
+	<script src="../js/plugins/fancybox/jquery.fancybox.js"></script>
+	<script src="../js/plugins/tagsinput/jquery.tagsinput.min.js"></script>
+	<script src="../js/plugins/multiselect/jquery.multi-select.js"></script>
+	<script src="../js/plugins/jquery.scrolltofixed/1.0.0/jquery-scrolltofixed.js"></script>
+	<script src="../js/plugins/bootstrap-multiselect/bootstrap-multiselect.js"></script>
+	<script src="../js/init.js"></script>
+	<script src="../js/application.js"></script>
+	<script src="../js/admin.js"></script>
+	
+	<!--[if lte IE 9]>
+		<script src="../js/plugins/placeholder/jquery.placeholder.min.js"></script>
+		<script>
+			$(document).ready(function() {
+				$('input, textarea').placeholder();
+			});
+		</script>
+	<![endif]-->
+
+</head>
+
+<body>
+	<div id="navigation">
+		<div class="container">
+			<div class="pull-left" style="padding-top: 4px; min-width: 200px;"><img src="../mock/image/promo-logo.png" alt="" /></div>
+			<a href="#" class="toggle-nav" rel="tooltip" data-placement="bottom" title="Toggle sidebar"><i class="icon-reorder"></i></a>
+			<ul class='main-nav'>
+				<li>
+					<a href="#">
+						<span>Home</span>
+					</a>
+				</li>
+				<li>
+					<a href="#" data-toggle="dropdown" class='dropdown-toggle'>
+						<span>Biz Social</span>
+						<span class="caret"></span>
+					</a>
+					<ul class="dropdown-menu">
+						<li><a href="#">Customer social</a></li>
+						<li><a href="#">Vendor social</a></li>
+						<li><a href="#">Internal social</a></li>
+					</ul>
+				</li>
+				<li class='active'>
+					<a href="#" data-toggle="dropdown" class='dropdown-toggle'>
+						<span>Marketing</span>
+						<span class="caret"></span>
+					</a>
+					<ul class="dropdown-menu">
+						<li><a href="#">Homepage admin</a></li>
+						<li><a href="#">Item admin</a></li>
+						<li><a href="#">Mass price updating</a></li>
+						<li><a href="#">Mass info updating</a></li>
+						<li><a href="#">Categories</a></li>
+						<li><a href="#">Tags</a></li>
+						<li><a href="#">Banners</a></li>
+						<li><a href="#">eFlyers</a></li>
+						<li><a href="#">Workflow</a></li>
+						<li><a href="#">My surveys</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="#" data-toggle="dropdown" class='dropdown-toggle'>
+						<span>Customers</span>
+						<span class="caret"></span>
+					</a>
+					<ul class="dropdown-menu">
+						<li><a href="#">Customer social</a></li>
+						<li><a href="#">Quotes</a></li>
+						<li><a href="#">Sale orders</a></li>
+						<li><a href="#">AR down invoices</a></li>
+						<li><a href="#">AR invoice</a></li>
+						<li><a href="#">AR credit memos</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="#" data-toggle="dropdown" class='dropdown-toggle'>
+						<span>Vendors</span>
+						<span class="caret"></span>
+					</a>
+					<ul class="dropdown-menu">
+						<li><a href="#">Vendor social</a></li>
+						<li><a href="#">Inquiries</a></li>
+						<li><a href="#">Puchuse orders</a></li>
+						<li><a href="#">AP down invoices</a></li>
+						<li><a href="#">AP invoices</a></li>
+						<li><a href="#">AP credit memos</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="#" data-toggle="dropdown" class='dropdown-toggle'>
+						<span>Finance</span>
+						<span class="caret"></span>
+					</a>
+					<ul class="dropdown-menu">
+						<li><a href="#">Currency exchange</a></li>
+						<li><a href="#">Incoming payments</a></li>
+						<li><a href="#">Outgoing payments</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="#" data-toggle="dropdown" class='dropdown-toggle'>
+						<span>HR</span>
+						<span class="caret"></span>
+					</a>
+					<ul class="dropdown-menu">
+						<li><a href="#">Orginizaion chart</a></li>
+						<li><a href="#">Member profiles</a></li>
+						<li><a href="#">Permissions</a></li>
+					</ul>
+				</li>
+			</ul>
+			<div class="user">
+				<ul class="icon-nav">
+					<li class='dropdown colo'>
+						<a href="#" class='dropdown-toggle' data-toggle="dropdown"><i class="icon-tint"></i></a>
+						<ul class="dropdown-menu pull-right theme-colors">
+							<li class="subtitle">
+								Theme colors
+							</li>
+							<li>
+								<span class="lightgrey" rel="tooltip" title="Classic Black"></span>
+								<span class="blue" rel="tooltip" title="Classic Blue"></span>
+								<span class="darkblue" rel="tooltip" title="Classic Deep Blue"></span>
+								<span class='green' rel="tooltip" title="Classic Green"></span>
+								<span class="satgreen" rel="tooltip" title="Holiday Green"></span>
+								<span class='red' rel="tooltip" title="Classic Red"></span>
+								<span class="lightred" rel="tooltip" title="Holiday Red"></span>
+								<span class="lime" rel="tooltip" title="Classic Yellow"></span>
+							</li>
+						</ul>
+					</li>
+					<li class="dropdown">
+						<a href="#" class='dropdown-toggle' data-toggle="dropdown"><i class="icon-search"></i></a>
+						<ul class="dropdown-menu pull-right theme-settings" style="padding: 15px 15px 0;">
+							<form class='form-horizontal'>
+								<div class="input-append">
+									<input type="text" name="search" placeholder="Type a company name">
+									<button type='submit' class='btn'><i class="icon-search"></i></button>
+								</div>
+							</form>
+						</ul>
+					</li>
+					<li class="dropdown">
+						<a href="#" class='dropdown-toggle' data-toggle="dropdown"><i class="icon-cog"></i></a>
+						<ul class="dropdown-menu pull-right theme-settings">
+							<li><a href="#">Company profile</a></li>
+							<li><a href="#">Site theme</a></li>
+						</ul>
+					</li>
+				</ul>
+				<div class="dropdown">
+					<a href="#" class='dropdown-toggle' data-toggle="dropdown">Harrison Fu <img src="../mock/image/user/user-avatar.jpg" width="27" height="27" alt=""></a>
+					<ul class="dropdown-menu pull-right">
+						<li>
+							<a href="#">Edit profile</a>
+						</li>
+						<li>
+							<a href="#">Account settings</a>
+						</li>
+						<li>
+							<a href="#">Sign out</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="container" id="content">
+		<div id="left">
+			<div class="side-logo">
+				<img src="../mock/image/logo/sunjoy.gif" width="150" alt="" />
+			</div>
+			
+			<div class="side-scrollfixed">
+
+				<div class="spaced">
+					<div class="btn-group btn-block">
+						<button class="btn btn-large btn-success btn-block" data-toggle="dropdown">USB 10D <span class="caret"></span></button>
+						<ul class="dropdown-menu">
+							<li><a href="#">USB 5D</a></li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="spaced">
+					<div class="btn-group btn-block">
+						<button class="btn btn-block" data-toggle="dropdown">Open orders <span class="caret"></span></button>
+						<ul class="dropdown-menu">
+							<li><a href="#">Closed orders</a></li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="filter-sections spaced">
+					
+					<div class="filter-section">
+						<h5>Workflow name:</h5>
+						<div class="filter-tag">
+							<a href="javascript:void(0)" class="btn-remove-filter"><i class="icon-remove"></i></a>
+							<span>Workflow 1</span>
+						</div>
+						<div class="filter-tag">
+							<a href="javascript:void(0)" class="btn-remove-filter"><i class="icon-remove"></i></a>
+							<span>Workflow 2</span>
+						</div>
+					</div>
+
+					<div class="filter-section">
+						<h5>Account manager:</h5>
+						<div class="filter-tag">
+							<a href="javascript:void(0)" class="btn-remove-filter"><i class="icon-remove"></i></a>
+							<span>Harrison Fu</span>
+						</div>
+					</div>
+
+					<button class="btn btn-warning btn-block"><i class="icon-trash"></i> Remove all filters</button>
+
+				</div>
+
+				<div class="side-filter">
+					<div class="side-filter-hd">Workflow name</div>
+					<div class="side-filter-bd">
+						<input type="text" class="input-medium">
+					</div>
+				</div>
+
+				<div class="side-filter">
+					<div class="side-filter-hd">Account manager</div>
+					<div class="side-filter-bd">
+						<input type="text" class="input-medium">
+					</div>
+				</div>
+
+				<div class="side-filter">
+					<div class="side-filter-hd">Other order roles</div>
+					<div class="side-filter-bd">
+						<input type="text" class="input-medium">
+					</div>
+				</div>
+
+				<div class="side-filter">
+					<div class="side-filter-hd">Other order roles</div>
+					<div class="side-filter-bd">
+						<div class="input-medium">
+							<select name="" id="23423" class='chosen-select' data-placeholder="Order roles" data-nosearch="true">
+								<option value="">Customer care</option>
+							</select>
+						</div>
+						<input type="text" class="input-medium">
+					</div>
+				</div>
+
+				<div class="side-filter">
+					<div class="side-filter-hd">Order status</div>
+					<div class="side-filter-bd">
+						<input type="text" class="input-medium">
+					</div>
+				</div>
+
+				<div class="side-filter">
+					<div class="side-filter-hd">Order date</div>
+					<div class="side-filter-bd">
+						<div class="input-medium">
+							<select name="" id="72423" class='chosen-select' data-placeholder="Created date" data-nosearch="true">
+								<option value="">Created date</option>
+							</select>
+						</div>
+						<input type="text" name="textfield" value="" placeholder="From" id="t23234" class="input-small datepick">
+						<input type="text" name="textfield" value="" placeholder="To" id="23423" class="input-small datepick">
+					</div>
+				</div>
+			</div>
+
+		</div>
+		<div id="main">
+			<div class="container-fluid">
+				<div class="page-header">
+					<div class="pull-left">
+						<h1>{Quotation} schedule view</h1>
+					</div>
+					<div class="pull-right" style="padding-top: 25px;">
+						<form action="#" method="GET" class='search-form spaced'>
+							<div class="search-pane">
+								<input type="text" name="search" placeholder="Search by name">
+								<button type="submit"><i class="icon-search"></i></button>
+							</div>
+						</form>
+					</div>
+				</div>
+				<div class="breadcrumbs spaced">
+					<ul>
+						<li>
+							<a href="#">Home</a>
+							<i class="icon-angle-right"></i>
+						</li>
+						<li>
+							<a href="#">Schedule View</a>
+						</li>
+					</ul>
+					<div class="close-bread">
+						<a href="#"><i class="icon-remove"></i></a>
+					</div>
+				</div>
+
+				<div class="row-fluid">
+					<div class="span12">
+						<div class="box">
+							<div class="box-content nopadding">
+								
+								<div class="cf">
+
+									<div class="list-actions-container">
+										<div class="list-actions-bar">
+											<div class="row-fluid">
+												<div class="span4">
+													<a href="#" class="btn" rel="tooltip" title="Refresh"><i class="icon-refresh"></i></a> 
+													<a href="#" class="btn" rel="tooltip" title="Send"><i class="icon-envelope"></i></a>
+												</div>
+												<div class="span8 tright">
+													<a href="#" class="btn" rel="tooltip" title="Value View"><i class="glyphicon-usd"></i></a> 
+													<a href="#" class="btn" rel="tooltip" title="Calendar View"><i class="icon-calendar"></i></a> 
+													<a href="#" class="btn" rel="tooltip" title="Old Calendar View"><i class="glyphicon-calendar"></i></a> 
+													<a href="#" class="btn" rel="tooltip" title="Mockup View"><i class="icon-picture"></i></a> 
+													<a href="#" class="btn" rel="tooltip" title="Conversation View"><i class="glyphicon-chat"></i></a> 
+													<a href="#" class="btn" rel="tooltip" title="Job View"><i class="icon-pushpin"></i></a> 
+												</div>
+											</div>
+										</div>
+									</div>
+
+									<table class="table table-hover table-nomargin table-list">
+										<thead>
+											<tr>
+												<th>
+													<div class="check-line no-margin"><input type="checkbox" class='icheck-me checkbox-select-all' id="8388" name="2983" data-skin="minimal" class=""><label class='inline' for="8388"><strong></strong></label></div>
+												</th>
+												<th>
+													<div class="context-popup">
+														<a href="#" data-toggle="dropdown" class='dropdown-toggle context-popup-btn'>
+															<span>Priority <i class="icon-filter"></i></span>
+														</a>
+														<div class="dropdown-menu context-popup-bd">
+															<div>
+																<div class="input-large">
+																	<select name="" id="79844" class='chosen-select input-large' data-placeholder="Status" data-nosearch="true">
+																		<option value="0">Not Started</option>
+																		<option value="1">Started</option>
+																	</select>
+																</div>
+
+																<input type="text" name="textfield" value="" placeholder="From" id="23633" class="span12 datepick" > 
+
+																<input type="text" name="textfield" value="" placeholder="To" id="634543" class="span12 datepick" >
+
+															</div>
+															<div>
+																<button class="btn btn-primary"><i class="icon-filter"></i> Filter</button> <button class="btn btn-cancel">Cancel</button>
+															</div>
+														</div>
+													</div>
+												</th>
+												<th>
+													<div class="context-popup">
+														<a href="#" data-toggle="dropdown" class='dropdown-toggle context-popup-btn'>
+															<span>Order date <i class="icon-filter"></i></span>
+														</a>
+														<div class="dropdown-menu context-popup-bd">
+															<div>
+																<div class="input-large">
+																	<select name="" id="35488" class='chosen-select input-large' data-placeholder="Status" data-nosearch="true">
+																		<option value="0">Not Started</option>
+																		<option value="1">Started</option>
+																	</select>
+																</div>
+
+																<input type="text" name="textfield" value="" placeholder="From" id="23633" class="span12 datepick" > 
+
+																<input type="text" name="textfield" value="" placeholder="To" id="634543" class="span12 datepick" >
+																
+															</div>
+															<div>
+																<button class="btn btn-primary"><i class="icon-filter"></i> Filter</button> <button class="btn btn-cancel">Cancel</button>
+															</div>
+														</div>
+													</div>
+												</th>
+												<th>
+													<div class="context-popup">
+														<a href="#" data-toggle="dropdown" class='dropdown-toggle context-popup-btn'>
+															<span>PO received <i class="icon-filter"></i></span>
+														</a>
+														<div class="dropdown-menu context-popup-bd">
+															<div>
+																<div class="input-large">
+																	<select name="" id="48978" class='chosen-select input-large' data-placeholder="Status" data-nosearch="true">
+																		<option value="0">Not Started</option>
+																		<option value="1">Started</option>
+																	</select>
+																</div>
+
+																<input type="text" name="textfield" value="" placeholder="From" id="23633" class="span12 datepick" > 
+
+																<input type="text" name="textfield" value="" placeholder="To" id="634543" class="span12 datepick" >
+																
+															</div>
+															<div>
+																<button class="btn btn-primary"><i class="icon-filter"></i> Filter</button> <button class="btn btn-cancel">Cancel</button>
+															</div>
+														</div>
+													</div>
+												</th>
+												<th>
+													<div class="context-popup">
+														<a href="#" data-toggle="dropdown" class='dropdown-toggle context-popup-btn'>
+															<span>Virtual sent <i class="icon-filter"></i></span>
+														</a>
+														<div class="dropdown-menu context-popup-bd">
+															<div>
+																<div class="input-large">
+																	<select name="" id="84687" class='chosen-select input-large' data-placeholder="Status" data-nosearch="true">
+																		<option value="0">Not Started</option>
+																		<option value="1">Started</option>
+																	</select>
+																</div>
+
+																<input type="text" name="textfield" value="" placeholder="From" id="23633" class="span12 datepick" > 
+
+																<input type="text" name="textfield" value="" placeholder="To" id="634543" class="span12 datepick" >
+																
+															</div>
+															<div>
+																<button class="btn btn-primary"><i class="icon-filter"></i> Filter</button> <button class="btn btn-cancel">Cancel</button>
+															</div>
+														</div>
+													</div>
+												</th>
+												<th>
+													<div class="context-popup">
+														<a href="#" data-toggle="dropdown" class='dropdown-toggle context-popup-btn'>
+															<span>Virtual approved <i class="icon-filter"></i></span>
+														</a>
+														<div class="dropdown-menu context-popup-bd">
+															<div>
+																<div class="input-large">
+																	<select name="" id="21126" class='chosen-select input-large' data-placeholder="Status" data-nosearch="true">
+																		<option value="0">Not Started</option>
+																		<option value="1">Started</option>
+																	</select>
+																</div>
+
+																<input type="text" name="textfield" value="" placeholder="From" id="23633" class="span12 datepick" > 
+
+																<input type="text" name="textfield" value="" placeholder="To" id="634543" class="span12 datepick" >
+																
+															</div>
+															<div>
+																<button class="btn btn-primary"><i class="icon-filter"></i> Filter</button> <button class="btn btn-cancel">Cancel</button>
+															</div>
+														</div>
+													</div>
+												</th>
+												<th>
+													<div class="context-popup">
+														<a href="#" data-toggle="dropdown" class='dropdown-toggle context-popup-btn'>
+															<span>Production started <i class="icon-filter"></i></span>
+														</a>
+														<div class="dropdown-menu context-popup-bd">
+															<div>
+																<div class="input-large">
+																	<select name="" id="132215" class='chosen-select input-large' data-placeholder="Status" data-nosearch="true">
+																		<option value="0">Not Started</option>
+																		<option value="1">Started</option>
+																	</select>
+																</div>
+
+																<input type="text" name="textfield" value="" placeholder="From" id="23633" class="span12 datepick" > 
+
+																<input type="text" name="textfield" value="" placeholder="To" id="634543" class="span12 datepick" >
+																
+															</div>
+															<div>
+																<button class="btn btn-primary"><i class="icon-filter"></i> Filter</button> <button class="btn btn-cancel">Cancel</button>
+															</div>
+														</div>
+													</div>
+												</th>
+												<th>
+													<div class="context-popup">
+														<a href="#" data-toggle="dropdown" class='dropdown-toggle context-popup-btn'>
+															<span>QA passed <i class="icon-filter"></i></span>
+														</a>
+														<div class="dropdown-menu context-popup-bd">
+															<div>
+																<div class="input-large">
+																	<select name="" id="83625" class='chosen-select input-large' data-placeholder="Status" data-nosearch="true">
+																		<option value="0">Not Started</option>
+																		<option value="1">Started</option>
+																	</select>
+																</div>
+
+																<input type="text" name="textfield" value="" placeholder="From" id="23633" class="span12 datepick" > 
+
+																<input type="text" name="textfield" value="" placeholder="To" id="634543" class="span12 datepick" >
+																
+															</div>
+															<div>
+																<button class="btn btn-primary"><i class="icon-filter"></i> Filter</button> <button class="btn btn-cancel">Cancel</button>
+															</div>
+														</div>
+													</div>
+												</th>
+												<th>
+													<div class="context-popup">
+														<a href="#" data-toggle="dropdown" class='dropdown-toggle context-popup-btn'>
+															<span>Shipped <i class="icon-filter"></i></span>
+														</a>
+														<div class="dropdown-menu context-popup-bd">
+															<div>
+																<div class="input-large">
+																	<select name="" id="27439" class='chosen-select input-large' data-placeholder="Status" data-nosearch="true">
+																		<option value="0">Not Started</option>
+																		<option value="1">Started</option>
+																	</select>
+																</div>
+
+																<input type="text" name="textfield" value="" placeholder="From" id="23633" class="span12 datepick" > 
+
+																<input type="text" name="textfield" value="" placeholder="To" id="634543" class="span12 datepick" >
+																
+															</div>
+															<div>
+																<button class="btn btn-primary"><i class="icon-filter"></i> Filter</button> <button class="btn btn-cancel">Cancel</button>
+															</div>
+														</div>
+													</div>
+												</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td colspan="9" class="alert-select-all">
+													All 50 {Sale Order} on this page are selected. <a href="#">Select all 1,167 {Sale Order}. 
+												</td>
+											</tr>
+											<tr>
+												<td>
+													<div class="check-line no-margin"><input type="checkbox" class='icheck-me checkbox-item' id="2983" name="3283" data-skin="minimal"></div>
+												</td>
+												<td>
+													<div class="tag-priority tag-red" rel="tooltip" title="Click to change priority"></div>
+												</td>
+												<td><a href="#order-box" data-toggle="modal">SO 289994 <br> <span class="gray-light">01/15/2013</span></a></td>
+												<td><a href="#order-activity" data-toggle="modal">PO Reveived <br> <span class="gray-light">02/28/2014</span></a></td>
+												<td><a href="#order-activity" data-toggle="modal">Virtual sent <br> <span class="gray-light">02/28/2014</span></a></td>
+												<td><a href="#order-activity" data-toggle="modal">Virtual approved <br> <span class="gray-light">02/28/2014</span></a></td>
+												<td><a href="#order-activity" data-toggle="modal">Production started <br> <span class="gray-light">02/28/2014</span></a></td>
+												<td><a href="#order-activity" data-toggle="modal">QA passed <br> <span class="gray-light">02/28/2014</span></a></td>
+												<td><a href="#order-activity" data-toggle="modal">Shipped <br> <span class="gray-light">02/28/2014</span></a></td>
+											</tr>
+											<tr class="unread">
+												<td>
+													<div class="check-line no-margin"><input type="checkbox" class='icheck-me checkbox-item' id="uf93" name="" data-skin="minimal"></div>
+												</td>
+												<td>
+													<div class="tag-priority tag-red" rel="tooltip" title="Click to change priority"></div>
+												</td>
+												<td><a href="#order-box" data-toggle="modal">SO 289994 <br> <span class="gray-light">01/15/2013</span></a></td>
+												<td><a href="#order-activity" data-toggle="modal">PO Reveived <br> <span class="gray-light">02/28/2014</span></a></td>
+												<td><a href="#order-activity" data-toggle="modal">Virtual sent <br> <span class="gray-light">02/28/2014</span></a></td>
+												<td><a href="#order-activity" data-toggle="modal">Virtual approved <br> <span class="gray-light">02/28/2014</span></a></td>
+												<td><a href="#order-activity" data-toggle="modal">Production started <br> <span class="gray-light">02/28/2014</span></a></td>
+												<td><a href="#order-activity" data-toggle="modal">QA passed <br> <span class="gray-light">02/28/2014</span></a></td>
+												<td><a href="#order-activity" data-toggle="modal">Shipped <br> <span class="gray-light">02/28/2014</span></a></td>
+											</tr>
+											<tr class="unread">
+												<td>
+													<div class="check-line no-margin"><input type="checkbox" class='icheck-me checkbox-item' id="zoi5" name="" data-skin="minimal"></div>
+												</td>
+												<td>
+													<div class="tag-priority tag-red" rel="tooltip" title="Click to change priority"></div>
+												</td>
+												<td><a href="#order-box" data-toggle="modal">SO 289994 <br> <span class="gray-light">01/15/2013</span></a></td>
+												<td><a href="#order-activity" data-toggle="modal">PO Reveived <br> <span class="gray-light">02/28/2014</span></a></td>
+												<td><a href="#order-activity" data-toggle="modal">Virtual sent <br> <span class="gray-light">02/28/2014</span></a></td>
+												<td><a href="#order-activity" data-toggle="modal">Virtual approved <br> <span class="gray-light">02/28/2014</span></a></td>
+												<td><a href="#order-activity" data-toggle="modal">Production started <br> <span class="gray-light">02/28/2014</span></a></td>
+												<td><a href="#order-activity" data-toggle="modal">QA passed <br> <span class="gray-light">02/28/2014</span></a></td>
+												<td><a href="#order-activity" data-toggle="modal">Shipped <br> <span class="gray-light">02/28/2014</span></a></td>
+											</tr>
+											<tr class="unread">
+												<td>
+													<div class="check-line no-margin"><input type="checkbox" class='icheck-me checkbox-item' id="kvi8" name="" data-skin="minimal"></div>
+												</td>
+												<td>
+													<div class="tag-priority tag-red" rel="tooltip" title="Click to change priority"></div>
+												</td>
+												<td><a href="#order-box" data-toggle="modal">SO 289994 <br> <span class="gray-light">01/15/2013</span></a></td>
+												<td><a href="#order-activity" data-toggle="modal">PO Reveived <br> <span class="gray-light">02/28/2014</span></a></td>
+												<td><a href="#order-activity" data-toggle="modal">Virtual sent <br> <span class="gray-light">02/28/2014</span></a></td>
+												<td><a href="#order-activity" data-toggle="modal">Virtual approved <br> <span class="gray-light">02/28/2014</span></a></td>
+												<td><a href="#order-activity" data-toggle="modal">Production started <br> <span class="gray-light">02/28/2014</span></a></td>
+												<td><a href="#order-activity" data-toggle="modal">QA passed <br> <span class="gray-light">02/28/2014</span></a></td>
+												<td><a href="#order-activity" data-toggle="modal">Shipped <br> <span class="gray-light">02/28/2014</span></a></td>
+											</tr>
+											<tr class="unread">
+												<td>
+													<div class="check-line no-margin"><input type="checkbox" class='icheck-me checkbox-item' id="q98w" name="" data-skin="minimal"></div>
+												</td>
+												<td>
+													<div class="tag-priority tag-red" rel="tooltip" title="Click to change priority"></div>
+												</td>
+												<td><a href="#order-box" data-toggle="modal">SO 289994 <br> <span class="gray-light">01/15/2013</span></a></td>
+												<td><a href="#order-activity" data-toggle="modal">PO Reveived <br> <span class="gray-light">02/28/2014</span></a></td>
+												<td><a href="#order-activity" data-toggle="modal">Virtual sent <br> <span class="gray-light">02/28/2014</span></a></td>
+												<td><a href="#order-activity" data-toggle="modal">Virtual approved <br> <span class="gray-light">02/28/2014</span></a></td>
+												<td><a href="#order-activity" data-toggle="modal">Production started <br> <span class="gray-light">02/28/2014</span></a></td>
+												<td><a href="#order-activity" data-toggle="modal">QA passed <br> <span class="gray-light">02/28/2014</span></a></td>
+												<td><a href="#order-activity" data-toggle="modal">Shipped <br> <span class="gray-light">02/28/2014</span></a></td>
+											</tr>
+											<tr class="unread">
+												<td>
+													<div class="check-line no-margin"><input type="checkbox" class='icheck-me checkbox-item' id="3284" name="" data-skin="minimal"></div>
+												</td>
+												<td>
+													<div class="tag-priority tag-red" rel="tooltip" title="Click to change priority"></div>
+												</td>
+												<td><a href="#order-box" data-toggle="modal">SO 289994 <br> <span class="gray-light">01/15/2013</span></a></td>
+												<td><a href="#order-activity" data-toggle="modal">PO Reveived <br> <span class="gray-light">02/28/2014</span></a></td>
+												<td><a href="#order-activity" data-toggle="modal">Virtual sent <br> <span class="gray-light">02/28/2014</span></a></td>
+												<td><a href="#order-activity" data-toggle="modal">Virtual approved <br> <span class="gray-light">02/28/2014</span></a></td>
+												<td><a href="#order-activity" data-toggle="modal">Production started <br> <span class="gray-light">02/28/2014</span></a></td>
+												<td><a href="#order-activity" data-toggle="modal">QA passed <br> <span class="gray-light">02/28/2014</span></a></td>
+												<td><a href="#order-activity" data-toggle="modal">Shipped <br> <span class="gray-light">02/28/2014</span></a></td>
+											</tr>
+											<tr class="unread">
+												<td>
+													<div class="check-line no-margin"><input type="checkbox" class='icheck-me checkbox-item' id="2983" name="" data-skin="minimal"></div>
+												</td>
+												<td>
+													<div class="tag-priority tag-red" rel="tooltip" title="Click to change priority"></div>
+												</td>
+												<td><a href="#order-box" data-toggle="modal">SO 289994 <br> <span class="gray-light">01/15/2013</span></a></td>
+												<td><a href="#order-activity" data-toggle="modal">PO Reveived <br> <span class="gray-light">02/28/2014</span></a></td>
+												<td><a href="#order-activity" data-toggle="modal">Virtual sent <br> <span class="gray-light">02/28/2014</span></a></td>
+												<td><a href="#order-activity" data-toggle="modal">Virtual approved <br> <span class="gray-light">02/28/2014</span></a></td>
+												<td><a href="#order-activity" data-toggle="modal">Production started <br> <span class="gray-light">02/28/2014</span></a></td>
+												<td><a href="#order-activity" data-toggle="modal">QA passed <br> <span class="gray-light">02/28/2014</span></a></td>
+												<td><a href="#order-activity" data-toggle="modal">Shipped <br> <span class="gray-light">02/28/2014</span></a></td>
+											</tr>
+											<tr class="unread">
+												<td>
+													<div class="check-line no-margin"><input type="checkbox" class='icheck-me checkbox-item' id="2886" name="" data-skin="minimal"></div>
+												</td>
+												<td>
+													<div class="tag-priority tag-yellow" rel="tooltip" title="Click to change priority"></div>
+												</td>
+												<td><a href="#order-box" data-toggle="modal">SO 289994 <br> <span class="gray-light">01/15/2013</span></a></td>
+												<td><a href="#order-activity" data-toggle="modal">PO Reveived <br> <span class="gray-light">02/28/2014</span></a></td>
+												<td><a href="#order-activity" data-toggle="modal">Virtual sent <br> <span class="gray-light">02/28/2014</span></a></td>
+												<td><a href="#order-activity" data-toggle="modal">Virtual approved <br> <span class="gray-light">02/28/2014</span></a></td>
+												<td><a href="#order-activity" data-toggle="modal">Production started <br> <span class="gray-light">02/28/2014</span></a></td>
+												<td><a href="#order-activity" data-toggle="modal">QA passed <br> <span class="gray-light">02/28/2014</span></a></td>
+												<td><a href="#order-activity" data-toggle="modal">Shipped <br> <span class="gray-light">02/28/2014</span></a></td>
+											</tr>
+
+											<tr>
+												<td>
+													<div class="check-line no-margin"><input type="checkbox" class='icheck-me checkbox-item' id="4752" name="" data-skin="minimal"></div>
+												</td>
+												<td>
+													<div class="tag-priority tag-yellow" rel="tooltip" title="Click to change priority"></div>
+												</td>
+												<td><a href="#order-box" data-toggle="modal">SO 289994 <br> <span class="gray-light">01/15/2013</span></a></td>
+												<td><a href="#order-activity" data-toggle="modal">PO Reveived <br> <span class="gray-light">02/28/2014</span></a></td>
+												<td><a href="#order-activity" data-toggle="modal">Virtual sent <br> <span class="gray-light">02/28/2014</span></a></td>
+												<td><a href="#order-activity" data-toggle="modal">Virtual approved <br> <span class="gray-light">02/28/2014</span></a></td>
+												<td><a href="#order-activity" data-toggle="modal">Production started <br> <span class="gray-light">02/28/2014</span></a></td>
+												<td><a href="#order-activity" data-toggle="modal">QA passed <br> <span class="gray-light">02/28/2014</span></a></td>
+												<td><a href="#order-activity" data-toggle="modal">Shipped <br> <span class="gray-light">02/28/2014</span></a></td>
+											</tr>
+											<tr>
+												<td>
+													<div class="check-line no-margin"><input type="checkbox" class='icheck-me checkbox-item' id="0588" name="" data-skin="minimal"></div>
+												</td>
+												<td>
+													<div class="tag-priority tag-yellow" rel="tooltip" title="Click to change priority"></div>
+												</td>
+												<td><a href="#order-box" data-toggle="modal">SO 289994 <br> <span class="gray-light">01/15/2013</span></a></td>
+												<td><a href="#order-activity" data-toggle="modal">PO Reveived <br> <span class="gray-light">02/28/2014</span></a></td>
+												<td><a href="#order-activity" data-toggle="modal">Virtual sent <br> <span class="gray-light">02/28/2014</span></a></td>
+												<td><a href="#order-activity" data-toggle="modal">Virtual approved <br> <span class="gray-light">02/28/2014</span></a></td>
+												<td><a href="#order-activity" data-toggle="modal">Production started <br> <span class="gray-light">02/28/2014</span></a></td>
+												<td><a href="#order-activity" data-toggle="modal">QA passed <br> <span class="gray-light">02/28/2014</span></a></td>
+												<td><a href="#order-activity" data-toggle="modal">Shipped <br> <span class="gray-light">02/28/2014</span></a></td>
+											</tr>
+											<tr>
+												<td>
+													<div class="check-line no-margin"><input type="checkbox" class='icheck-me checkbox-item' id="8677" name="" data-skin="minimal"></div>
+												</td>
+												<td>
+													<div class="tag-priority tag-yellow" rel="tooltip" title="Click to change priority"></div>
+												</td>
+												<td><a href="#order-box" data-toggle="modal">SO 289994 <br> <span class="gray-light">01/15/2013</span></a></td>
+												<td><a href="#order-activity" data-toggle="modal">PO Reveived <br> <span class="gray-light">02/28/2014</span></a></td>
+												<td><a href="#order-activity" data-toggle="modal">Virtual sent <br> <span class="gray-light">02/28/2014</span></a></td>
+												<td><a href="#order-activity" data-toggle="modal">Virtual approved <br> <span class="gray-light">02/28/2014</span></a></td>
+												<td><a href="#order-activity" data-toggle="modal">Production started <br> <span class="gray-light">02/28/2014</span></a></td>
+												<td><a href="#order-activity" data-toggle="modal">QA passed <br> <span class="gray-light">02/28/2014</span></a></td>
+												<td><a href="#order-activity" data-toggle="modal">Shipped <br> <span class="gray-light">02/28/2014</span></a></td>
+											</tr>
+											<tr>
+												<td>
+													<div class="check-line no-margin"><input type="checkbox" class='icheck-me checkbox-item' id="2995" name="" data-skin="minimal"></div>
+												</td>
+												<td>
+													<div class="tag-priority tag-green" rel="tooltip" title="Click to change priority"></div>
+												</td>
+												<td><a href="#order-box" data-toggle="modal">SO 289994 <br> <span class="gray-light">01/15/2013</span></a></td>
+												<td><a href="#order-activity" data-toggle="modal">PO Reveived <br> <span class="gray-light">02/28/2014</span></a></td>
+												<td><a href="#order-activity" data-toggle="modal">Virtual sent <br> <span class="gray-light">02/28/2014</span></a></td>
+												<td><a href="#order-activity" data-toggle="modal">Virtual approved <br> <span class="gray-light">02/28/2014</span></a></td>
+												<td><a href="#order-activity" data-toggle="modal">Production started <br> <span class="gray-light">02/28/2014</span></a></td>
+												<td><a href="#order-activity" data-toggle="modal">QA passed <br> <span class="gray-light">02/28/2014</span></a></td>
+												<td><a href="#order-activity" data-toggle="modal">Shipped <br> <span class="gray-light">02/28/2014</span></a></td>
+											</tr>
+											<tr>
+												<td>
+													<div class="check-line no-margin"><input type="checkbox" class='icheck-me checkbox-item' id="9354" name="" data-skin="minimal"></div>
+												</td>
+												<td>
+													<div class="tag-priority tag-green" rel="tooltip" title="Click to change priority"></div>
+												</td>
+												<td><a href="#order-box" data-toggle="modal">SO 289994 <br> <span class="gray-light">01/15/2013</span></a></td>
+												<td><a href="#order-activity" data-toggle="modal">PO Reveived <br> <span class="gray-light">02/28/2014</span></a></td>
+												<td><a href="#order-activity" data-toggle="modal">Virtual sent <br> <span class="gray-light">02/28/2014</span></a></td>
+												<td><a href="#order-activity" data-toggle="modal">Virtual approved <br> <span class="gray-light">02/28/2014</span></a></td>
+												<td><a href="#order-activity" data-toggle="modal">Production started <br> <span class="gray-light">02/28/2014</span></a></td>
+												<td><a href="#order-activity" data-toggle="modal">QA passed <br> <span class="gray-light">02/28/2014</span></a></td>
+												<td><a href="#order-activity" data-toggle="modal">Shipped <br> <span class="gray-light">02/28/2014</span></a></td>
+											</tr>
+											<tr>
+												<td>
+													<div class="check-line no-margin"><input type="checkbox" class='icheck-me checkbox-item' id="3842" name="" data-skin="minimal"></div>
+												</td>
+												<td>
+													<div class="tag-priority tag-green" rel="tooltip" title="Click to change priority"></div>
+												</td>
+												<td><a href="#order-box" data-toggle="modal">SO 289994 <br> <span class="gray-light">01/15/2013</span></a></td>
+												<td><a href="#order-activity" data-toggle="modal">PO Reveived <br> <span class="gray-light">02/28/2014</span></a></td>
+												<td><a href="#order-activity" data-toggle="modal">Virtual sent <br> <span class="gray-light">02/28/2014</span></a></td>
+												<td><a href="#order-activity" data-toggle="modal">Virtual approved <br> <span class="gray-light">02/28/2014</span></a></td>
+												<td><a href="#order-activity" data-toggle="modal">Production started <br> <span class="gray-light">02/28/2014</span></a></td>
+												<td><a href="#order-activity" data-toggle="modal">QA passed <br> <span class="gray-light">02/28/2014</span></a></td>
+												<td><a href="#order-activity" data-toggle="modal">Shipped <br> <span class="gray-light">02/28/2014</span></a></td>
+											</tr>
+											<tr>
+												<td>
+													<div class="check-line no-margin"><input type="checkbox" class='icheck-me checkbox-item' id="0058" name="" data-skin="minimal"></div>
+												</td>
+												<td>
+													<div class="tag-priority tag-green" rel="tooltip" title="Click to change priority"></div>
+												</td>
+												<td><a href="#order-box" data-toggle="modal">SO 289994 <br> <span class="gray-light">01/15/2013</span></a></td>
+												<td><a href="#order-activity" data-toggle="modal">PO Reveived <br> <span class="gray-light">02/28/2014</span></a></td>
+												<td><a href="#order-activity" data-toggle="modal">Virtual sent <br> <span class="gray-light">02/28/2014</span></a></td>
+												<td><a href="#order-activity" data-toggle="modal">Virtual approved <br> <span class="gray-light">02/28/2014</span></a></td>
+												<td><a href="#order-activity" data-toggle="modal">Production started <br> <span class="gray-light">02/28/2014</span></a></td>
+												<td><a href="#order-activity" data-toggle="modal">QA passed <br> <span class="gray-light">02/28/2014</span></a></td>
+												<td><a href="#order-activity" data-toggle="modal">Shipped <br> <span class="gray-light">02/28/2014</span></a></td>
+											</tr>
+											<tr>
+												<td>
+													<div class="check-line no-margin"><input type="checkbox" class='icheck-me checkbox-item' id="4992" name="" data-skin="minimal"></div>
+												</td>
+												<td>
+													<div class="tag-priority tag-green" rel="tooltip" title="Click to change priority"></div>
+												</td>
+												<td><a href="#order-box" data-toggle="modal">SO 289994 <br> <span class="gray-light">01/15/2013</span></a></td>
+												<td><a href="#order-activity" data-toggle="modal">PO Reveived <br> <span class="gray-light">02/28/2014</span></a></td>
+												<td><a href="#order-activity" data-toggle="modal">Virtual sent <br> <span class="gray-light">02/28/2014</span></a></td>
+												<td><a href="#order-activity" data-toggle="modal">Virtual approved <br> <span class="gray-light">02/28/2014</span></a></td>
+												<td><a href="#order-activity" data-toggle="modal">Production started <br> <span class="gray-light">02/28/2014</span></a></td>
+												<td><a href="#order-activity" data-toggle="modal">QA passed <br> <span class="gray-light">02/28/2014</span></a></td>
+												<td><a href="#order-activity" data-toggle="modal">Shipped <br> <span class="gray-light">02/28/2014</span></a></td>
+											</tr>
+											
+										</tbody>
+									</table>
+								</div>
+
+								<div class="highlight-toolbar">
+									<div class="pull-left">
+										<a href="#" class="btn"><i class="icon-download-alt"></i> Download as spreadsheet</a>
+									</div>
+									<div class="pull-right">
+										<div class="btn-toolbar">
+											<div class="btn-group">
+												<a href="#" class="btn"><i class="icon-angle-left"></i></a>
+												<a href="#" class="btn"><i class="icon-angle-right"></i></a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		
+
+		<div style="text-align: right; padding: 30px 0 50px;">Copyright © 2013 SunJoy Group, Inc. All rights reserved.</div>
+	</div>
+	
+
+	<div id="order-box" class="modal hide" tabindex="-1" role="dialog">
+		<div class="modal-header">
+			<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+			<h4><a href="#">SO 2989232</a></h4>
+		</div>
+		<div class="modal-body">
+			<h5><a href="#">iClick</a></h5>
+			<div class="spaced">
+				<span class="gray">open</span><br>
+				<span class="gray">Created: 02/28/2014</span>
+			</div>
+			<hr>
+			<div class="row-fluid">
+				<div class="span2"><img src="../mock/image/user/user-avatar.jpg" width="68" height="68" alt=""></div>
+				<div class="span8">
+					<div>
+						<strong>Russel Peters</strong><br>
+						Phone: (774) 284 9848 <br>
+						Email: <a href="#">harrison@sunjoy.us</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div id="order-activity" class="modal hide" tabindex="-1" role="dialog">
+		<div class="modal-header">
+			<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+			<h4><a href="#">SO 2989232</a></h4>
+		</div>
+		<div class="modal-body">
+			<div class="activity-thread cf">
+				<div class="row-fluid">
+					<div class="span2 tcenter">
+						<img src="../mock/image/user/user-2.jpg" width="68" height="68" alt="">
+					</div>
+					<div class="span10">
+						<div class="section-thread">
+							<div class="row-fluid">
+								<div class="span10">
+									<a href="#" class="act-user-popover act-list-by-user" data-content="&lt;img width='36' height='36' src='../mock/image/user/user-2.jpg' /&gt; &lt;br /&gt;Seatle, WA, USA &lt;br /&gt;Phone: 54648789 &lt;br /&gt;Email: &lt;a href='#'&gt;harrison.fu@sunjoy.com&lt;/a&gt;" data-original-title="Harrison Fu">Harrison Fu</a>
+
+									<span class="bold grey">You are invited to SunJoy New System</span>
+								</div>
+								<div class="span2 tright">
+									<div class="btn-group tright">
+										<button class="btn btn-mini btn-edit-thread"><i class="icon-edit"></i> Edit</button>
+										<button class="btn btn-mini dropdown-toggle" data-toggle="dropdown">
+											<span class="caret"></span>
+										</button>
+										<ul class="dropdown-menu tleft align-right">
+											<li><a href="#"><i class="icon-exclamation-sign"></i> Important</a></li>
+											<li><a href="#"><i class="icon-ok"></i> To-dos</a></li>
+											<li><a href="#"><i class="icon-folder-close"></i> Archive</a></li>
+											<li><a href="#"><i class="icon-envelope"></i> Read/Unread</a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<div class="row-fluid">
+								<div class="span12">
+									Hi Stephanie ,<br>
+									We have launched a new and improved website to meet your promotional needs. As a valued customer, we have already created you the login and password: Login Address: http://www.sunjoy.us distributor_login.aspx
+								</div>
+							</div>
+						</div>
+
+						<div class="section-thread-edit none">
+							<div class="row-fluid">
+								<input type="text" value="You are invited to SunJoy New System" class="span12 bold" />
+							</div>
+							<div class="row-fluid">
+								<div class="span12">
+									<textarea rows="3" class="span12 rte-simple">Hi Stephanie,We have launched a new and improved website to meet your promotional needs. As a valued customer, we have  already created you the login and password: Login Address: http://www.sunjoy.us distributor_login.aspx</textarea>
+								</div>
+							</div>
+							<div class="row-fluid">
+								<div class="span6">
+									<label for="internal" class="checkbox"><input type="checkbox" name="" id="internal"> Internal only</label>
+								</div>
+								<div class="span6 tright">
+									<button class="btn btn-small btn-primary btn-save">Save</button> <button class="btn btn-small btn-cancel">Cancel</button>
+								</div>
+							</div>
+						</div>
+
+							<div class="section-expandable">
+								
+								<div class="row-fluid spaced small activity-actions">
+									<a href="#" class="grey-light btn-edit-reply">Reply</a>  ·  
+									<a href="#" class="grey-light btn-edit-assignment" class="grey-light">Assignment</a>  ·  
+									<a href="#" class="grey-light btn-edit-tag">Tag</a>  ·  
+									<a href="#" class="grey-light btn-edit-file">File</a>  ·  
+									<a href="#" class="grey-light">Email</a>  ·  
+									<a href="#" class="grey-light btn-edit-review">Review</a>  ·  
+									<span class="grey-light">August 19 at 1:30pm</span>
+								</div>
+
+								<div class="act-box section-edit section-edit-reply spaced small none">
+									<input type="" placeholder="Write a reply" class="span12">
+									<div class="row-fluid none">
+										<div class="span1"><img src="../mock/image/user/user-2.jpg" width="32" height="32" alt=""></div>
+										<div class="span11">
+											<div class="row-fluid">
+												<div class="span11">Replying to Harrison Fu</div>
+												<div class="span1 tright"><button type="button" class="close">×</button></div>
+											</div>
+											<div class="row-fluid">
+												<textarea name="" class="span12" id="" cols="30" rows="3"></textarea>
+											</div>
+											<div class="row-fluid">
+												<div class="span10"><a href="#">Add file</a></div>
+												<div class="span2 tright"><button class="btn btn-primary btn-small">Reply</button></div>
+											</div>
+										</div>
+									</div>
+								</div>
+								
+								<div class="act-box section-edit section-edit-tag spaced small">
+									<div class="row-fluid">
+										<div class="span10">
+											<a href="#" class="act-tag act-list-by-tag"><span>SO 10993</span></a> <a href="#" class="act-tag act-list-by-tag"><span>SO 10993</span> <i class="close btn-remove-tag">&times;</i></a> 
+											<span class="edit-panel none"><input type="text" name="" class="span4 no-margin" placeholder="Change assign to" id=""> <a href="#" class="grey">Add tag</a></span>
+										</div>
+										<div class="span2 tright">
+											<a href="javascript:void(0);" class="grey save none">Done</a> 
+											<a href="javascript:void(0);" class="grey edit none">Edit tags</a> 
+										</div>
+									</div>
+								</div>
+								
+
+								<div class="act-box section-edit section-edit-assignment spaced small no-shadow none">
+									<div class="row-fluid spaced small">
+										<div class="span10">Assign to</div>
+										<div class="span2 tright"><a href="javascript:void(0);" class="edit grey none">Change</a></div>
+									</div>
+									<div class="row-fluid">
+										<div class="span12">
+											<a href="#" class="user-stripe"><span>Emily Hu</span> <i class="close">&times;</i></a> 
+											<a href="#" class="user-stripe"><span>Harrison Fu</span> <i class="close">&times;</i></a> 
+											<span class="edit-panel none">
+												<input type="text" name="" class="span4 no-margin" placeholder="Change assign to" id=""> 
+												<a href="#" class="grey">Search &amp; Add</a>
+											</span>
+										</div>
+									</div>
+
+									<hr class="dashed">
+
+									<div class="row-fluid">
+										<div class="span10">Notify parties</div>
+										<div class="span2 tright"><a href="javascript:void(0);" class="grey remove-all none">Remove all</a></div>
+									</div>
+									<div class="row-fluid border-dashed-bottom">
+										<div class="span10">
+											<a href="#" class="user-stripe"><span>Emily Hu</span> <i class="close">&times;</i></a> 
+											<a href="#" class="user-stripe"><span>Harrison Fu</span> <i class="close">&times;</i></a> 
+											<span class="edit-panel none">
+												<input type="text" name="" class="span4 no-margin" placeholder="+ Add people to notify" id=""> <a href="#" class="grey">Search &amp; Add</a>
+											</span>
+										</div>
+										<div class="span2 tright"><button class="btn btn-primary btn-small save none">Assgin</button></div>
+									</div>
+								</div>
+
+								
+
+								<div class="act-box section-edit section-edit-file spaced small none">
+									<div class="row-fluid spaced small">
+										<div class="span11">Add file</div>
+										<div class="span1 tright"><button type="button" class="close btn-close-section">&times;</button></div>
+									</div>
+									<div class="row-fluid">
+										<div><input type="text" name="" placeholder="Comment on this file..." id="" class="span12"> </div>
+										<ul>
+											<li class="spaced small">
+												<div class="upload-form-progress"></div>
+												<span class="file-from-upload fileinput-button">
+													Upload a file from your computer
+													<input type="file" name="files[]" multiple>
+												</span>
+											</li>
+											<li class="spaced small"><a href="#" class="file-from-folder">Select a file from my file folder on this site</a></li>
+											<li class="spaced small"><a href="#" class="file-from-activity">Select another activity on this site</a></li>
+										</ul>
+										<div><button class="btn btn-small btn-primary">Add</button></div>
+									</div>
+								</div>
+
+								<div class="act-box section-edit section-edit-review spaced small none">
+									<div class="row-fluid">
+										<div class="span1"><img src="../mock/image/user/user-2.jpg" width="32" height="32" alt=""></div>
+										<div class="span11">
+											<div class="row-fluid spaced small">
+												<div class="span11">How do you like this?</div>
+												<div class="span1 tright"><button type="button" class="close btn-close-section">&times;</button></div>
+											</div>
+											<div class="row-fluid">
+												<div class="act-rate cf spaced small">
+													<input name="star2" type="radio" class="star"/>
+													<input name="star2" type="radio" class="star"/>
+													<input name="star2" type="radio" class="star"/>
+													<input name="star2" type="radio" class="star"/>
+													<input name="star2" type="radio" class="star"/>
+												</div>
+												<button class="btn btn-primary btn-small">Review</button>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="activity-thread-reply">
+									<div class="row-fluid">
+										<div class="span1"><img src="../mock/image/user/user-1.jpg" width="36" height="36" alt=""></div>
+										<div class="span11">
+											<div class="row-fluid">
+												<div class="span10"><a href="#">Emily Hu</a></div>
+												<div class="span2 tright"></div>
+											</div>
+											<div class="spaced small">Hi Harrison,<br>
+												We have launched a new and improved website to meet your promotional needs. As a valued customer, we have already created you the login and password: Login Address: http://www.sunjoy.us distributor_login.aspx</div>
+												<div><span class="grey-light">August 19 at 1:30pm</span></div>
+											</div>
+										</div>
+									</div>
+
+									
+									<div class="activity-thread-reply">
+										<div class="row-fluid">
+											<div class="span1"><img src="../mock/image/user/user-4.jpg" width="36" height="36" alt=""></div>
+											<div class="span11">
+												<div class="row-fluid">
+													<div class="span10"><a href="#">Emily Hu</a> <span class="grey-light">tagged the activity</span></div>
+													<div class="span2 tright"><a href="#" class="grey edit none">Edit</a></div>
+												</div>
+												<div class="spaced small">
+													<a href="#" class="act-tag act-list-by-tag">SO 10993</a> <a href="#" class="act-tag act-list-by-tag">SO 10993</a> 
+												</div>
+												<div><span class="grey-light">August 19 at 1:30pm</span></div>
+											</div>
+										</div>
+									</div>
+
+									<div class="activity-thread-reply">
+										<div class="row-fluid">
+											<div class="span1"><img src="../mock/image/user/user-3.jpg" width="36" height="36" alt=""></div>
+											<div class="span11">
+												<div class="row-fluid">
+													<div class="span10"><a href="#">Emily Hu</a> <span class="grey-light">uploaded the file</span></div>
+													<div class="span2 tright"><a href="#" class="grey remove none">Remove</a></div>
+												</div>
+												<div class="spaced small">
+													<a href="#">
+														<img src="../mock/image/250x250/p1.jpg" width="160" height="160" alt="" /><br>
+														sample.jpg
+													</a>
+												</div>
+												<div class="spaced small">
+													<a href="#">
+														<img src="../img/admin/activity-icon-file.png" alt="" /><br>
+														readme.doc
+													</a>
+												</div>
+												<div><span class="grey-light">August 19 at 1:30pm</span></div>
+											</div>
+										</div>
+									</div>
+
+									<div class="activity-thread-reply">
+										<div class="row-fluid">
+											<div class="span1"><img src="../mock/image/user/user-1.jpg" width="36" height="36" alt=""></div>
+											<div class="span11">
+												<div class="row-fluid">
+													<div class="span10"><a href="#">Emily Hu</a> <span class="grey-light">sent emails</span></div>
+													<div class="span2 tright"><a href="#"></a></div>
+												</div>
+												<div class="spaced small">
+													<p class="bold">You're invited to sunjoy new system.</p>
+													<p>sent to: <a href="#">Harrison Fu</a>, <a href="#">Harrison Fu</a>, <a href="#">Harrison Fu</a></p>
+													<p>copied to: <a href="#">Harrison Fu</a>, <a href="#">Harrison Fu</a>, <a href="#">Harrison Fu</a></p>
+												</div>
+												<div><span class="grey-light">August 19 at 1:30pm</span></div>
+											</div>
+										</div>
+									</div>
+
+									<div class="activity-thread-reply">
+										<div class="row-fluid">
+											<div class="span1"><img src="../mock/image/user/user-4.jpg" width="36" height="36" alt=""></div>
+											<div class="span11">
+												<div class="row-fluid">
+													<div class="span10"><a href="#">Emily Hu</a> <span class="grey-light">reviewed this</span></div>
+													<div class="span2 tright"><a href="#" class="edit grey none">Change</a></div>
+												</div>
+												<div class="spaced small">
+													<div class="act-rate cf spaced small">
+														<input name="star3" type="radio" class="star"/>
+														<input name="star3" type="radio" class="star"/>
+														<input name="star3" type="radio" class="star"/>
+														<input name="star3" type="radio" class="star"/>
+														<input name="star3" type="radio" class="star"/>
+													</div>
+													<div>Review comment Review comment Review comment Review comment </div>
+											<!-- <ul class="act-rating">
+												<li><span class="act-rating-stars-5"></span> <span>Excellent</span></li>
+											</ul> -->
+										</div>
+										<div><span class="grey-light">August 19 at 1:30pm</span></div>
+									</div>
+								</div>
+							</div>
+
+							<div class="act-box section-edit section-edit-reply spaced small">
+								<input type="" placeholder="Write a reply" class="span12">
+								<div class="row-fluid none">
+									<div class="span1"><img src="../mock/image/user/user-2.jpg" width="32" height="32" alt=""></div>
+									<div class="span11">
+										<div class="row-fluid">
+											<div class="span11">Replying to Harrison Fu</div>
+											<div class="span1 tright"><button type="button" class="close btn-close-section">&times;</button></div>
+										</div>
+										<div class="row-fluid">
+											<textarea name="" class="span12" id="" cols="30" rows="3"></textarea>
+										</div>
+										<div class="row-fluid">
+											<div class="span10"><a href="#">Add file</a></div>
+											<div class="span2 tright"><button class="btn btn-primary btn-small">Reply</button></div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+
+</html>
+

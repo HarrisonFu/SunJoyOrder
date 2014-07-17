@@ -1,0 +1,318 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<!-- <link rel="stylesheet/less" type="text/css" href="../../css/site/main.less" media="all">
+		<script type="text/javascript">less = {}; less.env = 'development';</script>
+		<script type="text/javascript" src="../../js/utils/less/1.3.0/less.min.js"></script> -->
+		<link rel="stylesheet" type="text/css" href="../../css/site/main.css" media="all">
+		<link rel="stylesheet" type="text/css" href="../../css/legacy/main.css" media="all">
+		<script type="text/javascript" src="../../js/lib/jquery/1.8.0/jquery.min.js"></script>
+		<script type="text/javascript" src="../../js/utils/bootstrap/2.1.0/bootstrap.js"></script>
+		<script type="text/javascript" src="../../js/utils/jquery.expander/1.4.3/jquery.expander.js"></script>
+		<script type="text/javascript" src="../../js/utils/jquery.placeholder/2.0.7/jquery.placeholder.min.js"></script>
+		<script type="text/javascript" src="../../js/utils/jquery.scrolltofixed/1.0.0/jquery-scrolltofixed.js"></script>
+		<script type="text/javascript" src="../../js/utils/jquery.fancybox/2.1.3/jquery.fancybox.js"></script>
+		<link rel="stylesheet" type="text/css" href="../../js/utils/jquery.fancybox/2.1.3/jquery.fancybox.css" media="all" />
+		<script type="text/javascript" src="../../js/site/main.js"></script>
+		<script type="text/javascript" src="../../js/site/order.js"></script>
+
+		<!--[if lt IE 9]>
+		<script src="../../js/utils/html5/3.0/html5.js"></script>
+		<![endif]-->
+		<script type="text/javascript">
+			$(function(){
+				$('.popup-new-bp').fancybox({
+					width: 580,
+					height: 450,
+					href: "popup-new-bp.html"
+				});
+			});
+		</script>
+	</head>
+	<body>
+		<div class="wrapper theme-black">
+			<div class="page">
+				<!-- Header Start -->
+				<header id="header" class="cf">
+					<div id="hd-logo"><img src="../../img/icons/logo-sunjoy.png" alt="" /></div>
+					<section class="mod-welcome" id="hd-welcome">
+						Welcome! <a href="#">Sign In</a> | <a href="#">Register</a>
+					</section>
+					<section class="mod-share" id="hd-share">
+						<a href="#"><img alt="" src="../../img/icons/hd-ico-facebook.png"></a>
+				    	<a href="#"><img alt="" src="../../img/icons/hd-ico-twitter.png"></a>
+					</section>
+				</header>
+				<!-- Header End -->
+				
+				<!-- Navigation Start -->
+				<nav id="nav" class="mod-nav cf">
+				  	<div class="mod-nav-l"></div>
+				  	<div class="mod-nav-c">
+				    	<ul class="cf" id="nav-list">
+				      		<li> <a href="#">Home</a> </li>
+				      		<li class="on"> <a href="#">Products</a> </li>
+				      		<li> <a href="#">Specials</a> </li>
+				      		<li> <a href="#">eFlyers</a> </li>
+				      		<li> <a href="#">News</a> </li>
+				      		<li></li>
+				    	</ul>
+				    	<div class="mod-nav-search" id="nav-search">
+				      		<input type="text" placeholder="sku, keyword or name" />
+				      		<div class="mod-nav-search-btn"></div>
+				    	</div>
+				  	</div>
+				  	<div class="mod-nav-r"></div>
+				</nav>
+				<!-- Navigation End -->
+				
+				<!-- Breadcrumb Start -->
+				<div class="position cf">
+					<ul class="breadcrumb">
+						<li><a href="#">Home</a> &gt;</li>
+						<li>Shopping cart</li>
+					</ul>
+				</div>
+				<!-- Breadcrumb End -->
+				
+				<!-- Body Start -->
+				<div class="body cf">
+					
+					<!-- Order Start -->
+					<div class="order">
+						<div class="bd cf">
+							<div class="main">
+								<div class="order-guide spaced">
+									<ul class="nav nav-pills">
+										<li class="active"><a href="order-po-customer-info.html">Additional order info <i class="icon-arrow-right"></i></a></li>
+										<li><a href="order-po-customer-address.html">Addresses <i class="icon-arrow-right"></i></a></li>
+										<li><a href="order-po-customer-review.html">Order review</a></li>
+									</ul>
+								</div>
+								
+								<div class="order-form">
+									<section class="order-form-section" id="parties">
+										<span class="btn btn-small edit"><i class="icon-edit"></i> Edit</span>
+										<h3>Order parties</h3>
+										<form class="form-horizontal">
+									        <fieldset>
+									          <div class="control-group">
+									            <label class="control-label">The buying party:</label>
+									            <div class="controls">
+									              <input type="text" class="span4" name="" id="" />
+									              <a href="#" class="btn-search-bp"></a> 
+									              <a href="#" class="popup-new-bp fancybox fancybox-normal fancybox.iframe">+1 New BP</a>
+									            </div>
+									          </div>
+									          <div class="control-group">
+									            <label class="control-label">Order Executive:</label>
+									            <div class="controls">
+									              <input type="text" class="span4" name="" id="" />
+									              <a href="#" class="btn-search-contact"></a>
+									            </div>
+									          </div>
+									          <div class="control-group">
+									            <label class="control-label">Buyer:</label>
+									            <div class="controls">
+									              <input type="text" class="span4" name="" id="" />
+									              <a href="#" class="btn-search-contact"></a>
+									            </div>
+									          </div>
+									          <div class="control-group">
+									            <label class="control-label">The selling party:</label>
+									            <div class="controls">
+									              <input type="text" class="span4" name="" id="" />
+									              <a href="#" class="btn-search-bp"></a> 
+									              <a href="#" class="popup-new-bp fancybox fancybox-normal fancybox.iframe">+1 New BP</a>
+									            </div>
+									          </div>
+									          <div class="control-group">
+									            <label class="control-label">Customer Care:</label>
+									            <div class="controls">
+									              <span class="user with-profile" data-name="Brian Etchman" data-email="brian.etchman@gmail.com" data-phone="(773) 631 2008" data-picture="../../mock/image/user/user-2.jpg">Brian Etchman</span>
+									            </div>
+									          </div>
+									          <div class="control-group">
+									            <label class="control-label">Account Executive:</label>
+									            <div class="controls">
+									              <span class="user with-profile" data-name="Jimmy Lee" data-email="jimmy.lee@gmail.com" data-phone="(773) 631 2008" data-picture="../../mock/image/user/user-1.jpg">Jimmy Lee</span>
+									            </div>
+									          </div>
+									          <div class="control-group">
+									            <label class="control-label"></label>
+									            <div class="controls">
+									              <label class="checkbox inline">
+									                <span class="btn btn-primary save"><i class="icon-ok-sign icon-white"></i> Save</span>
+									              </label>
+									            </div>
+									          </div>
+									        </fieldset>
+									      </form>
+									</section>
+									
+									<section class="order-form-section" id="info">
+										<span class="btn btn-small edit"><i class="icon-edit"></i> Edit</span>
+										<h3>Project Info</h3>
+										<form class="form-horizontal">
+									        <fieldset>
+									          <div class="control-group">
+									            <label class="control-label">Project name:</label>
+									            <div class="controls">
+									              <input type="text" class="span4" />
+									            </div>
+									          </div>
+									          <div class="control-group">
+									            <label class="control-label">Customer reference:</label>
+									            <div class="controls">
+									              <input type="text" class="span4" />
+									            </div>
+									          </div>
+									          <div class="control-group">
+									            <label class="control-label">In hand date:</label>
+									            <div class="controls">
+									              <input type="text" class="span2 date" data-date-format="mm/dd/yy" placeholder="In hand date">
+									            </div>
+									          </div>
+									          <div class="control-group">
+									            <label class="control-label">Due date:</label>
+									            <div class="controls">
+									              <input type="text" class="span2 date" data-date-format="mm/dd/yy" placeholder="Due date">
+									            </div>
+									          </div>
+									          <div class="control-group">
+									            <label class="control-label">Created date:</label>
+									            <div class="controls">
+									              <input type="text" class="span2" readonly="readonly" value="5/20/2012">
+									            </div>
+									          </div>
+									          <div class="control-group">
+									            <label class="control-label"></label>
+									            <div class="controls">
+									              <label class="checkbox inline">
+									                <span class="btn btn-primary save"><i class="icon-ok-sign icon-white"></i> Save</span>
+									              </label>
+									            </div>
+									          </div>
+									        </fieldset>
+									      </form>
+									</section>
+									
+									<section class="order-form-section" id="payment">
+										<span class="btn btn-small edit"><i class="icon-edit"></i> Edit</span>
+										<h3>Payment</h3>
+										<form class="form-horizontal">
+									        <fieldset>
+									          <div class="control-group">
+									            <label class="control-label">Payment term:</label>
+									            <div class="controls">
+									              <input type="text" class="span4" name="" id="" />
+									            </div>
+									          </div>
+									          <div class="control-group">
+									            <label class="control-label">Payment means:</label>
+									            <div class="controls">
+									              <input type="text" class="span4" name="" id="" />
+									            </div>
+									          </div>
+									          <div class="control-group">
+									            <label class="control-label">Order status:</label>
+									            <div class="controls">
+									              <input type="text" class="span4" name="" id="" />
+									            </div>
+									          </div>
+									          <div class="control-group">
+									            <label class="control-label"></label>
+									            <div class="controls">
+									              <label class="checkbox inline">
+									                <span class="btn btn-primary save"><i class="icon-ok-sign icon-white"></i> Save</span>
+									              </label>
+									            </div>
+									          </div>
+									        </fieldset>
+									      </form>
+									</section>
+									
+								</div>
+								
+							</div>
+							<div class="side">
+								<div class="box theme">
+									<div class="hd">Summary</div>
+									<div class="bd cf">
+										<ul class="spaced">
+											<li class="summary-price bold font-larger">Total: $2560</li>
+										</ul>
+										<div class="row-fluid spaced small">
+											<a href="order-po-customer-address.html" class="btn btn-inverse btn-large block spaced small">Continue <i class="icon-arrow-right icon-white"></i></a>
+											<a href="shopping-cart.html" class="btn btn-large block spaced small"><i class="icon-arrow-left"></i> Back to cart</a>
+										</div>
+									</div>
+								</div>
+								
+								<div class="box light job-summary">
+									<div class="hd">Job summary</div>
+									<div class="bd">
+										<ul>
+											<li>
+												<a href="job-edit.html">
+													<img src="../../mock/image/48x48/p1.jpg" class="pull-left" width="60" height="60" alt="" />
+													<span class="grey-darker bold">1128</span> <br />
+													<span class="grey-light font-small">Qty: 260</span><br />
+													<span class="grey-light font-small">Sub: $8380.00</span>
+												</a>
+											</li>
+											<li>
+												<a href="job-edit.html">
+													<img src="../../mock/image/48x48/p1.jpg" class="pull-left" width="60" height="60" alt="" />
+													<span class="grey-darker bold">1128</span> <br />
+													<span class="grey-light font-small">Qty: 260</span><br />
+													<span class="grey-light font-small">Sub: $8380.00</span>
+												</a>
+											</li>
+											<li>
+												<a href="job-edit.html">
+													<img src="../../mock/image/48x48/p1.jpg" class="pull-left" width="60" height="60" alt="" />
+													<span class="grey-darker bold">1128</span> <br />
+													<span class="grey-light font-small">Qty: 260</span><br />
+													<span class="grey-light font-small">Sub: $8380.00</span>
+												</a>
+											</li>
+											<li>
+												<a href="job-edit.html">
+													<img src="../../mock/image/48x48/p1.jpg" class="pull-left" width="60" height="60" alt="" />
+													<span class="grey-darker bold">1128</span> <br />
+													<span class="grey-light font-small">Qty: 260</span><br />
+													<span class="grey-light font-small">Sub: $8380.00</span>
+												</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- Order End -->
+				</div>
+				<!-- Body End -->
+				
+				<!-- Footer Start-->
+				<footer id="footer" class="cf">
+				  	<div id="footer-copyright">
+				    	<p>Power by no1sourcing.com <a href="userCenter/user-terms.html">Terms &amp; Conditions</a></p>
+				    	<p>Use of this website constitutes acceptance of the <a href="#">User Agreement</a> and <a href="user-privacy.html">Privacy Policy</a>.</p>
+				    	<p>Copyright 2010, PromoLinked, Inc. All rights reserved.</p>
+				  	</div>
+				  	<ul id="footer-links">
+				    	<li><img src="../../mock/image/icon/ft-link1.png" alt="" /></li>
+				    	<li><img src="../../mock/image/icon/ft-link2.png" alt="" /></li>
+				    	<li><img src="../../mock/image/icon/ft-link3.png" alt="" /></li>
+				    	<li><img src="../../mock/image/icon/ft-link4.png" alt="" /></li>
+				  	</ul>
+				</footer>
+				<!-- Footer End-->
+			</div>
+		</div>
+	</body>
+</html>

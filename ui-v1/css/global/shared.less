@@ -1,0 +1,339 @@
+////Common Styles////
+html {
+}
+
+.cf, .clearfix {
+  *zoom: 1;
+  &:before,
+  &:after {
+    display: table;
+    content: "";
+  }
+  &:after {
+    clear: both;
+  }
+}
+
+.none, .hidden {
+  display: none;
+}
+
+.block {
+  display: block;
+}
+
+.inline {
+  display: inline;
+}
+
+.inline-block {
+  display: inline-block;
+}
+
+.box {
+  margin-bottom: 15px;
+  border-radius: 3px;
+  &.light {
+    border: 1px solid #ddd;
+    > .hd {
+      font-size: 14px;
+      padding: 6px 10px;
+      border-bottom: 1px solid #ddd;
+      background: #ddd;
+      #gradient > .vertical(#f3f3f3, #ddd);
+      border-top-left-radius: 2px;
+      border-top-right-radius: 2px;
+      .bold;
+    }
+    > .bd {
+      padding: 10px;
+    }
+  }
+  &.grey {
+    border: 1px solid #ccc;
+    background: #f6f6f6;
+  }
+  &.theme {
+    border: 1px solid #ddd;
+    > .hd {
+      font-size: 14px;
+      padding: 6px 10px;
+      border-bottom: 1px solid #ddd;
+      border-top-left-radius: 2px;
+      border-top-right-radius: 2px;
+      .bold;
+    }
+    > .bd {
+      padding: 10px;
+    }
+  }
+}
+
+
+.editable {
+  .inline-block;
+  min-width: 20px;
+  &:hover {
+    border: 1px solid #ddd;
+  }
+}
+
+ul, li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.spaced {
+  margin-bottom: 15px;
+  &.small {
+    margin-bottom: 10px;
+  }
+  &.large {
+    margin-bottom: 20px;
+  }
+}
+
+img.spaced {
+  margin: 0 10px 10px 0;
+  &.small {
+    margin: 0 5px 5px 0;
+  }
+  &.large {
+    margin: 0 15px 15px 0;
+  }
+}
+
+.grey {
+  color: #555;
+}
+
+.grey-dark {
+  color: #333;
+}
+
+.grey-darker {
+  color: #222;
+}
+
+.grey-light {
+  color: #999;
+}
+
+.grey-lighter {
+  color: #ccc;
+}
+
+.black {
+  color: #000;
+}
+
+.white {
+  color: #fff;
+}
+
+.green {
+  color: #698C00;
+}
+
+.orange {
+  color: #f30;
+}
+
+.red {
+  color: #f00;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.font-small {
+  font-size: 11px;
+}
+
+.font-smaller {
+  font-size: 10px;
+}
+
+.font-large {
+  font-size: 13px;
+}
+
+.font-larger {
+  font-size: 14px;
+}
+
+.clear {
+  clear: both;
+}
+
+.tleft {
+  text-align: left;
+}
+
+.tright {
+  text-align: right;
+}
+
+.tcenter {
+  text-align: center;
+}
+
+label.valid {
+  width: 24px;
+  height: 24px;
+  background: url(../../img/icons/valid.png) center center no-repeat;
+  display: inline-block;
+  text-indent: -9999px;
+}
+label.error {
+  font-weight: bold;
+  color: red;
+  padding: 2px 8px;
+  margin-top: 2px;
+}
+
+.bordered {
+  border: 1px solid #ddd;
+}
+
+.border-dashed {
+  border: 1px dashed #ddd;
+}
+
+.border-dotted {
+  border: 1px dotted #ddd;
+}
+
+.no-border {
+  border: none!important;
+}
+
+.border-bottom-dashed {
+  border-bottom: 1px dashed #ddd;
+}
+
+.border-top-dashed {
+  border-top: 1px dashed #ddd;
+}
+
+.border-bottom-dotted {
+  border-bottom: 1px dotted #ccc;
+}
+
+.border-top-dotted {
+  border-top: 1px dotted #ccc;
+}
+
+.border-bottom {
+  border-bottom: 1px solid #ddd;
+}
+
+.border-top {
+  border-top: 1px solid #ddd;
+}
+
+.border-left {
+  border-left: 1px solid #ddd;
+}
+
+.border-right {
+  border-right: 1px solid #ddd;
+}
+
+.input-tiny {
+  width: 36px;
+}
+
+.input-tinyer {
+  width: 24px;
+}
+
+.padding {
+  padding: 8px;
+}
+
+.input-readonly.input-editable {
+  border: 1px solid transparent;
+  background: none;
+  box-shadow: none;
+  &:hover {
+    border: 1px solid #73B8EE;
+  }
+  &:active {
+    border: 1px solid #73B8EE;
+  }
+  &:focus {
+    border: 1px solid #73B8EE;
+  }
+}
+
+input[type="checkbox"].no-margin,
+input[type="text"].no-margin,
+input[type="radio"].no-margin
+ {
+  margin: 0;
+}
+
+.no-padding {
+  padding: 0;
+}
+
+hr.dashed {
+  margin: 10px 0;
+  border-bottom: 1px dashed #ccc;
+}
+
+.word-break {
+  word-break:break-all;
+}
+
+ul.list-no-bullet {
+  line-height: 1.6;
+    margin-bottom: 0.8;
+  > li {
+    line-height: 1.6;
+    margin-bottom: 0.8;
+  }
+}
+
+.bottom-bar-fixed {
+  padding: 8px 0;
+  background: #fff;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+.pdf {
+  p {
+    margin: 0 0 4px 0;
+  }
+  h1, h2, h3, h4, h5 {
+    line-height: 1.1;
+    margin: 0 0 5px 0;
+  }
+  
+
+}
+
+.email {
+  p {
+    margin: 0 0 4px 0;
+  }
+  h1, h2, h3, h4, h5 {
+    line-height: 1.1;
+    margin: 0 0 5px 0;
+  }
+}
+
+h1, h2, h3, h4, h5 {
+  margin: 0 0 5px 0;
+}
+
+
+textarea {
+    resize: none;
+}
