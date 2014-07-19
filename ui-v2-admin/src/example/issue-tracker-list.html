@@ -334,15 +334,42 @@
 												<th style="width: 3%;">
 													<div class="check-line"><input type="checkbox" class='icheck-me checkbox-select-all' id="8388" name="2983" data-skin="minimal" class=""></div>
 												</th>
-												
-												<th style="width: 15%;">
+												<th style="width: 7%;">
 													<div class="context-popup">
 														<a href="#" data-toggle="dropdown" class='dropdown-toggle context-popup-btn'>
-															<span>Person <i class="icon-filter"></i></span>
+															<span>Status <i class="icon-filter"></i></span>
 														</a>
 														<div class="dropdown-menu context-popup-bd">
 															<div>
-																<input type="text" name="textfield" value="" id="84894" class="span12" placeholder="Person"> 
+																<div class="input-large">
+																	<select name="" id="32487" class='chosen-select input-large' placeholder="Status" data-nosearch="true">
+																		<option value="">All status</option>
+																		<option value="">Open</option>
+																		<option value="">Closed</option>
+																	</select>
+																</div>
+															</div>
+															<div>
+																<button class="btn btn-primary"><i class="icon-filter"></i> Filter</button> <button class="btn btn-cancel">Cancel</button>
+															</div>
+														</div>
+													</div>
+												</th>
+												<th style="width: 15%;">
+													<div class="context-popup">
+														<a href="#" data-toggle="dropdown" class='dropdown-toggle context-popup-btn'>
+															<span>Activiy roles <i class="icon-filter"></i></span>
+														</a>
+														<div class="dropdown-menu context-popup-bd">
+															<div>
+																<div class="input-large">
+																	<select name="" id="66887" class='chosen-select input-large' data-nosearch="true" placeholder="Activities created by">
+																		<option value="">Harrison Fu</option>
+																	</select>
+																</div>
+															</div>
+															<div>
+																<input type="text" name="textfield" value="" id="41777" class="span12" placeholder="Search by user name"> 
 															</div>
 															<div>
 																<button class="btn btn-primary"><i class="icon-filter"></i> Filter</button> <button class="btn btn-cancel">Cancel</button>
@@ -353,11 +380,18 @@
 												<th style="width: 40%;">
 													<div class="context-popup">
 														<a href="#" data-toggle="dropdown" class='dropdown-toggle context-popup-btn'>
-															<span>Activity content <i class="icon-filter"></i></span>
+															<span>Activity contents <i class="icon-filter"></i></span>
 														</a>
 														<div class="dropdown-menu context-popup-bd">
 															<div>
-																<input type="text" name="textfield" value="" id="84894" class="span12" placeholder="Subject"> 
+																<div class="input-large">
+																	<select name="" id="38892" class='chosen-select input-large' data-nosearch="true" placeholder="Activity tag">
+																		<option value="">Tag 1</option>
+																	</select>
+																</div>
+															</div>
+															<div>
+																<input type="text" name="textfield" value="" id="32420" class="span12" placeholder="Search by tag name"> 
 															</div>
 															<div>
 																<button class="btn btn-primary"><i class="icon-filter"></i> Filter</button> <button class="btn btn-cancel">Cancel</button>
@@ -372,7 +406,11 @@
 														</a>
 														<div class="dropdown-menu context-popup-bd">
 															<div>
-																<input type="text" name="textfield" value="" id="84894" class="span12" placeholder="Created at"> 
+																<div class="input-large">
+																	<select name="" id="34877" class='chosen-select input-large' data-nosearch="true" placeholder="Created at">
+																		<option value="">iClick Inc</option>
+																	</select>
+																</div>
 															</div>
 															<div>
 																<button class="btn btn-primary"><i class="icon-filter"></i> Filter</button> <button class="btn btn-cancel">Cancel</button>
@@ -383,11 +421,14 @@
 												<th style="width: 10%;">
 													<div class="context-popup">
 														<a href="#" data-toggle="dropdown" class='dropdown-toggle context-popup-btn'>
-															<span>Created time <i class="icon-filter"></i></span>
+															<span>Due <i class="icon-filter"></i></span>
 														</a>
 														<div class="dropdown-menu context-popup-bd">
 															<div>
-																<input type="text" name="textfield" value="" id="84894" class="span12" placeholder="Created time"> 
+																<input type="text" name="textfield" value="" id="65487" class="span12 datepick" placeholder="From"> 
+															</div>
+															<div>
+																<input type="text" name="textfield" value="" id="24487" class="span12 datepick" placeholder="To"> 
 															</div>
 															<div>
 																<button class="btn btn-primary"><i class="icon-filter"></i> Filter</button> <button class="btn btn-cancel">Cancel</button>
@@ -402,7 +443,10 @@
 														</a>
 														<div class="dropdown-menu context-popup-bd">
 															<div>
-																<input type="text" name="textfield" value="" id="84894" class="span12" placeholder="Loss(est.)"> 
+																<input type="text" name="textfield" value="" id="65487" class="span12" placeholder="From $ value"> 
+															</div>
+															<div>
+																<input type="text" name="textfield" value="" id="24487" class="span12" placeholder="To $ value"> 
 															</div>
 															<div>
 																<button class="btn btn-primary"><i class="icon-filter"></i> Filter</button> <button class="btn btn-cancel">Cancel</button>
@@ -414,15 +458,15 @@
 										</thead>
 										<tbody>
 											<tr>
-												<td colspan="6" class="alert-select-all">
+												<td colspan="7" class="alert-select-all">
 													All 48 activities on this page are selected. <a href="#">Select all 1,167 activities. </a>
 												</td>
 											</tr>
 											<tr>
-												<td colspan="6">
+												<td colspan="7">
 													<div class="row-fluid">
 														<div class="span6 separator-unread">
-															<i class="icon-caret-down"></i> Unread 
+															<i class="icon-caret-down"></i> Open 
 														</div>
 														<div class="span6 tright">
 															<div class="btn-group">
@@ -437,7 +481,8 @@
 												<td width="5%">
 													<div class="check-line"><input type="checkbox" class='icheck-me checkbox-item' id="2983" name="3283" data-skin="minimal"></div>
 												</td>
-												<td><a href="#">Harrrrrison Fu</a></td>
+												<td><span>Open</span></td>
+												<td><a href="#">Harrison Fu</a></td>
 												<td><a href="#">Turnaround issue need to done early on Monday</a></td>
 												<td><a href="#">IClick, IncIClick, In</a></td>
 												<td><a href="#">9:12 AM</a></td>
@@ -447,7 +492,8 @@
 												<td width="5%">
 													<div class="check-line"><input type="checkbox" class='icheck-me checkbox-item' id="2983" name="3283" data-skin="minimal"></div>
 												</td>
-												<td><a href="#">Harrrrrison Fu</a></td>
+												<td><span>Open</span></td>
+												<td><a href="#">Harrison Fu</a></td>
 												<td><a href="#">Turnaround issue need to done early on Monday</a></td>
 												<td><a href="#">IClick, IncIClick, In</a></td>
 												<td><a href="#">9:12 AM</a></td>
@@ -457,7 +503,8 @@
 												<td width="5%">
 													<div class="check-line"><input type="checkbox" class='icheck-me checkbox-item' id="2983" name="3283" data-skin="minimal"></div>
 												</td>
-												<td><a href="#">Harrrrrison Fu</a></td>
+												<td><span>Open</span></td>
+												<td><a href="#">Harrison Fu</a></td>
 												<td><a href="#">Turnaround issue need to done early on Monday</a></td>
 												<td><a href="#">IClick, IncIClick, In</a></td>
 												<td><a href="#">9:12 AM</a></td>
@@ -467,7 +514,8 @@
 												<td width="5%">
 													<div class="check-line"><input type="checkbox" class='icheck-me checkbox-item' id="2983" name="3283" data-skin="minimal"></div>
 												</td>
-												<td><a href="#">Harrrrrison Fu</a></td>
+												<td><span>Open</span></td>
+												<td><a href="#">Harrison Fu</a></td>
 												<td><a href="#">Turnaround issue need to done early on Monday</a></td>
 												<td><a href="#">IClick, IncIClick, In</a></td>
 												<td><a href="#">9:12 AM</a></td>
@@ -477,7 +525,8 @@
 												<td width="5%">
 													<div class="check-line"><input type="checkbox" class='icheck-me checkbox-item' id="2983" name="3283" data-skin="minimal"></div>
 												</td>
-												<td><a href="#">Harrrrrison Fu</a></td>
+												<td><span>Open</span></td>
+												<td><a href="#">Harrison Fu</a></td>
 												<td><a href="#">Turnaround issue need to done early on Monday</a></td>
 												<td><a href="#">IClick, IncIClick, In</a></td>
 												<td><a href="#">9:12 AM</a></td>
@@ -487,7 +536,8 @@
 												<td width="5%">
 													<div class="check-line"><input type="checkbox" class='icheck-me checkbox-item' id="2983" name="3283" data-skin="minimal"></div>
 												</td>
-												<td><a href="#">Harrrrrison Fu</a></td>
+												<td><span>Open</span></td>
+												<td><a href="#">Harrison Fu</a></td>
 												<td><a href="#">Turnaround issue need to done early on Monday</a></td>
 												<td><a href="#">IClick, IncIClick, In</a></td>
 												<td><a href="#">9:12 AM</a></td>
@@ -497,7 +547,8 @@
 												<td width="5%">
 													<div class="check-line"><input type="checkbox" class='icheck-me checkbox-item' id="2983" name="3283" data-skin="minimal"></div>
 												</td>
-												<td><a href="#">Harrrrrison Fu</a></td>
+												<td><span>Open</span></td>
+												<td><a href="#">Harrison Fu</a></td>
 												<td><a href="#">Turnaround issue need to done early on Monday</a></td>
 												<td><a href="#">IClick, IncIClick, In</a></td>
 												<td><a href="#">9:12 AM</a></td>
@@ -507,7 +558,8 @@
 												<td width="5%">
 													<div class="check-line"><input type="checkbox" class='icheck-me checkbox-item' id="2983" name="3283" data-skin="minimal"></div>
 												</td>
-												<td><a href="#">Harrrrrison Fu</a></td>
+												<td><span>Open</span></td>
+												<td><a href="#">Harrison Fu</a></td>
 												<td><a href="#">Turnaround issue need to done early on Monday</a></td>
 												<td><a href="#">IClick, IncIClick, In</a></td>
 												<td><a href="#">9:12 AM</a></td>
@@ -517,7 +569,8 @@
 												<td width="5%">
 													<div class="check-line"><input type="checkbox" class='icheck-me checkbox-item' id="2983" name="3283" data-skin="minimal"></div>
 												</td>
-												<td><a href="#">Harrrrrison Fu</a></td>
+												<td><span>Open</span></td>
+												<td><a href="#">Harrison Fu</a></td>
 												<td><a href="#">Turnaround issue need to done early on Monday</a></td>
 												<td><a href="#">IClick, IncIClick, In</a></td>
 												<td><a href="#">9:12 AM</a></td>
@@ -527,7 +580,8 @@
 												<td width="5%">
 													<div class="check-line"><input type="checkbox" class='icheck-me checkbox-item' id="2983" name="3283" data-skin="minimal"></div>
 												</td>
-												<td><a href="#">Harrrrrison Fu</a></td>
+												<td><span>Open</span></td>
+												<td><a href="#">Harrison Fu</a></td>
 												<td><a href="#">Turnaround issue need to done early on Monday</a></td>
 												<td><a href="#">IClick, IncIClick, In</a></td>
 												<td><a href="#">9:12 AM</a></td>
@@ -537,7 +591,8 @@
 												<td width="5%">
 													<div class="check-line"><input type="checkbox" class='icheck-me checkbox-item' id="2983" name="3283" data-skin="minimal"></div>
 												</td>
-												<td><a href="#">Harrrrrison Fu</a></td>
+												<td><span>Open</span></td>
+												<td><a href="#">Harrison Fu</a></td>
 												<td><a href="#">Turnaround issue need to done early on Monday</a></td>
 												<td><a href="#">IClick, IncIClick, In</a></td>
 												<td><a href="#">9:12 AM</a></td>
@@ -545,10 +600,10 @@
 											</tr>
 
 											<tr>
-												<td colspan="6">
+												<td colspan="7">
 													<div class="row-fluid">
 														<div class="span6 separator-read">
-															<i class="icon-caret-down"></i> Read 
+															<i class="icon-caret-down"></i> Closed 
 														</div>
 														<div class="span6 tright">
 															<div class="btn-group">
@@ -564,7 +619,8 @@
 												<td width="5%">
 													<div class="check-line"><input type="checkbox" class='icheck-me checkbox-item' id="2983" name="3283" data-skin="minimal"></div>
 												</td>
-												<td><a href="#">Harrrrrison Fu</a></td>
+												<td><span>Closed</span></td>
+												<td><a href="#">Harrison Fu</a></td>
 												<td><a href="#">Turnaround issue need to done early on Monday</a></td>
 												<td><a href="#">IClick, IncIClick, In</a></td>
 												<td><a href="#">9:12 AM</a></td>
@@ -574,7 +630,8 @@
 												<td width="5%">
 													<div class="check-line"><input type="checkbox" class='icheck-me checkbox-item' id="2983" name="3283" data-skin="minimal"></div>
 												</td>
-												<td><a href="#">Harrrrrison Fu</a></td>
+												<td><span>Closed</span></td>
+												<td><a href="#">Harrison Fu</a></td>
 												<td><a href="#">Turnaround issue need to done early on Monday</a></td>
 												<td><a href="#">IClick, IncIClick, In</a></td>
 												<td><a href="#">9:12 AM</a></td>
@@ -584,7 +641,8 @@
 												<td width="5%">
 													<div class="check-line"><input type="checkbox" class='icheck-me checkbox-item' id="2983" name="3283" data-skin="minimal"></div>
 												</td>
-												<td><a href="#">Harrrrrison Fu</a></td>
+												<td><span>Closed</span></td>
+												<td><a href="#">Harrison Fu</a></td>
 												<td><a href="#">Turnaround issue need to done early on Monday</a></td>
 												<td><a href="#">IClick, IncIClick, In</a></td>
 												<td><a href="#">9:12 AM</a></td>
@@ -594,7 +652,8 @@
 												<td width="5%">
 													<div class="check-line"><input type="checkbox" class='icheck-me checkbox-item' id="2983" name="3283" data-skin="minimal"></div>
 												</td>
-												<td><a href="#">Harrrrrison Fu</a></td>
+												<td><span>Closed</span></td>
+												<td><a href="#">Harrison Fu</a></td>
 												<td><a href="#">Turnaround issue need to done early on Monday</a></td>
 												<td><a href="#">IClick, IncIClick, In</a></td>
 												<td><a href="#">9:12 AM</a></td>
@@ -604,7 +663,8 @@
 												<td width="5%">
 													<div class="check-line"><input type="checkbox" class='icheck-me checkbox-item' id="2983" name="3283" data-skin="minimal"></div>
 												</td>
-												<td><a href="#">Harrrrrison Fu</a></td>
+												<td><span>Closed</span></td>
+												<td><a href="#">Harrison Fu</a></td>
 												<td><a href="#">Turnaround issue need to done early on Monday</a></td>
 												<td><a href="#">IClick, IncIClick, In</a></td>
 												<td><a href="#">9:12 AM</a></td>
@@ -614,7 +674,8 @@
 												<td width="5%">
 													<div class="check-line"><input type="checkbox" class='icheck-me checkbox-item' id="2983" name="3283" data-skin="minimal"></div>
 												</td>
-												<td><a href="#">Harrrrrison Fu</a></td>
+												<td><span>Closed</span></td>
+												<td><a href="#">Harrison Fu</a></td>
 												<td><a href="#">Turnaround issue need to done early on Monday</a></td>
 												<td><a href="#">IClick, IncIClick, In</a></td>
 												<td><a href="#">9:12 AM</a></td>
@@ -624,7 +685,8 @@
 												<td width="5%">
 													<div class="check-line"><input type="checkbox" class='icheck-me checkbox-item' id="2983" name="3283" data-skin="minimal"></div>
 												</td>
-												<td><a href="#">Harrrrrison Fu</a></td>
+												<td><span>Closed</span></td>
+												<td><a href="#">Harrison Fu</a></td>
 												<td><a href="#">Turnaround issue need to done early on Monday</a></td>
 												<td><a href="#">IClick, IncIClick, In</a></td>
 												<td><a href="#">9:12 AM</a></td>
@@ -634,7 +696,8 @@
 												<td width="5%">
 													<div class="check-line"><input type="checkbox" class='icheck-me checkbox-item' id="2983" name="3283" data-skin="minimal"></div>
 												</td>
-												<td><a href="#">Harrrrrison Fu</a></td>
+												<td><span>Closed</span></td>
+												<td><a href="#">Harrison Fu</a></td>
 												<td><a href="#">Turnaround issue need to done early on Monday</a></td>
 												<td><a href="#">IClick, IncIClick, In</a></td>
 												<td><a href="#">9:12 AM</a></td>
@@ -644,7 +707,8 @@
 												<td width="5%">
 													<div class="check-line"><input type="checkbox" class='icheck-me checkbox-item' id="2983" name="3283" data-skin="minimal"></div>
 												</td>
-												<td><a href="#">Harrrrrison Fu</a></td>
+												<td><span>Closed</span></td>
+												<td><a href="#">Harrison Fu</a></td>
 												<td><a href="#">Turnaround issue need to done early on Monday</a></td>
 												<td><a href="#">IClick, IncIClick, In</a></td>
 												<td><a href="#">9:12 AM</a></td>
@@ -654,7 +718,8 @@
 												<td width="5%">
 													<div class="check-line"><input type="checkbox" class='icheck-me checkbox-item' id="2983" name="3283" data-skin="minimal"></div>
 												</td>
-												<td><a href="#">Harrrrrison Fu</a></td>
+												<td><span>Closed</span></td>
+												<td><a href="#">Harrison Fu</a></td>
 												<td><a href="#">Turnaround issue need to done early on Monday</a></td>
 												<td><a href="#">IClick, IncIClick, In</a></td>
 												<td><a href="#">9:12 AM</a></td>
