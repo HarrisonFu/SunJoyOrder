@@ -243,47 +243,35 @@
 				</div>
 
 				<div class="side-filter">
-					<div class="side-filter-hd">To me</div>
+					<div class="side-filter-hd">Me</div>
 					<div class="side-filter-bd">
-						<input type="text" class="input-medium">
+						<div class="input-medium">
+							<ul>
+								<li><a href="#">Assigned to me</a></li>
+								<li><a href="#">Notify me</a></li>
+								<li><a href="#">Created by me</a></li>
+								<li><a href="#">Important</a></li>
+								<li><a href="#">Hide</a></li>
+								<li><a href="#">Read</a></li>
+							</ul>
+						</div>
 					</div>
 				</div>
 
 				<div class="side-filter">
-					<div class="side-filter-hd">Target type</div>
+					<div class="side-filter-hd">Activity type</div>
 					<div class="side-filter-bd">
-						<input type="text" class="input-medium">
+						<ul>
+							<li><a href="#">Biz social</a></li>
+							<li><a href="#">Todos</a></li>
+							<li><a href="#">Issue trackers</a></li>
+							<li><a href="#">Polls</a></li>
+							<li><a href="#">Case study</a></li>
+							<li><a href="#">Meeting</a></li>
+						</ul>
 					</div>
 				</div>
 
-				<div class="side-filter">
-					<div class="side-filter-hd">Created by</div>
-					<div class="side-filter-bd">
-						<input type="text" class="input-medium">
-					</div>
-				</div>
-
-				<div class="side-filter">
-					<div class="side-filter-hd">Content tag</div>
-					<div class="side-filter-bd">
-						<input type="text" class="input-medium">
-					</div>
-				</div>
-
-				<div class="side-filter">
-					<div class="side-filter-hd">Target type</div>
-					<div class="side-filter-bd">
-						<input type="text" class="input-medium">
-					</div>
-				</div>
-
-				<div class="side-filter">
-					<div class="side-filter-hd">Created date</div>
-					<div class="side-filter-bd">
-						<input type="text" name="textfield" value="" placeholder="From" id="t23234" class="input-small datepick">
-						<input type="text" name="textfield" value="" placeholder="To" id="23423" class="input-small datepick">
-					</div>
-				</div>
 			</div>
 		</div>
 
@@ -329,6 +317,7 @@
 										<div class="list-actions-bar">
 											<div class="row-fluid">
 												<div class="span11" style="margin-left:0;">
+													<a href="javascript:void(0)" class="btn" rel="tooltip" title="Refresh"><i class="icon-refresh icon-large"></i></a> 
 													<a href="javascript:void(0)" class="btn" rel="tooltip" title="Toggle todo"><i class="icon-ok-circle icon-large"></i></a> 
 													<a href="javascript:void(0)" class="btn" rel="tooltip" title="Toogle important"><i class="icon-star icon-large"></i></a> 
 													<a href="javascript:void(0)" class="btn" rel="tooltip" title="Hide"><i class="icon-eye-close icon-large"></i></a> 
@@ -365,14 +354,26 @@
 													</div>
 												</div>
 												<div class="span1 tright">
-													<div class="btn-group">
-														<a href="javascript:void(0)" data-toggle="dropdown" class="btn dropdown-toggle"> <i class="icon-cog icon-large"></i></a>
-														<ul class="dropdown-menu pull-right tleft">
-															<li><a href="#">Show 50 per page</a></li>
-															<li><a href="#">Show 100 per page</a></li>
-															<li><a href="#">Show 200 per page</a></li>
-														</ul>
+													
+													<div class="context-popup">
+														<a href="#" data-toggle="dropdown" class='btn dropdown-toggle context-popup-btn'>
+															<i class="icon-cog icon-large"></i>
+														</a>
+														<div class="dropdown-menu context-popup-bd tleft pull-right">
+															<div class="check-line"><input type="radio" class='icheck-me' id="851615" name="34443" data-skin="minimal"><label class='inline' for="851615">First due first</label></div>
+															<div class="check-line"><input type="radio" class='icheck-me' id="532873" name="34443" data-skin="minimal"><label class='inline' for="532873">Open todo first</label></div>
+															<div class="check-line"><input type="radio" class='icheck-me' id="473578" name="34443" data-skin="minimal"><label class='inline' for="473578">Latest created first</label></div>
+															<div class="divider"></div>
+															<div>
+																<div class="check-line"><input type="checkbox" class='icheck-me' id="84999" name="" data-skin="minimal"><label class='inline' for="84999">Hide closed todos</label></div>
+															</div>
+															<div class="divider"></div>
+															<div class="check-line"><input type="radio" class='icheck-me' id="84898" name="66548" data-skin="minimal"><label class='inline' for="84898">Show 50 per page</label></div>
+															<div class="check-line"><input type="radio" class='icheck-me' id="48948" name="66548" data-skin="minimal"><label class='inline' for="48948">Show 100 per page</label></div>
+															<div class="check-line"><input type="radio" class='icheck-me' id="13548" name="66548" data-skin="minimal"><label class='inline' for="13548">Show 200 per page</label></div>
+														</div>
 													</div>
+
 												</div>
 											</div>
 										</div>
@@ -429,7 +430,7 @@
 														</div>
 													</div>
 												</th>
-												<th style="width: 40%;">
+												<th style="width: 35%;">
 													<div class="context-popup">
 														<a href="#" data-toggle="dropdown" class='dropdown-toggle context-popup-btn'>
 															<span>Activity contents <i class="icon-filter"></i></span>
@@ -470,7 +471,7 @@
 														</div>
 													</div>
 												</th>
-												<th style="width: 10%;">
+												<th style="width: 12%;">
 													<div class="context-popup">
 														<a href="#" data-toggle="dropdown" class='dropdown-toggle context-popup-btn'>
 															<span>Created time <i class="icon-filter"></i></span>

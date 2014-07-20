@@ -973,6 +973,9 @@
 .table-list tr.checked td {
   background: #fcf8e3;
 }
+.table-list tr.checked:hover td {
+  background: #fcf8e3;
+}
 .table-list tr.unread td {
   font-weight: bold;
 }
@@ -1061,4 +1064,21 @@
 .list-actions-bar {
   background: #f9f9f9;
   padding: 10px;
+}
+.side-filter-hd {
+  background: #eee;
+  border: none;
+  margin: 0;
+  margin-bottom: 5px;
+  padding: 3px 5px;
+}
+.side-filter-bd ul,
+.side-filter-bd li {
+  list-style: none;
+  line-height: 1.6;
+  margin-left: 5px;
+}
+.side-filter-bd ul a,
+.side-filter-bd li a {
+  color: #333;
 }

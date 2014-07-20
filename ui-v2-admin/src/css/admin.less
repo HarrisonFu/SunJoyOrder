@@ -87,9 +87,15 @@
 	th > a {
 		color: #333;
 	}
-	tr.checked td {
-		background: #fcf8e3;
+	tr.checked {
+		td {
+			background: #fcf8e3;
+		}
+		&:hover td {
+			background: #fcf8e3;
+		}
 	}
+	
 	tr.unread td {
 		font-weight: bold;
 	}
@@ -188,3 +194,21 @@
 	padding: 10px;
 }
 
+.side-filter-hd {
+	background: #eee;
+	border: none;
+	margin: 0;
+	margin-bottom: 5px;
+	padding: 3px 5px;
+}
+
+.side-filter-bd {
+	ul, li {
+		list-style: none;
+		line-height: 1.6;
+		margin-left: 5px;
+		a {
+			color: #333;
+		}
+	}
+}
