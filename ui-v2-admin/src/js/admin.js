@@ -585,4 +585,10 @@ $(function(){
 		$(this).closest(".context-popup").removeClass("open");
 	});
 
+	$(".ui-menu-item").live("click", function(e){
+		e.stopPropagation();
+		e.preventDefault();
+		return false;
+	})
+
 });
