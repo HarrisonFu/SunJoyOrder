@@ -585,7 +585,7 @@ $(function(){
 		$(this).closest(".context-popup").removeClass("open");
 	});
 
-	$(".ui-menu-item").live("click", function(e){
+	$(".ui-menu-item, .context-popup-bd").live("click", function(e){
 		e.stopPropagation();
 		e.preventDefault();
 		return false;
