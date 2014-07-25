@@ -109,7 +109,7 @@
 }
 
 .dockmodal-header .header-action i {
-    background: url(../img/dockmodal-icon.png) no-repeat top left;
+    background: url(dockmodal-icon.png) no-repeat top left;
     vertical-align: top;
     display: inline-block;
     *display: inline;

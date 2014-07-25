@@ -589,7 +589,17 @@ $(function(){
 		e.stopPropagation();
 		e.preventDefault();
 		return false;
-	})
+	});
+
+	$("#bizsocial-btn-add-activity").click(function () {
+        $("#bizsocial-modal-add-activity").dockmodal({
+            initialState:"docked",
+            width:500,
+            minimizedWidth:300,
+            height: 450
+        });
+        return false;
+    });
 
 });
 
