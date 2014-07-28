@@ -755,72 +755,124 @@
 				<div class="activity-add-tabs">
 					<ul class="nav nav-tabs cf">
 						<li class="first active"><a href="#tab-add-activity" data-toggle="tab" >Activity</a></li>
-						<li class=""><a href="#tab-add-meeting" data-toggle="tab">Meeting</a></li>
-						<li class=""><a href="#tab-add-knowledge" data-toggle="tab">Knowledge</a></li>
-						<li class=""><a href="#tab-add-poll" data-toggle="tab">Poll</a></li>
+						<li class=""><a href="#tab-add-todo" data-toggle="tab">Todo</a></li>
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">More <span class="caret"></span></a>
+							<ul class="dropdown-menu" role="menu">
+								<li><a href="#tab-add-poll" data-toggle="tab">Poll</a></li>
+								<li><a href="#tab-add-issue-tracker" data-toggle="tab">Issue tracker</a></li>
+								<li><a href="#tab-add-case-study" data-toggle="tab">Case study</a></li>
+								<li><a href="#tab-add-knowledge" data-toggle="tab">Knowledge</a></li>
+							</ul>
+						</li>
 					</ul>
 				</div>
 				<div class="activity-add-content tab-content">
 					<div id="tab-add-activity" class="tab-pane cf active">
-						<div class="title"><input type="text" placeholder="You're invited to sunjoy new system" class="span12" /> </div>
-						<div class="content"><textarea name="" placeholder="Activity content..." id="" cols="30" rows="5" class="span12 rte-nocontrol"></textarea> </div>
-						<div class="notify spaced small">
-							<div class="row-fluid">
-								<div class="span10">
-									<a href="#" class="grey">Emily Hu</a> <a href="#" class="grey">Harrison Fu</a> <input type="text" name="" id="" placeholder="+ Add people to notify" class="span4 no-margin"> <a href="#">Search &amp; Add</a>
+						<div class="title">
+							<input type="text" placeholder="You're invited to sunjoy new system" class="span12" />
+						</div>
+						<div class="content">
+							<textarea name="" placeholder="Activity content..." id="" cols="30" rows="5" class="span12 rte-nocontrol"></textarea>
+						</div>
+						<div class="row-fluid spaced small">
+							<div class="span2">Notify:</div>
+							<div class="span10">
+								<div style="width: 400px;">
+									<select name="2320" id="130922" multiple="multiple" class="chosen-select">
+										<option value="1" selected>Harrison Fu</option>
+										<option value="2" selected>Michael Beets</option>
+										<option value="3">Jack Chow</option>
+									</select>
 								</div>
-								<div class="span2 tright"><a href="#">Remove all</a></div>
 							</div>
 						</div>
-						<div class="assign">
-							<div class="row-fluid">
-								<div class="span10">
-									<p class="grey">Assigned to Harrison Fu <a href="#">change</a></p>
-								</div>
-								<div class="span2 tright"><div class="btn btn-primary btn-small">Add</div></div>
+						<div class="row-fluid activity-add-footer">
+							<div class="span9">
+								<input type="submit" class="btn btn-primary" value="Save"> 
+								<button class="btn">Cancel</button>
 							</div>
-						</div>
-					</div>
-					<div id="tab-add-meeting" class="tab-pane cf">
-						<div class="title"><input type="text" placeholder="Meeting" class="span12" /> </div>
-						<div class="content"><textarea name="" placeholder="Meeting content..." id="" cols="30" rows="5" class="span12 rte-nocontrol"></textarea> </div>
-						<div class="notify spaced small">
-							<div class="row-fluid">
-								<div class="span10">
-									<a href="#" class="grey">Emily Hu</a> <a href="#" class="grey">Harrison Fu</a> <input type="text" name="" id="" placeholder="+ Add people to notify" class="span4 no-margin"> <a href="#">Search &amp; Add</a>
+							<div class="span3">
+								<div class="check-line">
+									<input type="checkbox" id="3209" class='icheck-me' name="32039" data-skin="square" data-color="blue"> <label class='inline' for="3209">Internal only </label>
 								</div>
-								<div class="span2 tright"><a href="#">Remove all</a></div>
-							</div>
-							
-						</div>
-						<div class="assign">
-							<div class="row-fluid">
-								<div class="span10">
-								</div>
-								<div class="span2 tright"><div class="btn btn-primary btn-small">Add</div></div>
 							</div>
 						</div>
 					</div>
-					<div id="tab-add-knowledge" class="tab-pane cf">
-						<div class="title"><input type="text" placeholder="Knowledge" class="span12" /> </div>
-						<div class="content"><textarea name="" placeholder="Knowledge content..." id="" cols="30" rows="5" class="span12 rte-nocontrol"></textarea> </div>
-						<div class="notify spaced small">
-							<div class="row-fluid">
-								<div class="span10">
-									<input type="text" name="" id="" placeholder="+ Add people to notify" class="span4 no-margin"> <a href="#">Search &amp; Add</a>
-								</div>
-								<div class="span2 tright"><a href="#">Remove all</a></div>
-							</div>
-							
+
+					<div id="tab-add-todo" class="tab-pane cf">
+						<div class="title">
+							<input type="text" placeholder="Harrison's daily to do on Monday" class="span12" />
 						</div>
-						<div class="assign">
-							<div class="row-fluid">
-								<div class="span12">
+						<div class="content">
+							<textarea name="" placeholder="Todo content..." id="" cols="30" rows="5" class="span12 rte-nocontrol"></textarea>
+						</div>
+						<div class="row-fluid">
+							<div class="span2">Due date:</div>
+							<div class="span10">
+								<input type="text" name="" id="" class="input-large datepick" placeholder="Pick a date">
+							</div>
+						</div>
+						<div class="row-fluid">
+							<div class="span2">Assign to:</div>
+							<div class="span10">
+								<div style="width: 400px;">
+									<select name="1393" id="1123" multiple="multiple" class="chosen-select">
+										<option value="1" selected>Harrison Fu</option>
+										<option value="2" selected>Michael Beets</option>
+										<option value="3">Jack Chow</option>
+									</select>
 								</div>
-								<div class="span10 tright"><div class="btn btn-primary btn-small">Add</div></div>
+							</div>
+						</div>
+						<div class="row-fluid">
+							<div class="span2">Nofity:</div>
+							<div class="span10">
+								<div style="width: 400px;">
+									<select name="3902" id="4002" multiple="multiple" class="chosen-select">
+										<option value="1" selected>Harrison Fu</option>
+										<option value="2">Michael Beets</option>
+										<option value="3">Jack Chow</option>
+									</select>
+								</div>
+							</div>
+						</div>
+						<div class="row-fluid">
+							<div class="span2">Status:</div>
+							<div class="span10">
+								<div class="input-large">
+									<select class='chosen-select input-medium' data-nosearch="true">
+										<option value="1" selected>Open</option>
+										<option value="2">Closed</option>
+									</select>
+								</div>
+							</div>
+						</div>
+						<div class="row-fluid">
+							<div class="span2">Priority:</div>
+							<div class="span10">
+								<div class="input-large">
+									<select class='chosen-select input-medium' data-nosearch="true">
+										<option value="1" selected>Priority green</option>
+										<option value="2">Priority red</option>
+										<option value="3">Priority yellow</option>
+									</select>
+								</div>
+							</div>
+						</div>
+						<div class="row-fluid activity-add-footer">
+							<div class="span9">
+								<input type="submit" class="btn btn-primary" value="Save"> 
+								<button class="btn">Cancel</button>
+							</div>
+							<div class="span3">
+								<div class="check-line">
+									<input type="checkbox" id="3209" class='icheck-me' name="32039" data-skin="square" data-color="blue"> <label class='inline' for="3209">Internal only </label>
+								</div>
 							</div>
 						</div>
 					</div>
+
 					<div id="tab-add-poll" class="tab-pane cf">
 						<div class="row-fluid">
 							<div class="span11"><input type="text" name="" value="How did you know about sunjoy product and service?" class="span12" id=""></div>
@@ -831,7 +883,11 @@
 							</div>
 						</div>
 						<div class="row-fluid">
-							<div class="span11"><label for="checkbox2" class="checkbox"><input type="checkbox" class="" name="" id="checkbox2"> allow multi-choice</label></div>
+							<div class="span11">
+								<div class="check-line">
+									<input type="checkbox" id="2898903" class='icheck-me' name="209933" data-skin="square" data-color="blue"> <label class='inline' for="2898903">Allow multi-choice</label>
+								</div>
+							</div>
 						</div>
 
 						<div class="row-fluid poll-option">
@@ -839,33 +895,182 @@
 							<div class="span1 tright"><button type="button" class="close btn-remove-option">&times;</button></div>
 						</div>
 
-						<div class="notify spaced small">
-							<div class="row-fluid">
-								<div class="span10">
-									<input type="text" name="" id="" placeholder="+ Add people to notify" class="span4 no-margin"> <a href="#">Search &amp; Add</a>
+						<div class="row-fluid">
+							<div class="span2">Assign to:</div>
+							<div class="span10">
+								<div style="width: 400px;">
+									<select name="19933" id="230902" multiple="multiple" class="chosen-select">
+										<option value="1" selected>Harrison Fu</option>
+										<option value="2" selected>Michael Beets</option>
+										<option value="3">Jack Chow</option>
+									</select>
 								</div>
-								<div class="span2 tright"><a href="#">Remove all</a></div>
 							</div>
 						</div>
-						<div class="assign">
-							<div class="row-fluid">
-								<div class="span10">
-									<p class="grey">Assigned to Harrison Fu <a href="#">change</a></p>
+						<div class="row-fluid">
+							<div class="span2">Notify:</div>
+							<div class="span10">
+								<div style="width: 400px;">
+									<select name="19493" id="23092" multiple="multiple" class="chosen-select">
+										<option value="1" selected>Harrison Fu</option>
+										<option value="2">Michael Beets</option>
+										<option value="3">Jack Chow</option>
+									</select>
 								</div>
-								<div class="span2 tright"><button class="btn btn-primary btn-small">Add</button></div>
+							</div>
+						</div>
+						<div class="row-fluid activity-add-footer">
+							<div class="span9">
+								<input type="submit" class="btn btn-primary" value="Save"> 
+								<button class="btn">Cancel</button>
+							</div>
+							<div class="span3">
+								<div class="check-line">
+									<input type="checkbox" id="38982" class='icheck-me' name="991029" data-skin="square" data-color="blue"> <label class='inline' for="38982">Internal only </label>
+								</div>
 							</div>
 						</div>
 					</div>
+
+					<div id="tab-add-issue-tracker" class="tab-pane cf">
+						<div class="title">
+							<input type="text" placeholder="Issue tracker" class="span12" />
+						</div>
+						<div class="content">
+							<textarea name="" placeholder="Issue tracker..." id="" cols="30" rows="5" class="span12 rte-nocontrol"></textarea> 
+						</div>
+						<div class="row-fluid">
+							<div class="span2">Assign to:</div>
+							<div class="span10">
+								<div style="width: 400px;">
+									<select name="2651" id="7540" multiple="multiple" class="chosen-select">
+										<option value="1" selected>Harrison Fu</option>
+										<option value="2" selected>Michael Beets</option>
+										<option value="3">Jack Chow</option>
+									</select>
+								</div>
+							</div>
+						</div>
+						<div class="row-fluid">
+							<div class="span2">Notify:</div>
+							<div class="span10">
+								<div style="width: 400px;">
+									<select name="244422" id="23344" multiple="multiple" class="chosen-select">
+										<option value="1" selected>Harrison Fu</option>
+										<option value="2">Michael Beets</option>
+										<option value="3">Jack Chow</option>
+									</select>
+								</div>
+							</div>
+						</div>
+						<div class="row-fluid activity-add-footer">
+							<div class="span9">
+								<input type="submit" class="btn btn-primary" value="Save"> 
+								<button class="btn">Cancel</button>
+							</div>
+							<div class="span3">
+								<div class="check-line">
+									<input type="checkbox" id="325509" class='icheck-me' name="902233" data-skin="square" data-color="blue"> <label class='inline' for="325509">Internal only </label>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div id="tab-add-case-study" class="tab-pane cf">
+						<div class="title">
+							<input type="text" placeholder="Case study" class="span12" />
+						</div>
+						<div class="content">
+							<textarea name="" placeholder="Case study..." id="" cols="30" rows="5" class="span12 rte-nocontrol"></textarea>
+						</div>
+						<div class="row-fluid">
+							<div class="span2">Assign to:</div>
+							<div class="span10">
+								<div style="width: 400px;">
+									<select name="12341" id="67423" multiple="multiple" class="chosen-select">
+										<option value="1" selected>Harrison Fu</option>
+										<option value="2" selected>Michael Beets</option>
+										<option value="3">Jack Chow</option>
+									</select>
+								</div>
+							</div>
+						</div>
+						<div class="row-fluid">
+							<div class="span2">Notify:</div>
+							<div class="span10">
+								<div style="width: 400px;">
+									<select name="2234" id="2344" multiple="multiple" class="chosen-select">
+										<option value="1" selected>Harrison Fu</option>
+										<option value="2">Michael Beets</option>
+										<option value="3">Jack Chow</option>
+									</select>
+								</div>
+							</div>
+						</div>
+						<div class="row-fluid activity-add-footer">
+							<div class="span9">
+								<input type="submit" class="btn btn-primary" value="Save"> 
+								<button class="btn">Cancel</button>
+							</div>
+							<div class="span3">
+								<div class="check-line">
+									<input type="checkbox" id="20933" class='icheck-me' name="39022" data-skin="square" data-color="blue"> <label class='inline' for="20933">Internal only </label>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div id="tab-add-knowledge" class="tab-pane cf">
+						<div class="title">
+							<input type="text" placeholder="Knowledge" class="span12" />
+						</div>
+						<div class="content">
+							<textarea name="" placeholder="Knowledge content..." id="" cols="30" rows="5" class="span12 rte-nocontrol"></textarea>
+						</div>
+						<div class="row-fluid">
+							<div class="span2">Assign to:</div>
+							<div class="span10">
+								<div style="width: 400px;">
+									<select name="230992" id="734534" multiple="multiple" class="chosen-select">
+										<option value="1" selected>Harrison Fu</option>
+										<option value="2" selected>Michael Beets</option>
+										<option value="3">Jack Chow</option>
+									</select>
+								</div>
+							</div>
+						</div>
+						<div class="row-fluid">
+							<div class="span2">Notify:</div>
+							<div class="span10">
+								<div style="width: 400px;">
+									<select name="23423" id="73443" multiple="multiple" class="chosen-select">
+										<option value="1" selected>Harrison Fu</option>
+										<option value="2">Michael Beets</option>
+										<option value="3">Jack Chow</option>
+									</select>
+								</div>
+							</div>
+						</div>
+						<div class="row-fluid activity-add-footer">
+							<div class="span9">
+								<input type="submit" class="btn btn-primary" value="Save"> 
+								<button class="btn">Cancel</button>
+							</div>
+							<div class="span3">
+								<div class="check-line">
+									<input type="checkbox" id="234234" class='icheck-me' name="2365" data-skin="square" data-color="blue"> <label class='inline' for="234234">Internal only </label>
+								</div>
+							</div>
+						</div>
+					</div>
+
+
 				</div>
+
 			</div>
 		</div>
 
-		<div class="row-fluid">
-			<div class="span12">
-				<input type="submit" class="btn btn-primary" value="Save"> 
-				<button class="btn">Cancel</button>
-			</div>
-		</div>
+		
 			
 	</div>
 		

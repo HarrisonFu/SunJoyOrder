@@ -594,9 +594,9 @@ $(function(){
 	$("#bizsocial-btn-add-activity").click(function () {
         $("#bizsocial-modal-add-activity").dockmodal({
             initialState:"docked",
-            width:500,
+            width: 600,
             minimizedWidth:300,
-            height: 450
+            height: 560
         });
         return false;
     });

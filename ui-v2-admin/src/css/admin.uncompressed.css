@@ -1084,3 +1084,19 @@
 .side-filter-bd li a {
   color: #333;
 }
+.activity-add-content {
+  height: 100%;
+}
+.activity-add-content .tab-pane {
+  height: 100%;
+  padding-bottom: 56px;
+}
+.activity-add-content .activity-add-footer {
+  padding: 10px;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  background: #f9f9f9;
+  border-top: 1px solid #eee;
+}
