@@ -195,6 +195,7 @@
 
 .list-actions-bar {
 	padding: 10px 0;
+	background: #fff;
 }
 
 .side-filter-hd {
@@ -216,11 +217,52 @@
 	}
 }
 
+.dockmodal-body {
+	padding: 0;
+	position: relative;
+}
+.activity-add-tabs {
+	.nav-tabs {
+		background: #eee;
+		border: none;
+		li {
+			margin: 0;
+			a {
+				color: #666;
+				border-radius: 0;
+				padding: 10px 20px;
+				border: none;
+				.caret {
+					color: #666;
+				}
+				&:hover {
+					color: #222;
+				}
+			}
+			&.active {
+				a {
+					padding: 10px 20px;
+					border-radius: 0;
+					font-weight: bold;
+					border: none;
+					color: #222;
+					margin: 0;
+				}
+			}
+		}
+	}
+}
 .activity-add-content {
 	height: 100%;
 	.tab-pane {
-		height: 100%;
+		height: 464px;
 		padding-bottom: 56px;
+		// position: relative;
+		overflow: auto;
+	}
+
+	.activity-add-body {
+		padding: 10px 15px;
 	}
 
 	.activity-add-footer {

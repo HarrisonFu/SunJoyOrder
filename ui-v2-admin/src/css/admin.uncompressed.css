@@ -534,6 +534,7 @@
   display: inline-block;
   *display: inline;
   /* IE7 inline-block hack */
+
   *zoom: 1;
 }
 .activity-thread .btn-section-expand.expanded i.icon-chevron-down {
@@ -554,6 +555,7 @@
   display: inline-block;
   *display: inline;
   /* IE7 inline-block hack */
+
   *zoom: 1;
   padding: 1px 5px 1px 23px;
   background: #f6f6f6 url(../img/admin/icon-act-tag-s.png) 3px center no-repeat;
@@ -567,6 +569,7 @@
   display: inline-block;
   *display: inline;
   /* IE7 inline-block hack */
+
   *zoom: 1;
   float: left;
 }
@@ -574,6 +577,7 @@
   display: inline-block;
   *display: inline;
   /* IE7 inline-block hack */
+
   *zoom: 1;
   margin-left: 5px;
   padding-left: 3px;
@@ -603,6 +607,7 @@
   display: inline-block;
   *display: inline;
   /* IE7 inline-block hack */
+
   *zoom: 1;
   width: 104px;
   height: 16px;
@@ -614,6 +619,7 @@
   display: inline-block;
   *display: inline;
   /* IE7 inline-block hack */
+
   *zoom: 1;
   width: 104px;
   height: 16px;
@@ -625,6 +631,7 @@
   display: inline-block;
   *display: inline;
   /* IE7 inline-block hack */
+
   *zoom: 1;
   width: 104px;
   height: 16px;
@@ -636,6 +643,7 @@
   display: inline-block;
   *display: inline;
   /* IE7 inline-block hack */
+
   *zoom: 1;
   width: 104px;
   height: 16px;
@@ -647,6 +655,7 @@
   display: inline-block;
   *display: inline;
   /* IE7 inline-block hack */
+
   *zoom: 1;
   width: 104px;
   height: 16px;
@@ -675,6 +684,7 @@
   display: inline-block;
   *display: inline;
   /* IE7 inline-block hack */
+
   *zoom: 1;
   margin: 0 2%  0 0;
 }
@@ -689,6 +699,7 @@
   display: inline-block;
   *display: inline;
   /* IE7 inline-block hack */
+
   *zoom: 1;
 }
 .act-voting .act-voting-number {
@@ -696,6 +707,7 @@
   display: inline-block;
   *display: inline;
   /* IE7 inline-block hack */
+
   *zoom: 1;
 }
 .act-voting-edit {
@@ -712,6 +724,7 @@
   display: inline-block;
   *display: inline;
   /* IE7 inline-block hack */
+
   *zoom: 1;
 }
 .act-voting-edit .act-voting-bar {
@@ -721,6 +734,7 @@
   display: inline-block;
   *display: inline;
   /* IE7 inline-block hack */
+
   *zoom: 1;
   margin: 0 10px;
 }
@@ -735,6 +749,7 @@
   display: inline-block;
   *display: inline;
   /* IE7 inline-block hack */
+
   *zoom: 1;
 }
 #tab-order-activity .activity-add .nav-tabs {
@@ -780,6 +795,7 @@
   display: inline-block;
   *display: inline;
   /* IE7 inline-block hack */
+
   *zoom: 1;
   float: none;
 }
@@ -802,6 +818,7 @@
   display: inline-block;
   *display: inline;
   /* IE7 inline-block hack */
+
   *zoom: 1;
   padding: 1px 5px;
   background: #DEE7FB;
@@ -814,6 +831,7 @@
   display: inline-block;
   *display: inline;
   /* IE7 inline-block hack */
+
   *zoom: 1;
   float: left;
 }
@@ -821,6 +839,7 @@
   display: inline-block;
   *display: inline;
   /* IE7 inline-block hack */
+
   *zoom: 1;
   margin-left: 5px;
   padding-left: 3px;
@@ -842,6 +861,7 @@
   display: inline-block;
   *display: inline;
   /* IE7 inline-block hack */
+
   *zoom: 1;
 }
 .dropdown-menu-group li.selected a {
@@ -922,6 +942,7 @@
   display: inline-block;
   *display: inline;
   /* IE7 inline-block hack */
+
   *zoom: 1;
   user-select: none;
   cursor: pointer;
@@ -1066,6 +1087,7 @@
 }
 .list-actions-bar {
   padding: 10px 0;
+  background: #fff;
 }
 .side-filter-hd {
   background: #eee;
@@ -1084,12 +1106,47 @@
 .side-filter-bd li a {
   color: #333;
 }
+.dockmodal-body {
+  padding: 0;
+  position: relative;
+}
+.activity-add-tabs .nav-tabs {
+  background: #eee;
+  border: none;
+}
+.activity-add-tabs .nav-tabs li {
+  margin: 0;
+}
+.activity-add-tabs .nav-tabs li a {
+  color: #666;
+  border-radius: 0;
+  padding: 10px 20px;
+  border: none;
+}
+.activity-add-tabs .nav-tabs li a .caret {
+  color: #666;
+}
+.activity-add-tabs .nav-tabs li a:hover {
+  color: #222;
+}
+.activity-add-tabs .nav-tabs li.active a {
+  padding: 10px 20px;
+  border-radius: 0;
+  font-weight: bold;
+  border: none;
+  color: #222;
+  margin: 0;
+}
 .activity-add-content {
   height: 100%;
 }
 .activity-add-content .tab-pane {
-  height: 100%;
+  height: 464px;
   padding-bottom: 56px;
+  overflow: auto;
+}
+.activity-add-content .activity-add-body {
+  padding: 10px 15px;
 }
 .activity-add-content .activity-add-footer {
   padding: 10px;
