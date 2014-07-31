@@ -591,137 +591,169 @@ $(function(){
 		return false;
 	});
 
+
+	if ($('textarea.rte-simple').length > 0) {
+		$('textarea.rte-simple').tinymce({
+
+			// Location of TinyMCE script
+			script_url : '../js/plugins/jquery.tinymce/3.5.8/tiny_mce.js',
+
+			width : "100%",
+
+			forced_root_block : '',
+
+			// General options
+			theme : "advanced",
+			plugins : "autoresize,autolink,lists,pagebreak,style,layer,table,save,advhr,advimage,advlink,emotions,iespell,inlinepopups,insertdatetime,preview,media,searchreplace,print,contextmenu,paste,directionality,fullscreen,noneditable,visualchars,nonbreaking,xhtmlxtras,template,advlist",
+
+			// Theme options
+			theme : "advanced",
+		    theme_advanced_buttons1 : "mylistbox,mysplitbutton,bold,italic,underline,backcolor,forecolor,separator,strikethrough,justifyleft,justifycenter,justifyright,justifyfull,bullist,numlist,undo,redo,link,unlink",
+		    theme_advanced_buttons2 : "",
+		    theme_advanced_buttons3 : "",
+			theme_advanced_toolbar_location : "top",
+			theme_advanced_toolbar_align : "left",
+			theme_advanced_statusbar_location : "",
+			theme_advanced_resizing : false,
+
+			autoresize_min_height: "200",
+			autoresize_max_height: "400"
+		});
+	}
+
+
+	if ($('textarea.rte-email').length > 0) {
+		$('textarea.rte-email').tinymce({
+
+			// Location of TinyMCE script
+			script_url : '../js/plugins/jquery.tinymce/3.5.8/tiny_mce.js',
+
+			width : "100%",
+
+			forced_root_block : '',
+
+			// General options
+			theme : "advanced",
+			plugins : "autoresize,autolink,lists,pagebreak,style,layer,table,save,advhr,advimage,advlink,emotions,iespell,inlinepopups,insertdatetime,preview,media,searchreplace,print,contextmenu,paste,directionality,fullscreen,noneditable,visualchars,nonbreaking,xhtmlxtras,template,advlist",
+
+			// Theme options
+			theme : "advanced",
+		    theme_advanced_buttons1 : "mylistbox,mysplitbutton,bold,italic,underline,backcolor,forecolor,separator,strikethrough,justifyleft,justifycenter,justifyright,justifyfull,bullist,numlist,undo,redo,link,unlink",
+		    theme_advanced_buttons2 : "",
+		    theme_advanced_buttons3 : "",
+			theme_advanced_toolbar_location : "top",
+			theme_advanced_toolbar_align : "left",
+			theme_advanced_statusbar_location : "",
+			theme_advanced_resizing : false,
+
+			autoresize_min_height: "250",
+			autoresize_max_height: "400"
+		});
+	}
+	
+
+	
+
+	if ($('textarea.rte-nocontrol').length > 0) {
+		$('textarea.rte-nocontrol').tinymce({
+
+			// Location of TinyMCE script
+			script_url : '../js/plugins/jquery.tinymce/3.5.8/tiny_mce.js',
+
+			width : "100%",
+
+			forced_root_block : '',
+
+			// General options
+			theme : "advanced",
+			plugins : "autoresize,autolink,lists,pagebreak,style,layer,table,save,advhr,advimage,advlink,emotions,iespell,inlinepopups,insertdatetime,preview,media,searchreplace,print,contextmenu,paste,directionality,fullscreen,noneditable,visualchars,nonbreaking,xhtmlxtras,template,advlist",
+
+			// Theme options
+			theme : "advanced",
+		    theme_advanced_buttons1 : "",
+		    theme_advanced_buttons2 : "",
+		    theme_advanced_buttons3 : "",
+			theme_advanced_toolbar_location : "",
+			theme_advanced_toolbar_align : "",
+			theme_advanced_statusbar_location : "",
+			theme_advanced_resizing : false,
+
+			autoresize_min_height: "100",
+			autoresize_max_height: "200"
+		});
+	}
+	
+
+	if ($('textarea.rte-nocontrol-large').length > 0) {
+		$('textarea.rte-nocontrol-large').tinymce({
+
+			// Location of TinyMCE script
+			script_url : '../js/plugins/jquery.tinymce/3.5.8/tiny_mce.js',
+
+			width : "100%",
+
+			forced_root_block : '',
+
+			// General options
+			theme : "advanced",
+			plugins : "autoresize,autolink,lists,pagebreak,style,layer,table,save,advhr,advimage,advlink,emotions,iespell,inlinepopups,insertdatetime,preview,media,searchreplace,print,contextmenu,paste,directionality,fullscreen,noneditable,visualchars,nonbreaking,xhtmlxtras,template,advlist",
+
+			// Theme options
+			theme : "advanced",
+		    theme_advanced_buttons1 : "",
+		    theme_advanced_buttons2 : "",
+		    theme_advanced_buttons3 : "",
+			theme_advanced_toolbar_location : "",
+			theme_advanced_toolbar_align : "",
+			theme_advanced_statusbar_location : "",
+			theme_advanced_resizing : false,
+
+			autoresize_min_height: "200",
+			autoresize_max_height: "300"
+		});
+	}
+
 	$("#bizsocial-modal-add-activity").dockmodal({
-	        initialState:"minimized",
+        initialState:"minimized",
+        width: 600,
+        minimizedWidth:300,
+        height: "65%",
+        open: function( event, dialog ) {
+        	$("#bizsocial-modal-add-activity").removeClass("none");
+        }, 
+        close: function( event, dialog ) {
+        	$("#bizsocial-modal-add-activity").addClass("none");
+        }
+    });
+
+    $("#bizsocial-btn-add-activity").click(function () {
+		$("#bizsocial-modal-add-activity").dockmodal({
+	        initialState:"docked",
 	        width: 600,
 	        minimizedWidth:300,
-	        height: 560,
-	        showClose: false,
-	        create: function( event, dialog ) {
+	        height: "65%",
+	        open: function( event, dialog ) {
 	        	$("#bizsocial-modal-add-activity").removeClass("none");
 	        }, 
 	        close: function( event, dialog ) {
 	        	$("#bizsocial-modal-add-activity").addClass("none");
 	        }
 	    });
-
-	
-
-	$("#bizsocial-btn-add-activity").click(function () {
-		$("#bizsocial-modal-add-activity").dockmodal("restore");
         return false;
     });
 
-    $('textarea.rte-simple').tinymce({
+    $(".nav-tabs .dropdown-menu > li > a").bind("click", function(){
+    	var tabName = $(this).html();
+    	var $moreTab = $(this).parent().parent().prev(".dropdown-toggle");
+    	$moreTab.html(tabName + ' <span class="caret"></span>');
+    });
 
-		// Location of TinyMCE script
-		script_url : '../js/plugins/jquery.tinymce/3.5.8/tiny_mce.js',
+    $(".nav-tabs > li > a").bind("click", function(){
+    	var $moreTab = $(this).parent().siblings(".dropdown").find(".dropdown-toggle");
+    	$moreTab.html("More" + ' <span class="caret"></span>');
+    });
 
-		width : "100%",
-
-		forced_root_block : '',
-
-		// General options
-		theme : "advanced",
-		plugins : "autoresize,autolink,lists,pagebreak,style,layer,table,save,advhr,advimage,advlink,emotions,iespell,inlinepopups,insertdatetime,preview,media,searchreplace,print,contextmenu,paste,directionality,fullscreen,noneditable,visualchars,nonbreaking,xhtmlxtras,template,advlist",
-
-		// Theme options
-		theme : "advanced",
-	    theme_advanced_buttons1 : "mylistbox,mysplitbutton,bold,italic,underline,backcolor,forecolor,separator,strikethrough,justifyleft,justifycenter,justifyright,justifyfull,bullist,numlist,undo,redo,link,unlink",
-	    theme_advanced_buttons2 : "",
-	    theme_advanced_buttons3 : "",
-		theme_advanced_toolbar_location : "top",
-		theme_advanced_toolbar_align : "left",
-		theme_advanced_statusbar_location : "",
-		theme_advanced_resizing : false,
-
-		autoresize_min_height: "200",
-		autoresize_max_height: "400"
-	});
-
-	$('textarea.rte-email').tinymce({
-
-		// Location of TinyMCE script
-		script_url : '../js/plugins/jquery.tinymce/3.5.8/tiny_mce.js',
-
-		width : "100%",
-
-		forced_root_block : '',
-
-		// General options
-		theme : "advanced",
-		plugins : "autoresize,autolink,lists,pagebreak,style,layer,table,save,advhr,advimage,advlink,emotions,iespell,inlinepopups,insertdatetime,preview,media,searchreplace,print,contextmenu,paste,directionality,fullscreen,noneditable,visualchars,nonbreaking,xhtmlxtras,template,advlist",
-
-		// Theme options
-		theme : "advanced",
-	    theme_advanced_buttons1 : "mylistbox,mysplitbutton,bold,italic,underline,backcolor,forecolor,separator,strikethrough,justifyleft,justifycenter,justifyright,justifyfull,bullist,numlist,undo,redo,link,unlink",
-	    theme_advanced_buttons2 : "",
-	    theme_advanced_buttons3 : "",
-		theme_advanced_toolbar_location : "top",
-		theme_advanced_toolbar_align : "left",
-		theme_advanced_statusbar_location : "",
-		theme_advanced_resizing : false,
-
-		autoresize_min_height: "250",
-		autoresize_max_height: "400"
-	});
-
-	
-
-
-	$('textarea.rte-nocontrol').tinymce({
-
-		// Location of TinyMCE script
-		script_url : '../js/plugins/jquery.tinymce/3.5.8/tiny_mce.js',
-
-		width : "100%",
-
-		forced_root_block : '',
-
-		// General options
-		theme : "advanced",
-		plugins : "autoresize,autolink,lists,pagebreak,style,layer,table,save,advhr,advimage,advlink,emotions,iespell,inlinepopups,insertdatetime,preview,media,searchreplace,print,contextmenu,paste,directionality,fullscreen,noneditable,visualchars,nonbreaking,xhtmlxtras,template,advlist",
-
-		// Theme options
-		theme : "advanced",
-	    theme_advanced_buttons1 : "",
-	    theme_advanced_buttons2 : "",
-	    theme_advanced_buttons3 : "",
-		theme_advanced_toolbar_location : "",
-		theme_advanced_toolbar_align : "",
-		theme_advanced_statusbar_location : "",
-		theme_advanced_resizing : false,
-
-		autoresize_min_height: "100",
-		autoresize_max_height: "200"
-	});
-
-	$('textarea.rte-nocontrol-large').tinymce({
-
-		// Location of TinyMCE script
-		script_url : '../js/plugins/jquery.tinymce/3.5.8/tiny_mce.js',
-
-		width : "100%",
-
-		forced_root_block : '',
-
-		// General options
-		theme : "advanced",
-		plugins : "autoresize,autolink,lists,pagebreak,style,layer,table,save,advhr,advimage,advlink,emotions,iespell,inlinepopups,insertdatetime,preview,media,searchreplace,print,contextmenu,paste,directionality,fullscreen,noneditable,visualchars,nonbreaking,xhtmlxtras,template,advlist",
-
-		// Theme options
-		theme : "advanced",
-	    theme_advanced_buttons1 : "",
-	    theme_advanced_buttons2 : "",
-	    theme_advanced_buttons3 : "",
-		theme_advanced_toolbar_location : "",
-		theme_advanced_toolbar_align : "",
-		theme_advanced_statusbar_location : "",
-		theme_advanced_resizing : false,
-
-		autoresize_min_height: "200",
-		autoresize_max_height: "300"
-	});
+	// $("#bizsocial-modal-add-activity").addClass("none");
 
 });
 

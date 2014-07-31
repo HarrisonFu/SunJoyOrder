@@ -4,6 +4,8 @@
 .tcenter,.table td.center{text-align:center}
 .tright,.table td.tright{text-align:right}
 .tleft,.table td.tleft{text-align:left}
+.spaced-right{margin-right:10px}
+.nowrap{white-space:nowrap}
 #left{background:none}
 #navigation,#content{min-width:992px}
 .badge .close{float:none;line-height:14px;position:relative;top:-3px;left:2px}
@@ -172,7 +174,7 @@
 .list-actions-bar{padding:10px 0;background:#fff}
 .side-filter-hd{background:#eee;border:none;margin:0;margin-bottom:5px;padding:3px 5px}
 .side-filter-bd ul,.side-filter-bd li{list-style:none;line-height:1.6;margin-left:5px}.side-filter-bd ul a,.side-filter-bd li a{color:#333}
-.dockmodal-body{padding:0;position:relative}
+.dockmodal-body{padding:0}
 .activity-add-tabs .nav-tabs{background:#eee;border:none}.activity-add-tabs .nav-tabs li{margin:0}.activity-add-tabs .nav-tabs li a{color:#666;border-radius:0;padding:10px 20px;border:none}.activity-add-tabs .nav-tabs li a .caret{color:#666}
 .activity-add-tabs .nav-tabs li a:hover{color:#222}
 .activity-add-tabs .nav-tabs li.active a{padding:10px 20px;border-radius:0;font-weight:bold;border:none;color:#222;margin:0}
