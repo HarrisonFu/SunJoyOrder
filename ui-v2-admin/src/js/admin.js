@@ -713,7 +713,7 @@ $(function(){
 	}
 
 	$("#bizsocial-modal-add-activity").dockmodal({
-        initialState:"docked",
+        initialState:"minimized",
         width: 650,
         minimizedWidth:300,
         height: 550,
