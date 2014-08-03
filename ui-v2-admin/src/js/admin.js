@@ -22,7 +22,7 @@ $(function(){
 		}
 	});
 
-	$('.date').datepicker();
+	$('.datepick').datepicker();
 
 	//Homepage admin
 	$( ".hp-edit-section-items" ).sortable({ axis: "x", containment: "parent", cursor: "move" });
@@ -581,7 +581,7 @@ $(function(){
 		e.stopPropagation();
 	});
 
-	$(".context-popup-bd .btn-cancel").bind("click", function(e){
+	$(".context-popup-bd .btn-cancel, .context-popup-bd .btn-confirm").bind("click", function(e){
 		$(this).closest(".context-popup").removeClass("open");
 	});
 
@@ -616,8 +616,7 @@ $(function(){
 			theme_advanced_statusbar_location : "",
 			theme_advanced_resizing : false,
 
-			autoresize_min_height: "200",
-			autoresize_max_height: "400"
+			autoresize_min_height: "200"
 		});
 	}
 
@@ -714,10 +713,11 @@ $(function(){
 	}
 
 	$("#bizsocial-modal-add-activity").dockmodal({
-        initialState:"minimized",
-        width: 600,
+        initialState:"docked",
+        width: 650,
         minimizedWidth:300,
-        height: "65%",
+        height: 550,
+        poppedOutDistance: "5%",
         open: function( event, dialog ) {
         	$("#bizsocial-modal-add-activity").removeClass("none");
         }, 
@@ -729,9 +729,10 @@ $(function(){
     $("#bizsocial-btn-add-activity").click(function () {
 		$("#bizsocial-modal-add-activity").dockmodal({
 	        initialState:"docked",
-	        width: 600,
+	        width: 650,
 	        minimizedWidth:300,
-	        height: "65%",
+	        height: 550,
+        	poppedOutDistance: "5%",
 	        open: function( event, dialog ) {
 	        	$("#bizsocial-modal-add-activity").removeClass("none");
 	        }, 

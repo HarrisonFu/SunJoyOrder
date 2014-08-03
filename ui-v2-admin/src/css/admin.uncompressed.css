@@ -1118,6 +1118,7 @@
 .activity-add-tabs .nav-tabs {
   background: #eee;
   border: none;
+  margin-bottom: 10px;
 }
 .activity-add-tabs .nav-tabs li {
   margin: 0;
