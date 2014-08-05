@@ -714,9 +714,9 @@ $(function(){
 
 	$("#bizsocial-modal-add-activity").dockmodal({
         initialState:"minimized",
-        width: 650,
+        width: 680,
         minimizedWidth:300,
-        height: 550,
+        height: 600,
         poppedOutDistance: "5%",
         open: function( event, dialog ) {
         	$("#bizsocial-modal-add-activity").removeClass("none");
@@ -729,9 +729,9 @@ $(function(){
     $("#bizsocial-btn-add-activity").click(function () {
 		$("#bizsocial-modal-add-activity").dockmodal({
 	        initialState:"docked",
-	        width: 650,
+	        width: 680,
 	        minimizedWidth:300,
-	        height: 550,
+	        height: 600,
         	poppedOutDistance: "5%",
 	        open: function( event, dialog ) {
 	        	$("#bizsocial-modal-add-activity").removeClass("none");
