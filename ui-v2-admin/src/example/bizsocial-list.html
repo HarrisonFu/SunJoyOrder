@@ -788,26 +788,10 @@
 						<div class="row-fluid activity-add-footer">
 							<div class="span12">
 
-								<div class="row-fluid" style="max-width: 800px;">
+								<div class="row-fluid spaced" style="max-width: 800px;">
 									<div class="span12">
 
 										<div class="row-fluid">
-											<div class="span2 tright">
-												Assign to:
-											</div>
-											<div class="span9">
-												<div style="width: 400px;">
-													<select name="2320" id="130922" multiple="multiple" class="chosen-select">
-														<option value="1" selected>Harrison Fu</option>
-														<option value="2" selected>Michael Beets</option>
-														<option value="3">Jack Chow</option>
-													</select>
-												</div>
-											</div>
-										</div>
-										<!-- end of assign -->
-
-										<div class="row-fluid spaced">
 											<div class="span2 tright">
 												Notify:
 											</div>
@@ -822,6 +806,7 @@
 											</div>
 										</div>
 										<!-- end of notify -->
+
 									</div>
 								</div>
 
@@ -867,6 +852,13 @@
 										<!-- end of tags -->
 
 										<div class="pull-left spaced-right">
+											<div class="check-line nowrap" style="width: 68px;">
+												<input type="checkbox" id="68612" class='icheck-me' name="73574" data-skin="square" data-color="blue"> <label class='inline' for="68612">Email </label>
+											</div>
+										</div>
+
+
+										<div class="pull-left spaced-right">
 											<div class="check-line nowrap">
 												<input type="checkbox" id="3209" class='icheck-me' name="32039" data-skin="square" data-color="blue"> <label class='inline' for="3209">Internal only </label>
 											</div>
@@ -895,8 +887,20 @@
 						<div class="row-fluid activity-add-footer">
 							<div class="span12">
 
-								<div class="row-fluid" style="max-width: 800px;">
+								<div class="row-fluid spaced" style="max-width: 800px;">
 									<div class="span12">
+
+										<div class="row-fluid">
+											<div class="span2 tright">
+												Due date:
+											</div>
+											<div class="span9">
+												<div style="width: 400px;">
+													<input type="text" name="" id="" class="input-medium datepick">
+												</div>
+											</div>
+										</div>
+										<!-- end of due date -->
 
 										<div class="row-fluid">
 											<div class="span2 tright">
@@ -914,7 +918,7 @@
 										</div>
 										<!-- end of assign -->
 
-										<div class="row-fluid spaced">
+										<div class="row-fluid">
 											<div class="span2 tright">
 												Notify:
 											</div>
@@ -924,6 +928,22 @@
 														<option value="1" selected>Harrison Fu</option>
 														<option value="2">Michael Beets</option>
 														<option value="3">Jack Chow</option>
+													</select>
+												</div>
+											</div>
+										</div>
+										<!-- end of notify -->
+
+										<div class="row-fluid">
+											<div class="span2 tright">
+												Priority:
+											</div>
+											<div class="span9">
+												<div style="width: 400px;">
+													<select class='chosen-select input-large' data-nosearch="true">
+														<option value="1" selected>Priority green</option>
+														<option value="2">Priority red</option>
+														<option value="3">Priority yellow</option>
 													</select>
 												</div>
 											</div>
@@ -997,7 +1017,7 @@
 										</div>
 										<!-- end of status -->
 
-										<div class="pull-left spaced-right">
+										<!-- <div class="pull-left spaced-right">
 											<div class="context-popup dropup">
 												<a href="javascript:void(0)" data-toggle="dropdown" class="btn dropdown-toggle context-popup-btn" rel="tooltip" title="Priority"><i class="glyphicon-circle_exclamation_mark"></i></a>
 
@@ -1018,8 +1038,14 @@
 													</div>
 												</div>
 											</div>
-										</div>
+										</div> -->
 										<!-- end of priority -->
+
+										<div class="pull-left spaced-right">
+											<div class="check-line nowrap" style="width: 68px;">
+												<input type="checkbox" id="24767" class='icheck-me' name="34632" data-skin="square" data-color="blue"> <label class='inline' for="24767">Email </label>
+											</div>
+										</div>
 
 										<div class="pull-left spaced-right">
 											<div class="check-line nowrap">
@@ -1064,12 +1090,24 @@
 						<div class="row-fluid activity-add-footer">
 							<div class="span12">
 
-								<div class="row-fluid" style="max-width: 800px;">
+								<div class="row-fluid spaced" style="max-width: 800px;">
 									<div class="span12">
 
 										<div class="row-fluid">
 											<div class="span2 tright">
-												Assign to:
+												Due date:
+											</div>
+											<div class="span9">
+												<div style="width: 400px;">
+													<input type="text" name="" id="" class="input-medium datepick">
+												</div>
+											</div>
+										</div>
+										<!-- end of due date -->
+
+										<div class="row-fluid">
+											<div class="span2 tright">
+												Audience:
 											</div>
 											<div class="span9">
 												<div style="width: 400px;">
@@ -1083,7 +1121,7 @@
 										</div>
 										<!-- end of assign -->
 
-										<div class="row-fluid spaced">
+										<div class="row-fluid">
 											<div class="span2 tright">
 												Notify:
 											</div>
@@ -1143,6 +1181,35 @@
 										<!-- end of tags -->
 
 										<div class="pull-left spaced-right">
+											<div class="context-popup dropup">
+												<a href="javascript:void(0)" data-toggle="dropdown" class="btn dropdown-toggle context-popup-btn" rel="tooltip" title="Status"><i class="icon-ok-circle"></i></a>
+
+												<div class="dropdown-menu context-popup-bd">
+													<div class="row-fluid spaced">
+														<div class="span12">
+															<div class="input-large">
+																<select class='chosen-select input-large' data-nosearch="true">
+																	<option value="1" selected>Open</option>
+																	<option value="2">Closed</option>
+																</select>
+															</div>
+														</div>
+													</div>
+													<div>
+														<button class="btn btn-primary btn-confirm">OK</button>
+													</div>
+												</div>
+											</div>
+										</div>
+										<!-- end of status -->
+
+										<div class="pull-left spaced-right">
+											<div class="check-line nowrap" style="width: 68px;">
+												<input type="checkbox" id="24767" class='icheck-me' name="34632" data-skin="square" data-color="blue"> <label class='inline' for="24767">Email </label>
+											</div>
+										</div>
+
+										<div class="pull-left spaced-right">
 											<div class="check-line nowrap">
 												<input type="checkbox" id="38982" class='icheck-me' name="991029" data-skin="square" data-color="blue"> <label class='inline' for="38982">Internal only </label>
 											</div>
@@ -1174,8 +1241,20 @@
 						<div class="row-fluid activity-add-footer">
 							<div class="span12">
 
-								<div class="row-fluid" style="max-width: 800px;">
+								<div class="row-fluid spaced" style="max-width: 800px;">
 									<div class="span12">
+
+										<div class="row-fluid">
+											<div class="span2 tright">
+												Due date:
+											</div>
+											<div class="span9">
+												<div style="width: 400px;">
+													<input type="text" name="" id="" class="input-medium datepick">
+												</div>
+											</div>
+										</div>
+										<!-- end of due date -->
 
 										<div class="row-fluid">
 											<div class="span2 tright">
@@ -1193,7 +1272,7 @@
 										</div>
 										<!-- end of assign -->
 
-										<div class="row-fluid spaced">
+										<div class="row-fluid">
 											<div class="span2 tright">
 												Notify:
 											</div>
@@ -1208,6 +1287,18 @@
 											</div>
 										</div>
 										<!-- end of notify -->
+
+										<div class="row-fluid">
+											<div class="span2 tright">
+												Loss (estimate):
+											</div>
+											<div class="span9">
+												<div style="width: 400px;">
+													<input type="text" name="" id="" class="input-medium">
+												</div>
+											</div>
+										</div>
+
 									</div>
 								</div>
 
@@ -1253,6 +1344,35 @@
 										<!-- end of tags -->
 
 										<div class="pull-left spaced-right">
+											<div class="context-popup dropup">
+												<a href="javascript:void(0)" data-toggle="dropdown" class="btn dropdown-toggle context-popup-btn" rel="tooltip" title="Status"><i class="icon-ok-circle"></i></a>
+
+												<div class="dropdown-menu context-popup-bd">
+													<div class="row-fluid spaced">
+														<div class="span12">
+															<div class="input-large">
+																<select class='chosen-select input-large' data-nosearch="true">
+																	<option value="1" selected>Open</option>
+																	<option value="2">Closed</option>
+																</select>
+															</div>
+														</div>
+													</div>
+													<div>
+														<button class="btn btn-primary btn-confirm">OK</button>
+													</div>
+												</div>
+											</div>
+										</div>
+										<!-- end of status -->
+
+										<div class="pull-left spaced-right">
+											<div class="check-line nowrap" style="width: 68px;">
+												<input type="checkbox" id="24767" class='icheck-me' name="34632" data-skin="square" data-color="blue"> <label class='inline' for="24767">Email </label>
+											</div>
+										</div>
+
+										<div class="pull-left spaced-right">
 											<div class="check-line nowrap">
 												<input type="checkbox" id="524325" class='icheck-me' name="2347734" data-skin="square" data-color="blue"> <label class='inline' for="524325">Internal only </label>
 											</div>
@@ -1283,8 +1403,20 @@
 						<div class="row-fluid activity-add-footer">
 							<div class="span12">
 
-								<div class="row-fluid" style="max-width: 800px;">
+								<div class="row-fluid spaced" style="max-width: 800px;">
 									<div class="span12">
+
+										<div class="row-fluid">
+											<div class="span2 tright">
+												Due date:
+											</div>
+											<div class="span9">
+												<div style="width: 400px;">
+													<input type="text" name="" id="" class="input-medium datepick">
+												</div>
+											</div>
+										</div>
+										<!-- end of due date -->
 
 										<div class="row-fluid">
 											<div class="span2 tright">
@@ -1302,7 +1434,7 @@
 										</div>
 										<!-- end of assign -->
 
-										<div class="row-fluid spaced">
+										<div class="row-fluid">
 											<div class="span2 tright">
 												Notify:
 											</div>
@@ -1362,6 +1494,35 @@
 										<!-- end of tags -->
 
 										<div class="pull-left spaced-right">
+											<div class="context-popup dropup">
+												<a href="javascript:void(0)" data-toggle="dropdown" class="btn dropdown-toggle context-popup-btn" rel="tooltip" title="Status"><i class="icon-ok-circle"></i></a>
+
+												<div class="dropdown-menu context-popup-bd">
+													<div class="row-fluid spaced">
+														<div class="span12">
+															<div class="input-large">
+																<select class='chosen-select input-large' data-nosearch="true">
+																	<option value="1" selected>Open</option>
+																	<option value="2">Closed</option>
+																</select>
+															</div>
+														</div>
+													</div>
+													<div>
+														<button class="btn btn-primary btn-confirm">OK</button>
+													</div>
+												</div>
+											</div>
+										</div>
+										<!-- end of status -->
+
+										<div class="pull-left spaced-right">
+											<div class="check-line nowrap" style="width: 68px;">
+												<input type="checkbox" id="735345" class='icheck-me' name="345234" data-skin="square" data-color="blue"> <label class='inline' for="735345">Email </label>
+											</div>
+										</div>
+
+										<div class="pull-left spaced-right">
 											<div class="check-line nowrap">
 												<input type="checkbox" id="845663" class='icheck-me' name="5646" data-skin="square" data-color="blue"> <label class='inline' for="845663">Internal only </label>
 											</div>
@@ -1392,7 +1553,7 @@
 						<div class="row-fluid activity-add-footer">
 							<div class="span12">
 
-								<div class="row-fluid" style="max-width: 800px;">
+								<div class="row-fluid spaced" style="max-width: 800px;">
 									<div class="span12">
 
 										<div class="row-fluid">
@@ -1411,7 +1572,7 @@
 										</div>
 										<!-- end of assign -->
 
-										<div class="row-fluid spaced">
+										<div class="row-fluid">
 											<div class="span2 tright">
 												Notify:
 											</div>
@@ -1469,6 +1630,35 @@
 											</div>
 										</div>
 										<!-- end of tags -->
+
+										<div class="pull-left spaced-right">
+											<div class="context-popup dropup">
+												<a href="javascript:void(0)" data-toggle="dropdown" class="btn dropdown-toggle context-popup-btn" rel="tooltip" title="Status"><i class="icon-ok-circle"></i></a>
+
+												<div class="dropdown-menu context-popup-bd">
+													<div class="row-fluid spaced">
+														<div class="span12">
+															<div class="input-large">
+																<select class='chosen-select input-large' data-nosearch="true">
+																	<option value="1" selected>Open</option>
+																	<option value="2">Closed</option>
+																</select>
+															</div>
+														</div>
+													</div>
+													<div>
+														<button class="btn btn-primary btn-confirm">OK</button>
+													</div>
+												</div>
+											</div>
+										</div>
+										<!-- end of status -->
+
+										<div class="pull-left spaced-right">
+											<div class="check-line nowrap" style="width: 68px;">
+												<input type="checkbox" id="12453" class='icheck-me' name="45378" data-skin="square" data-color="blue"> <label class='inline' for="12453">Email </label>
+											</div>
+										</div>
 
 										<div class="pull-left spaced-right">
 											<div class="check-line nowrap">
