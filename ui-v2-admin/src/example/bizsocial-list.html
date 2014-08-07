@@ -39,6 +39,8 @@
 	<script src="../js/plugins/jquery.tinymce/3.5.8/jquery.tinymce.js"></script>
 	<script src="../js/plugins/jquery.scrolltofixed/1.0.0/jquery-scrolltofixed.js"></script>
 	<script src="../js/plugins/bootstrap-multiselect/bootstrap-multiselect.js"></script>
+	<script src="../js/plugins/fileupload/bootstrap-fileupload.min.js"></script>
+	<script src="../js/plugins/mockjax/jquery.mockjax.js"></script>
 	<script src="../js/plugins/dockmodal/jquery.dockmodal.js"></script>
 	<script src="../js/init.js"></script>
 	<script src="../js/application.js"></script>
@@ -212,7 +214,7 @@
 
 			<div class="side-scrollfixed">
 				<div class="side-action spaced">
-					<a href="javascript:void(0)" id="bizsocial-btn-add-activity" class='btn btn-large btn-block btn-success'><i class="icon-plus"></i> Add activity</a>
+					<a href="javascript:void(0)" class='btn btn-large btn-block btn-success bizsocial-btn-add-activity'><i class="icon-plus"></i> Add activity</a>
 				</div>
 
 				<div class="filter-sections spaced">
@@ -788,6 +790,8 @@
 						<div class="row-fluid activity-add-footer">
 							<div class="span12">
 
+
+
 								<div class="row-fluid spaced" style="max-width: 800px;">
 									<div class="span12">
 
@@ -807,11 +811,13 @@
 										</div>
 										<!-- end of notify -->
 
+
 									</div>
 								</div>
 
 								<div class="row-fluid">
 									<div class="span12">
+
 										<div class="pull-left spaced-right">
 											<input type="submit" class="btn btn-primary" value="Save"> 
 											<button class="btn">Cancel</button>
@@ -819,13 +825,16 @@
 										<!-- end of form save -->
 
 										<div class="pull-left spaced-right">
-											<div class="fileupload fileupload-new" data-provides="fileupload">
-												<span class="btn btn-file" rel="tooltip" title="Add attachment"><span class="fileupload-new"><i class="glyphicon-paperclip"></i></span><span class="fileupload-exists">Change</span><input type="file" /></span>
-												<span class="fileupload-preview"></span>
-												<a href="#" class="close fileupload-exists" data-dismiss="fileupload" style="float: none">×</a>
+											<div class="controls">
+												<div class="fileupload fileupload-new" data-provides="fileupload">
+													<span class="btn btn-file"><span class="fileupload-new"><i class="glyphicon-paperclip"></i></span><span class="fileupload-exists">Change</span><input type="file" /></span>
+													<span class="fileupload-preview"></span>
+													<a href="#" class="close fileupload-exists" data-dismiss="fileupload" style="float: none">×</a>
+												</div>
 											</div>
 										</div>
 										<!-- end of attachment -->
+
 
 										<div class="pull-left spaced-right">
 											<div class="context-popup dropup">
@@ -962,10 +971,12 @@
 										<!-- end of form save -->
 
 										<div class="pull-left spaced-right">
-											<div class="fileupload fileupload-new" data-provides="fileupload">
-												<span class="btn btn-file"><span class="fileupload-new"><i class="glyphicon-paperclip"></i></span><span class="fileupload-exists">Change</span><input type="file" /></span>
-												<span class="fileupload-preview"></span>
-												<a href="#" class="close fileupload-exists" data-dismiss="fileupload" style="float: none">×</a>
+											<div class="controls">
+												<div class="fileupload fileupload-new" data-provides="fileupload">
+													<span class="btn btn-file"><span class="fileupload-new"><i class="glyphicon-paperclip"></i></span><span class="fileupload-exists">Change</span><input type="file" /></span>
+													<span class="fileupload-preview"></span>
+													<a href="#" class="close fileupload-exists" data-dismiss="fileupload" style="float: none">×</a>
+												</div>
 											</div>
 										</div>
 										<!-- end of attachment -->
@@ -1016,30 +1027,6 @@
 											</div>
 										</div>
 										<!-- end of status -->
-
-										<!-- <div class="pull-left spaced-right">
-											<div class="context-popup dropup">
-												<a href="javascript:void(0)" data-toggle="dropdown" class="btn dropdown-toggle context-popup-btn" rel="tooltip" title="Priority"><i class="glyphicon-circle_exclamation_mark"></i></a>
-
-												<div class="dropdown-menu context-popup-bd">
-													<div class="row-fluid spaced">
-														<div class="span12">
-															<div class="input-large">
-																<select class='chosen-select input-large' data-nosearch="true">
-																	<option value="1" selected>Priority green</option>
-																	<option value="2">Priority red</option>
-																	<option value="3">Priority yellow</option>
-																</select>
-															</div>
-														</div>
-													</div>
-													<div>
-														<button class="btn btn-primary btn-confirm">OK</button>
-													</div>
-												</div>
-											</div>
-										</div> -->
-										<!-- end of priority -->
 
 										<div class="pull-left spaced-right">
 											<div class="check-line nowrap" style="width: 68px;">
@@ -1148,10 +1135,12 @@
 										<!-- end of form save -->
 
 										<div class="pull-left spaced-right">
-											<div class="fileupload fileupload-new" data-provides="fileupload">
-												<span class="btn btn-file" rel="tooltip" title="Add attachment"><span class="fileupload-new"><i class="glyphicon-paperclip"></i></span><span class="fileupload-exists">Change</span><input type="file" /></span>
-												<span class="fileupload-preview"></span>
-												<a href="#" class="close fileupload-exists" data-dismiss="fileupload" style="float: none">×</a>
+											<div class="controls">
+												<div class="fileupload fileupload-new" data-provides="fileupload">
+													<span class="btn btn-file"><span class="fileupload-new"><i class="glyphicon-paperclip"></i></span><span class="fileupload-exists">Change</span><input type="file" /></span>
+													<span class="fileupload-preview"></span>
+													<a href="#" class="close fileupload-exists" data-dismiss="fileupload" style="float: none">×</a>
+												</div>
 											</div>
 										</div>
 										<!-- end of attachment -->
@@ -1311,10 +1300,12 @@
 										<!-- end of form save -->
 
 										<div class="pull-left spaced-right">
-											<div class="fileupload fileupload-new" data-provides="fileupload">
-												<span class="btn btn-file" rel="tooltip" title="Add attachment"><span class="fileupload-new"><i class="glyphicon-paperclip"></i></span><span class="fileupload-exists">Change</span><input type="file" /></span>
-												<span class="fileupload-preview"></span>
-												<a href="#" class="close fileupload-exists" data-dismiss="fileupload" style="float: none">×</a>
+											<div class="controls">
+												<div class="fileupload fileupload-new" data-provides="fileupload">
+													<span class="btn btn-file"><span class="fileupload-new"><i class="glyphicon-paperclip"></i></span><span class="fileupload-exists">Change</span><input type="file" /></span>
+													<span class="fileupload-preview"></span>
+													<a href="#" class="close fileupload-exists" data-dismiss="fileupload" style="float: none">×</a>
+												</div>
 											</div>
 										</div>
 										<!-- end of attachment -->
@@ -1461,10 +1452,12 @@
 										<!-- end of form save -->
 
 										<div class="pull-left spaced-right">
-											<div class="fileupload fileupload-new" data-provides="fileupload">
-												<span class="btn btn-file" rel="tooltip" title="Add attachment"><span class="fileupload-new"><i class="glyphicon-paperclip"></i></span><span class="fileupload-exists">Change</span><input type="file" /></span>
-												<span class="fileupload-preview"></span>
-												<a href="#" class="close fileupload-exists" data-dismiss="fileupload" style="float: none">×</a>
+											<div class="controls">
+												<div class="fileupload fileupload-new" data-provides="fileupload">
+													<span class="btn btn-file"><span class="fileupload-new"><i class="glyphicon-paperclip"></i></span><span class="fileupload-exists">Change</span><input type="file" /></span>
+													<span class="fileupload-preview"></span>
+													<a href="#" class="close fileupload-exists" data-dismiss="fileupload" style="float: none">×</a>
+												</div>
 											</div>
 										</div>
 										<!-- end of attachment -->
@@ -1599,10 +1592,12 @@
 										<!-- end of form save -->
 
 										<div class="pull-left spaced-right">
-											<div class="fileupload fileupload-new" data-provides="fileupload">
-												<span class="btn btn-file" rel="tooltip" title="Add attachment"><span class="fileupload-new"><i class="glyphicon-paperclip"></i></span><span class="fileupload-exists">Change</span><input type="file" /></span>
-												<span class="fileupload-preview"></span>
-												<a href="#" class="close fileupload-exists" data-dismiss="fileupload" style="float: none">×</a>
+											<div class="controls">
+												<div class="fileupload fileupload-new" data-provides="fileupload">
+													<span class="btn btn-file"><span class="fileupload-new"><i class="glyphicon-paperclip"></i></span><span class="fileupload-exists">Change</span><input type="file" /></span>
+													<span class="fileupload-preview"></span>
+													<a href="#" class="close fileupload-exists" data-dismiss="fileupload" style="float: none">×</a>
+												</div>
 											</div>
 										</div>
 										<!-- end of attachment -->

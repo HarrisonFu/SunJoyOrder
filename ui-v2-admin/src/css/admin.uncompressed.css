@@ -540,7 +540,6 @@
   display: inline-block;
   *display: inline;
   /* IE7 inline-block hack */
-
   *zoom: 1;
 }
 .activity-thread .btn-section-expand.expanded i.icon-chevron-down {
@@ -561,7 +560,6 @@
   display: inline-block;
   *display: inline;
   /* IE7 inline-block hack */
-
   *zoom: 1;
   padding: 1px 5px 1px 23px;
   background: #f6f6f6 url(../img/admin/icon-act-tag-s.png) 3px center no-repeat;
@@ -575,7 +573,6 @@
   display: inline-block;
   *display: inline;
   /* IE7 inline-block hack */
-
   *zoom: 1;
   float: left;
 }
@@ -583,7 +580,6 @@
   display: inline-block;
   *display: inline;
   /* IE7 inline-block hack */
-
   *zoom: 1;
   margin-left: 5px;
   padding-left: 3px;
@@ -613,7 +609,6 @@
   display: inline-block;
   *display: inline;
   /* IE7 inline-block hack */
-
   *zoom: 1;
   width: 104px;
   height: 16px;
@@ -625,7 +620,6 @@
   display: inline-block;
   *display: inline;
   /* IE7 inline-block hack */
-
   *zoom: 1;
   width: 104px;
   height: 16px;
@@ -637,7 +631,6 @@
   display: inline-block;
   *display: inline;
   /* IE7 inline-block hack */
-
   *zoom: 1;
   width: 104px;
   height: 16px;
@@ -649,7 +642,6 @@
   display: inline-block;
   *display: inline;
   /* IE7 inline-block hack */
-
   *zoom: 1;
   width: 104px;
   height: 16px;
@@ -661,7 +653,6 @@
   display: inline-block;
   *display: inline;
   /* IE7 inline-block hack */
-
   *zoom: 1;
   width: 104px;
   height: 16px;
@@ -690,7 +681,6 @@
   display: inline-block;
   *display: inline;
   /* IE7 inline-block hack */
-
   *zoom: 1;
   margin: 0 2%  0 0;
 }
@@ -705,7 +695,6 @@
   display: inline-block;
   *display: inline;
   /* IE7 inline-block hack */
-
   *zoom: 1;
 }
 .act-voting .act-voting-number {
@@ -713,7 +702,6 @@
   display: inline-block;
   *display: inline;
   /* IE7 inline-block hack */
-
   *zoom: 1;
 }
 .act-voting-edit {
@@ -730,7 +718,6 @@
   display: inline-block;
   *display: inline;
   /* IE7 inline-block hack */
-
   *zoom: 1;
 }
 .act-voting-edit .act-voting-bar {
@@ -740,7 +727,6 @@
   display: inline-block;
   *display: inline;
   /* IE7 inline-block hack */
-
   *zoom: 1;
   margin: 0 10px;
 }
@@ -755,7 +741,6 @@
   display: inline-block;
   *display: inline;
   /* IE7 inline-block hack */
-
   *zoom: 1;
 }
 #tab-order-activity .activity-add .nav-tabs {
@@ -801,7 +786,6 @@
   display: inline-block;
   *display: inline;
   /* IE7 inline-block hack */
-
   *zoom: 1;
   float: none;
 }
@@ -824,7 +808,6 @@
   display: inline-block;
   *display: inline;
   /* IE7 inline-block hack */
-
   *zoom: 1;
   padding: 1px 5px;
   background: #DEE7FB;
@@ -837,7 +820,6 @@
   display: inline-block;
   *display: inline;
   /* IE7 inline-block hack */
-
   *zoom: 1;
   float: left;
 }
@@ -845,7 +827,6 @@
   display: inline-block;
   *display: inline;
   /* IE7 inline-block hack */
-
   *zoom: 1;
   margin-left: 5px;
   padding-left: 3px;
@@ -867,7 +848,6 @@
   display: inline-block;
   *display: inline;
   /* IE7 inline-block hack */
-
   *zoom: 1;
 }
 .dropdown-menu-group li.selected a {
@@ -948,7 +928,6 @@
   display: inline-block;
   *display: inline;
   /* IE7 inline-block hack */
-
   *zoom: 1;
   user-select: none;
   cursor: pointer;
@@ -1096,7 +1075,6 @@
   background: #fff;
 }
 .side-filter-hd {
-  background: #eee;
   border: none;
   margin: 0;
   margin-bottom: 5px;

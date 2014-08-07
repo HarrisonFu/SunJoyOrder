@@ -726,7 +726,7 @@ $(function(){
         }
     });
 
-    $("#bizsocial-btn-add-activity").click(function () {
+    $(".bizsocial-btn-add-activity").click(function () {
 		$("#bizsocial-modal-add-activity").dockmodal({
 	        initialState:"docked",
 	        width: 680,
