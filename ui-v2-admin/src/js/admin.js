@@ -801,6 +801,23 @@ $(function(){
 			}
 		);
 	}
+
+	$(".select2-multi").select2({
+		placeholder: "States",
+		minimumInputLength: 1,
+		multiple: true,
+		ajax: {
+			//Replace URL Here
+			url: "../mock/json/states.json",
+			dataType: 'json',
+			data: function (term, page) {
+				//query data
+			},
+			results: function (data, page) {
+				return {results: data.states};
+			}
+		}
+	});
 	
 });
 

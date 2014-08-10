@@ -151,6 +151,7 @@
 .context-popup{position:relative}.context-popup .context-popup-btn{color:#333}.context-popup .context-popup-btn:hover{text-decoration:none}
 .context-popup .context-popup-bd{padding:10px}
 .context-popup .dropdown-menu{z-index:10}
+.context-popup.inline-block{display:inline-block}
 .table-list thead th{background:#eee;font-weight:normal;vertical-align:middle}
 .table-list tr th .check-line{margin:0}
 .table-list th>a{color:#333}
@@ -182,4 +183,3 @@
 .activity-add-content .activity-add-body{padding:10px 15px}
 .activity-add-content .activity-add-footer{padding:10px;position:absolute;width:100%;left:0;bottom:0;background:#f9f9f9;border-top:1px solid #eee}
 .select2-drop-mask{display:none!important}
-.select2-container{display:block!important}

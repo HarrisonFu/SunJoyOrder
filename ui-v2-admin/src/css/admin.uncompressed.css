@@ -989,6 +989,9 @@
 .context-popup .dropdown-menu {
   z-index: 10;
 }
+.context-popup.inline-block {
+  display: inline-block;
+}
 .table-list thead th {
   background: #eee;
   font-weight: normal;
@@ -1164,7 +1167,4 @@
 }
 .select2-drop-mask {
   display: none!important;
-}
-.select2-container {
-  display: block!important;
 }
