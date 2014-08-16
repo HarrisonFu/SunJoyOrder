@@ -257,8 +257,9 @@
 										<div class="activity-add-tabs">
 											<ul class="nav nav-tabs cf">
 												<li class="first active"><a href="#tab-add-activity" data-toggle="tab" >Activity</a></li>
-												<li class=""><a href="#tab-add-meeting" data-toggle="tab">Meeting</a></li>
-												<li class=""><a href="#tab-add-knowledge" data-toggle="tab">Knowledge</a></li>
+												<li class=""><a href="#tab-add-todo" data-toggle="tab">Todo</a></li>
+												<li class=""><a href="#tab-add-issue-tracker" data-toggle="tab">Issue Tracker</a></li>
+												<li class=""><a href="#tab-add-case-study" data-toggle="tab">Case Study</a></li>
 												<li class=""><a href="#tab-add-poll" data-toggle="tab">Poll</a></li>
 											</ul>
 										</div>
@@ -279,11 +280,15 @@
 														<div class="span10">
 															<p class="grey">Assigned to Harrison Fu <a href="#">change</a></p>
 														</div>
-														<div class="span2 tright"><div class="btn btn-primary btn-small">Add</div></div>
+													</div>
+												</div>
+												<div class="row-fluid">
+													<div class="span10">
+														<button class="btn btn-primary">Add</button>
 													</div>
 												</div>
 											</div>
-											<div id="tab-add-meeting" class="tab-pane cf">
+											<div id="tab-add-todo" class="tab-pane cf">
 												<div class="title"><input type="text" placeholder="Meeting" class="span12" /> </div>
 												<div class="content"><textarea name="" placeholder="Meeting content..." id="" cols="30" rows="5" class="span12 rte-nocontrol"></textarea> </div>
 												<div class="notify spaced small">
@@ -293,17 +298,30 @@
 														</div>
 														<div class="span2 tright"><a href="#">Remove all</a></div>
 													</div>
-													
 												</div>
 												<div class="assign">
 													<div class="row-fluid">
 														<div class="span10">
+															<p class="grey">Assigned to Harrison Fu <a href="#">change</a></p>
 														</div>
-														<div class="span2 tright"><div class="btn btn-primary btn-small">Add</div></div>
+													</div>
+												</div>
+												<div class="row-fluid">
+													<div class="span10">
+														<input type="text" name="" id="" class="input-large date" placeholder="Due date"> <select name="" id="" class="">
+															<option value="">Priority Green</option>
+															<option value="">Priority Yellow</option>
+															<option value="">Priority Red</option>
+														</select>
+													</div>
+												</div>
+												<div class="row-fluid">
+													<div class="span10">
+														<button class="btn btn-primary">Add</button>
 													</div>
 												</div>
 											</div>
-											<div id="tab-add-knowledge" class="tab-pane cf">
+											<div id="tab-add-issue-tracker" class="tab-pane cf">
 												<div class="title"><input type="text" placeholder="Knowledge" class="span12" /> </div>
 												<div class="content"><textarea name="" placeholder="Knowledge content..." id="" cols="30" rows="5" class="span12 rte-nocontrol"></textarea> </div>
 												<div class="notify spaced small">
@@ -317,9 +335,42 @@
 												</div>
 												<div class="assign">
 													<div class="row-fluid">
-														<div class="span12">
+														<div class="span10">
+															<p class="grey">Assigned to Harrison Fu <a href="#">change</a></p>
 														</div>
-														<div class="span10 tright"><div class="btn btn-primary btn-small">Add</div></div>
+													</div>
+												</div>
+												<div class="row-fluid">
+													<div class="span10">
+														<input type="text" name="" id="" class="input-large date" placeholder="Due date"> <input type="text" name="" id="" class="input-large" placeholder="Issue loss $">
+													</div>
+												</div>
+												<div class="row-fluid">
+													<div class="span10">
+														<button class="btn btn-primary">Add</button>
+													</div>
+												</div>
+											</div>
+											<div id="tab-add-case-study" class="tab-pane cf">
+												<div class="title"><input type="text" placeholder="Knowledge" class="span12" /> </div>
+												<div class="content"><textarea name="" placeholder="Knowledge content..." id="" cols="30" rows="5" class="span12 rte-nocontrol"></textarea> </div>
+												<div class="notify spaced small">
+													<div class="row-fluid">
+														<div class="span10">
+															<input type="text" name="" id="" placeholder="+ Add people to notify" class="span4 no-margin"> <a href="#">Search &amp; Add</a>
+														</div>
+														<div class="span2 tright"><a href="#">Remove all</a></div>
+													</div>
+													
+												</div>
+												<div class="row-fluid">
+													<div class="span10">
+														<input type="text" name="" id="" class="input-large date" placeholder="Due date">
+													</div>
+												</div>
+												<div class="row-fluid">
+													<div class="span10">
+														<button class="btn btn-primary">Add</button>
 													</div>
 												</div>
 											</div>
@@ -354,7 +405,16 @@
 														<div class="span10">
 															<p class="grey">Assigned to Harrison Fu <a href="#">change</a></p>
 														</div>
-														<div class="span2 tright"><button class="btn btn-primary btn-small">Add</button></div>
+													</div>
+												</div>
+												<div class="row-fluid">
+													<div class="span10">
+														<input type="text" name="" id="" class="input-large date" placeholder="Due date">
+													</div>
+												</div>
+												<div class="row-fluid">
+													<div class="span10">
+														<button class="btn btn-primary">Add</button>
 													</div>
 												</div>
 											</div>
@@ -397,6 +457,9 @@
 																		<a href="#" class="act-user-popover act-list-by-user" data-content="&lt;img width='36' height='36' src='../../mock/image/user/user-2.jpg' /&gt; &lt;br /&gt;Seatle, WA, USA &lt;br /&gt;Phone: 54648789 &lt;br /&gt;Email: &lt;a href='#'&gt;harrison.fu@sunjoy.com&lt;/a&gt;" data-original-title="Harrison Fu">Harrison Fu</a>
 
 																		<span class="bold grey">You are invited to SunJoy New System</span>
+
+																		<span class="bold spaced-left red">Past due: 2014/5/28</span>
+																		<span class="spaced-left tag-priority tag-small tag-yellow"></span>
 																	</div>
 																	<div class="span2 tright">
 																		<div class="btn-group tright">
@@ -431,6 +494,15 @@
 																	</div>
 																</div>
 																<div class="row-fluid">
+																	<div class="span10">
+																		<input type="text" name="" id="" class="input-large date" placeholder="Due date"> <select name="" id="" class="">
+																			<option value="">Priority Green</option>
+																			<option value="">Priority Yellow</option>
+																			<option value="">Priority Red</option>
+																		</select>
+																	</div>
+																</div>
+																<div class="row-fluid">
 																	<div class="span6">
 																		<label for="internal" class="checkbox"><input type="checkbox" name="" id="internal"> Internal only</label>
 																	</div>
@@ -438,6 +510,7 @@
 																		<button class="btn btn-small btn-primary btn-save">Save</button> <button class="btn btn-small btn-cancel">Cancel</button>
 																	</div>
 																</div>
+
 															</div>
 
 																<div class="section-expandable none">
@@ -611,7 +684,10 @@
 														<div class="span10">
 															<a href="#" class="act-user-popover act-list-by-user" data-content="&lt;img width='36' height='36' src='../../mock/image/user/user-2.jpg' /&gt; &lt;br /&gt;Seatle, WA, USA &lt;br /&gt;Phone: 54648789 &lt;br /&gt;Email: &lt;a href='#'&gt;harrison.fu@sunjoy.com&lt;/a&gt;" data-original-title="Harrison Fu">Harrison Fu</a>
 
-															<span class="bold grey">You are invited to SunJoy New System</span>
+															<span class="bold grey">Issue track #40859</span>
+
+															<span class="bold grey spaced-left">Due: 2014/5/28</span>
+															<span class="bold spaced-left red">$200</span>
 														</div>
 														<div class="span2 tright">
 															<div class="btn-group tright">
@@ -643,6 +719,11 @@
 													<div class="row-fluid">
 														<div class="span12">
 															<textarea rows="3" class="span12 rte-simple">Hi Stephanie,We have launched a new and improved website to meet your promotional needs. As a valued customer, we have  already created you the login and password: Login Address: http://www.sunjoy.us distributor_login.aspx</textarea>
+														</div>
+													</div>
+													<div class="row-fluid">
+														<div class="span10">
+															<input type="text" name="" id="" class="input-large date" placeholder="Due date"> <input type="text" name="" id="" class="input-large" placeholder="Issue loss $">
 														</div>
 													</div>
 													<div class="row-fluid">
@@ -925,9 +1006,14 @@
 											<div class="section-thread">
 												<div class="row-fluid spaced small">
 													<div class="span10">
+														
+
 														<a href="#" class="act-user-popover act-list-by-user" data-content="&lt;img width='36' height='36' src='../../mock/image/user/user-2.jpg' /&gt; &lt;br /&gt;Seatle, WA, USA &lt;br /&gt;Phone: 54648789 &lt;br /&gt;Email: &lt;a href='#'&gt;harrison.fu@sunjoy.com&lt;/a&gt;" data-original-title="Harrison Fu">Harrison Fu</a>
 
 														<span class="bold grey">How did you know about sunjoy products?</span>
+
+														<span class="bold grey spaced-left">Due: 2014/5/28</span>
+														<span class="spaced-left tag-priority tag-small tag-red"></span>
 													</div>
 													<div class="span2 tright">
 														<div class="btn-group tright">
@@ -1008,6 +1094,12 @@
 												<div class="row-fluid poll-option">
 													<div class="span11"><input type="text" name="" value="Sunjoy email blast" class="span12" id=""></div>
 													<div class="span1 tright"><button type="button" class="close btn-remove-option">&times;</button></div>
+												</div>
+
+												<div class="row-fluid">
+													<div class="span10">
+														<input type="text" name="" id="" class="input-large date" placeholder="Due date"> 
+													</div>
 												</div>
 
 												<div class="row-fluid">
